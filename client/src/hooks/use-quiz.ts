@@ -1,7 +1,14 @@
-import { useState, useEffect } from 'react';
-import { useQuery, useMutation } from '@tanstack/react-query';
-import { apiRequest, queryClient } from '@/lib/queryClient';
-import type { QuizQuestion, QuizSession } from '@shared/schema';
+import { useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
+
+type QuizQuestion = {
+  id: number;
+  question: string;
+  choices: string[];
+  answer: number;
+  type: 'true-false' | 'multiple-choice';
+  category: string;
+};
 
 export interface QuizState {
   currentQuestionIndex: number;
@@ -10,7 +17,7 @@ export interface QuizState {
   startTime: Date | null;
   endTime: Date | null;
   isCompleted: boolean;
-  sessionId: number | null;
+  sessionId: null;
 }
 
 export function useQuiz(category?: string) {
@@ -25,35 +32,34 @@ export function useQuiz(category?: string) {
   });
 
   const { data: questions = [], isLoading } = useQuery<QuizQuestion[]>({
-    queryKey: category && category !== 'All' 
-      ? ['/api/questions', category] 
-      : ['/api/questions'],
+    queryKey: ['questions', category],
     queryFn: async () => {
-      const url = category && category !== 'All' 
-        ? `/api/questions/${encodeURIComponent(category)}`
-        : '/api/questions';
-      const response = await fetch(url);
-      if (!response.ok) {
-        throw new Error('Failed to fetch questions');
+      if (!category || category === 'All') {
+        // Fetch all categories from categories.json
+        const res = await fetch('/quiz-data/categories.json');
+        if (!res.ok) throw new Error('Failed to load category list');
+        const categoryList: string[] = await res.json();
+
+        const allQuestions: QuizQuestion[] = [];
+
+        for (const file of categoryList) {
+          try {
+            const qRes = await fetch(`/quiz-data/${file}.json`);
+            if (qRes.ok) {
+              const data: QuizQuestion[] = await qRes.json();
+              allQuestions.push(...data);
+            }
+          } catch (err) {
+            console.error(`Failed to load ${file}.json`, err);
+          }
+        }
+
+        return allQuestions;
+      } else {
+        const res = await fetch(`/quiz-data/${category}.json`);
+        if (!res.ok) throw new Error('Failed to load questions');
+        return res.json();
       }
-      return response.json();
-    },
-  });
-
-  const createSessionMutation = useMutation({
-    mutationFn: async (sessionData: any) => {
-      const response = await apiRequest('POST', '/api/sessions', sessionData);
-      return response.json();
-    },
-    onSuccess: (session: QuizSession) => {
-      setQuizState(prev => ({ ...prev, sessionId: session.id }));
-    },
-  });
-
-  const updateSessionMutation = useMutation({
-    mutationFn: async ({ id, data }: { id: number; data: any }) => {
-      const response = await apiRequest('PATCH', `/api/sessions/${id}`, data);
-      return response.json();
     },
   });
 
@@ -64,30 +70,20 @@ export function useQuiz(category?: string) {
       startTime,
       selectedAnswers: new Array(questions.length).fill(null),
     }));
-
-    // Create quiz session
-    createSessionMutation.mutate({
-      startTime: startTime.toISOString(),
-      totalQuestions: questions.length,
-      userAnswers: [],
-      isCompleted: false,
-    });
   };
 
   const selectAnswer = (answerIndex: number) => {
     setQuizState(prev => {
-      const newAnswers = [...prev.selectedAnswers];
-      newAnswers[prev.currentQuestionIndex] = answerIndex;
-      return { ...prev, selectedAnswers: newAnswers };
+      const updated = [...prev.selectedAnswers];
+      updated[prev.currentQuestionIndex] = answerIndex;
+      return { ...prev, selectedAnswers: updated };
     });
   };
 
   const nextQuestion = () => {
     setQuizState(prev => {
       const nextIndex = prev.currentQuestionIndex + 1;
-      if (nextIndex >= questions.length) {
-        return completeQuiz(prev);
-      }
+      if (nextIndex >= questions.length) return completeQuiz(prev);
       return { ...prev, currentQuestionIndex: nextIndex };
     });
   };
@@ -99,41 +95,24 @@ export function useQuiz(category?: string) {
     }));
   };
 
-  const completeQuiz = (currentState: QuizState) => {
+  const completeQuiz = (state: QuizState): QuizState => {
     const endTime = new Date();
-    const score = calculateScore(currentState.selectedAnswers, questions);
-    
-    const completedState = {
-      ...currentState,
+    const score: number = calculateScore(state.selectedAnswers, questions);
+    return {
+      ...state,
       endTime,
       score,
       isCompleted: true,
     };
-
-    // Update session
-    if (currentState.sessionId) {
-      updateSessionMutation.mutate({
-        id: currentState.sessionId,
-        data: {
-          endTime: endTime.toISOString(),
-          score,
-          isCompleted: true,
-          userAnswers: currentState.selectedAnswers.filter(answer => answer !== null),
-        },
-      });
-    }
-
-    return completedState;
   };
 
   const calculateScore = (answers: (number | null)[], questions: QuizQuestion[]) => {
-    let correct = 0;
-    answers.forEach((answer, index) => {
-      if (answer !== null && questions[index] && answer === questions[index].answer) {
-        correct++;
+    return answers.reduce((acc: number, answer, i) => {
+      if (answer !== null && answer === questions[i]?.answer) {
+        return acc + 1;
       }
-    });
-    return correct;
+      return acc;
+    }, 0);
   };
 
   const resetQuiz = () => {
@@ -148,26 +127,16 @@ export function useQuiz(category?: string) {
     });
   };
 
-  const getCurrentQuestion = () => {
-    return questions[quizState.currentQuestionIndex] || null;
-  };
-
-  const getProgress = () => {
-    if (questions.length === 0) return 0;
-    return Math.round((quizState.currentQuestionIndex / questions.length) * 100);
-  };
-
-  const getSelectedAnswer = () => {
-    return quizState.selectedAnswers[quizState.currentQuestionIndex] || null;
-  };
-
   return {
     quizState,
     questions,
     isLoading,
-    currentQuestion: getCurrentQuestion(),
-    progress: getProgress(),
-    selectedAnswer: getSelectedAnswer(),
+    currentQuestion: questions[quizState.currentQuestionIndex] || null,
+    progress:
+      questions.length === 0
+        ? 0
+        : Math.round((quizState.currentQuestionIndex / questions.length) * 100),
+    selectedAnswer: quizState.selectedAnswers[quizState.currentQuestionIndex] || null,
     startQuiz,
     selectAnswer,
     nextQuestion,

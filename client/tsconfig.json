@@ -1,9 +1,9 @@
 {
-  "include": ["src", "../shared"],
+  "include": ["src"],
   "exclude": ["node_modules", "build", "dist", "**/*.test.ts"],
   "compilerOptions": {
     "incremental": true,
-    "tsBuildInfoFile": "../node_modules/typescript/tsbuildinfo",
+    "tsBuildInfoFile": "../node_modules/typescript/tsbuildinfo", 
     "noEmit": true,
     "module": "ESNext",
     "strict": true,
@@ -13,12 +13,11 @@
     "skipLibCheck": true,
     "allowImportingTsExtensions": true,
     "moduleResolution": "bundler",
-    "baseUrl": ".",
-    "types": ["vite/client"],
+    "baseUrl": ".", 
+    "types": ["node", "vite/client"],
     "paths": {
-      "@/*": ["src/*"],
-      "@shared/*": ["../shared/*"],
-      "@assets/*": ["../attached_assets/*"]
+      "@/*": ["src/*"],              
+      "@assets/*": ["../attached_assets/*"] 
     }
   }
 }
