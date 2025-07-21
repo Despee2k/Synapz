@@ -10,7 +10,7 @@ import { StatsSidebar } from '@/components/quiz/stats-sidebar';
 import { ReviewAnswers } from '@/pages/review';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Play } from 'lucide-react';
+import { Play, Home } from 'lucide-react';
 
 export default function Quiz() {
   const [, setLocation] = useLocation();
@@ -51,7 +51,7 @@ export default function Quiz() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader onHome={goHome} />
+        <QuizHeader />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -68,7 +68,7 @@ export default function Quiz() {
     const categoryDisplay = category || 'All Categories';
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader category={categoryDisplay} onHome={goHome} />
+        <QuizHeader category={categoryDisplay} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -84,10 +84,18 @@ export default function Quiz() {
                   Take your time and choose the best answer for each question
                 </div>
               </div>
-              <Button onClick={startQuiz} size="lg" className="px-8">
-                <Play className="w-4 h-4 mr-2" />
-                Start Quiz
-              </Button>
+              <div className="space-y-4">
+                <Button onClick={startQuiz} size="lg" className="px-8">
+                  <Play className="w-4 h-4 mr-2" />
+                  Start Quiz
+                </Button>
+                <div>
+                  <Button variant="outline" onClick={goHome} size="sm">
+                    <Home className="w-4 h-4 mr-2" />
+                    Go Home
+                  </Button>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </main>
@@ -110,7 +118,7 @@ export default function Quiz() {
 
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader onHome={goHome} />
+        <QuizHeader />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <QuizResults
             score={quizState.score}
@@ -127,11 +135,15 @@ export default function Quiz() {
   if (!currentQuestion) {
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader onHome={goHome} />
+        <QuizHeader />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
-              <p className="text-slate-600">No questions available</p>
+              <p className="text-slate-600 mb-4">No questions available</p>
+              <Button onClick={goHome}>
+                <Home className="w-4 h-4 mr-2" />
+                Go Home
+              </Button>
             </CardContent>
           </Card>
         </main>
@@ -141,7 +153,7 @@ export default function Quiz() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <QuizHeader onHome={goHome} />
+      <QuizHeader />
       
       <main className="max-w-4xl mx-auto px-4 py-8">
         <ProgressIndicator

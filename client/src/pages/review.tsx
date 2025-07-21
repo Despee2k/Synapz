@@ -51,15 +51,9 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
         <div className="max-w-4xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <h1 className="text-2xl font-bold text-slate-800">Review Answers</h1>
-            <div className="flex items-center space-x-4">
-              <span className="text-sm text-slate-600">
-                Score: {score}/{questions.length} ({Math.round((score / questions.length) * 100)}%)
-              </span>
-              <Button variant="outline" onClick={onHome}>
-                <Home className="w-4 h-4 mr-2" />
-                Home
-              </Button>
-            </div>
+            <span className="text-sm text-slate-600">
+              Score: {score}/{questions.length} ({Math.round((score / questions.length) * 100)}%)
+            </span>
           </div>
         </div>
       </header>
