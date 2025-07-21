@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "question": "The 1987 Constitution allows warrantless seizures if police believe evidence will be destroyed.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 2,
+    "question": "Under RA 9165, the chain of custody rule allows minor lapses in inventory procedures.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 3,
+    "question": "Regulatory searches (e.g., airport security) always require a warrant.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 4,
+    "question": "Probable cause for a search warrant must be personally determined by a judge.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 5,
+    "question": "A warrantless arrest is always unconstitutional.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 6,
+    "question": "Cybercrime warrants under A.M. No. 17-11-03-SC are valid for 30 days.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 7,
+    "question": "The Plain View Doctrine applies only if the officer intentionally searched for the evidence.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 8,
+    "question": "The Hot Pursuit exception applies only if the suspect is still at the crime scene.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 9,
+    "question": "A consented search requires the suspect to sign a written waiver.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 10,
+    "question": "A search incidental to a lawful arrest can only cover the suspect’s immediate surroundings.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 11,
+    "question": "What is required for a valid warrantless arrest under \"in flagrante delicto\"?",
+    "choices": [
+      "The suspect confesses",
+      "The suspect is a fugitive",
+      "A witness identifies the suspect",
+      "The suspect is caught in the act"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 12,
+    "question": "The \"Hot Pursuit\" exception applies when:",
+    "choices": [
+      "A suspect is arrested at home without a warrant",
+      "Evidence is found in a trash bin",
+      "A tip from an informant is received",
+      "Police chase a suspect immediately after a crime"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 13,
+    "question": "What is required for a consented search to be valid?",
+    "choices": [
+      "Judicial approval",
+      "Knowing and voluntary consent",
+      "Presence of a lawyer",
+      "Written agreement"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 14,
+    "question": "Which doctrine allows seizure of evidence without a warrant if it is plainly visible?",
+    "choices": [
+      "Hot Pursuit Doctrine",
+      "Chain of Custody Rule",
+      "Exigent Circumstances",
+      "Plain View Doctrine"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 15,
+    "question": "A search incidental to a lawful arrest is justified to:",
+    "choices": [
+      "Find all personal belongings",
+      "Conduct a full property search",
+      "Ensure officer safety and preserve evidence",
+      "Check for unrelated contraband"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following is NOT a requisite of a valid search warrant?",
+    "choices": [
+      "Signed by a police officer",
+      "Probable cause determined by a judge",
+      "Based on sworn testimony",
+      "Specific description of place/items"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 17,
+    "question": "Which is NOT an exception to the warrant requirement?",
+    "choices": [
+      "Stop-and-frisk",
+      "Exigent circumstances",
+      "Consented search",
+      "Random house inspections"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following voids a search warrant?",
+    "choices": [
+      "Issued by a mayor",
+      "All of the choices",
+      "General description of items",
+      "Probable cause based on hearsay"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 19,
+    "question": "How many days is a cybercrime warrant initially valid?",
+    "choices": [
+      "10",
+      "30",
+      "15",
+      "20"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  },
+  {
+    "id": 20,
+    "question": "A warrantless arrest is valid if:",
+    "choices": [
+      "The suspect is uncooperative",
+      "The suspect is caught committing a crime",
+      "The suspect is a habitual delinquent",
+      "The police have reason to believe the suspect is likely guilty"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Philippine Law on Searches and Seizures"
+  }
+]

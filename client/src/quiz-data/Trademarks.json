@@ -1,0 +1,212 @@
+[
+  {
+    "id": 1,
+    "question": "Both trademark infringement and unfair competition require the mark being used to be registered for the complainant to prevail.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 2,
+    "question": "The Dominancy Test disregards the totality of the mark’s appearance and instead zeroes in on its most prominent features.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 3,
+    "question": "The protection granted to trade names can be invoked even without prior registration, particularly under international agreements like the Paris Convention.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 4,
+    "question": "The “first-to-file” rule in Philippine trademark law completely overrides any claims by prior users, regardless of the circumstances.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 5,
+    "question": "A mark registered for one product category automatically gives protection across all classes.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 6,
+    "question": "The McDonald's v. Big Mak case illustrates that minor differences in a mark's spelling can prevent confusion.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 7,
+    "question": "Under Philippine law, a generic term can be registered if stylized in a unique way.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 8,
+    "question": "The holistic test is stricter than the dominancy test because it requires comparing all features of the marks, including market context.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 9,
+    "question": "A sound or smell may be registered as a trademark in the Philippines if it is distinctive.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 10,
+    "question": "Bad faith is a required element in both trademark infringement and unfair competition.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 11,
+    "question": "Why did the Supreme Court in Emerald Garments v. CA deny the registration of “LEE”?",
+    "choices": [
+      "The applicant was not Filipino",
+      "The mark lacked distinctiveness",
+      "LEE was considered too descriptive",
+      "It was confusingly similar to a well-known international mark"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is NOT a right conferred by trademark registration?",
+    "choices": [
+      "Right to file for infringement",
+      "Right to own the company using the mark",
+      "Right to exclusive use",
+      "Right to assign or license the mark"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 13,
+    "question": "Which test is more likely to take into account how a product is marketed and packaged in stores?",
+    "choices": [
+      "Genericness Test",
+      "Dilution Test",
+      "Dominancy Test",
+      "Holistic Test"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 14,
+    "question": "Why is “bad faith” a more critical element in unfair competition than in trademark infringement?",
+    "choices": [
+      "Because unfair competition penalizes intent to deceive, not mere usage",
+      "Because all marks must be registered",
+      "Because it involves criminal penalties",
+      "Because infringement focuses solely on registration"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 15,
+    "question": "Which scenario likely constitutes unfair competition but not trademark infringement?",
+    "choices": [
+      "Registering a mark already registered in another country",
+      "Imitating packaging and label design of another brand without copying the mark",
+      "Using a similar-sounding registered mark on identical goods",
+      "Copying a registered word mark"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 16,
+    "question": "In Societe Des Produits Nestle v. Dy, what key element led to a finding of infringement?",
+    "choices": [
+      "Phonetic and conceptual similarity of the marks",
+      "Failure to register a competing mark",
+      "Use of Nestlé’s exact packaging",
+      "Misuse of trade dress"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following best demonstrates the rationale for protecting unregistered trade names under the Paris Convention?",
+    "choices": [
+      "To harmonize IP procedures across ASEAN",
+      "To promote local registration of international brands",
+      "To penalize non-registration of famous marks",
+      "To protect goodwill established through use and reputation"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 18,
+    "question": "Why are marks consisting only of a product's shape or function typically not registrable?",
+    "choices": [
+      "They serve a utilitarian function and should remain in the public domain",
+      "They lack color elements",
+      "They are already patented",
+      "They can be offensive"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 19,
+    "question": "Which of the following best explains why descriptive marks like “Delicious Coffee” are not registrable?",
+    "choices": [
+      "They can be misleading",
+      "They merely describe product characteristics and lack distinctiveness",
+      "They are likely to offend public morals",
+      "They are difficult to remember"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 20,
+    "question": "In Zuneca Pharmaceutical v. Natrapharm, the Supreme Court ruled in favor of the first filer. What principle did this reinforce?",
+    "choices": [
+      "Prior use doctrine",
+      "Anti-dilution rule",
+      "First-to-file rule",
+      "Trade dress confusion"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  }
+]

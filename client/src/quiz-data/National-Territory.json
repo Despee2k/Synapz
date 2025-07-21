@@ -1,0 +1,482 @@
+[
+  {
+    "id": 1,
+    "question": "The 2016 Arbitral Award is legally binding and directly enforceable by the Permanent Court of Arbitration.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 2,
+    "question": "The Territorial Sea extends up to 24 nautical miles from the baseline, subject to the right of innocent passage.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 3,
+    "question": "China\u2019s \u201cNine-Dash Line\u201d claim has been universally recognized by international law as having a historical basis for exclusive control over the South China Sea.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 4,
+    "question": "The Arbitral Award reinforces the idea that historical claims always supersede modern international law like UNCLOS in maritime disputes.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 5,
+    "question": "The definition of national territory is considered fundamental to statehood because it dictates only the extent of governmental authority, not resource management.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 6,
+    "question": "RA 9522, the Philippine Baselines Law, entirely abandoned the use of straight baselines in favor of a new method for defining internal waters.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 7,
+    "question": "The Magallona v. Ermita (2011) case affirmed the unconstitutionality of using the Straight Baseline Method in delineating the Philippine territory.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 8,
+    "question": "The Archipelagic Doctrine treats scattered islands as separate entities for the purpose of defining maritime zones, preventing their unification.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 9,
+    "question": "Understanding the principles of national territory is crucial only for legal professionals, not for IT professionals or policymakers.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 10,
+    "question": "In the Contiguous Zone, the State exercises full sovereignty, similar to its territorial sea, for all purposes including resource exploitation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 11,
+    "question": "Despite China's rejection, the Arbitral Award has no significant impact on international law or future legal challenges globally.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 12,
+    "question": "The Exclusive Economic Zone (EEZ) grants the coastal state full sovereignty over its waters, seabed, and subsoil up to 200 nautical miles.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 13,
+    "question": "The Archipelagic Doctrine affirms the indivisible unity of the Philippines' islands and waters.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 14,
+    "question": "The Philippines exercises full sovereignty over its Aerial Territory without any subject to international aviation treaties.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 15,
+    "question": "Under UNCLOS III, Internal Waters are those waters outside the baselines, where foreign vessels generally have a right of innocent passage.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 16,
+    "question": "The 2016 Arbitral Award recognized Scarborough Shoal as an island, capable of generating its own 200-nm Exclusive Economic Zone.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 17,
+    "question": "The Philippine National Territory, as defined by Article I of the 1987 Constitution, is exclusively limited to its landmass and internal waters, excluding airspace.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 18,
+    "question": "The Arbitral Award explicitly stated that China\u2019s reclamation activities in the South China Sea were permissible under UNCLOS provisions for national security.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 19,
+    "question": "The Philippines initiated the arbitration case against China at the Permanent Court of Arbitration (PCA) in 2016, immediately after the Arbitral Award.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 20,
+    "question": "Inland bodies of water, such as rivers and lakes, are considered part of the maritime territory under Philippine law.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National Territory"
+  },
+  {
+    "id": 21,
+    "question": "The Straight Baseline Method is affirmed by which Philippine Supreme Court case?",
+    "choices": [
+      "Tanada v. Angara",
+      "Magallona v. Ermita",
+      "Disini v. Secretary of Justice",
+      "Sabio v. Gordon"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 22,
+    "question": "The Archipelagic Doctrine treats the islands and their connecting waters as:",
+    "choices": [
+      "Separate territories governed by local governments.",
+      "A unified entity or a single whole.",
+      "Only land territory with no maritime rights.",
+      "Independent units with distinct maritime zones."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 23,
+    "question": "China’s claim to almost the entire South China Sea is represented by:",
+    "choices": [
+      "The Three-Point Line.",
+      "The Exclusive Access Zone.",
+      "The Nine-Dash Line.",
+      "The U-Shaped Theory."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 24,
+    "question": "The Exclusive Economic Zone (EEZ) grants the coastal state:",
+    "choices": [
+      "Full sovereignty over all activities and resources.",
+      "Sovereign rights for exploring, exploiting, conserving, and managing natural resources.",
+      "No rights, only international navigation privileges.",
+      "Shared governance with other claimant states."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 25,
+    "question": "In the Contiguous Zone, the coastal State’s enforcement rights are limited to:",
+    "choices": [
+      "Military operations and naval drills.",
+      "Customs, fiscal, immigration, or sanitary laws.",
+      "Fishing and mineral exploration only.",
+      "Environmental research and development."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 26,
+    "question": "The fundamental importance of the definition of national territory to statehood includes dictating the extent of:",
+    "choices": [
+      "Foreign tourism and trade.",
+      "Governmental authority, law enforcement, resource management, and national security.",
+      "Cultural diversity and urbanization.",
+      "Language policy and education programs."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 27,
+    "question": "Despite China’s rejection, the 2016 Arbitral Award’s significance includes:",
+    "choices": [
+      "Affirming Philippine maritime rights and bolstering international law.",
+      "Legitimizing China's historic rights over the South China Sea.",
+      "Empowering military responses from ASEAN countries.",
+      "Authorizing the annexation of disputed islands."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 28,
+    "question": "Which component of national territory is characterized by full sovereignty, where foreign vessels typically need permission to enter?",
+    "choices": [
+      "Territorial Sea",
+      "Exclusive Economic Zone",
+      "Internal Waters",
+      "High Seas"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 29,
+    "question": "The maximum breadth of the Territorial Sea from the baseline is:",
+    "choices": [
+      "3 nautical miles",
+      "12 nautical miles",
+      "24 nautical miles",
+      "200 nautical miles"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 30,
+    "question": "The 2016 PCA ruling is described as having \"powerfully affirming international law\" primarily because:",
+    "choices": [
+      "It clarified maritime entitlements based on UNCLOS, not vague historical claims.",
+      "It nullified all territorial claims of China in the Pacific.",
+      "It provided new legal grounds for territorial annexation.",
+      "It enabled military enforcement of EEZ rights."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 31,
+    "question": "Which specific violation was cited against China regarding its activities in the Philippines' EEZ by the Arbitral Award?",
+    "choices": [
+      "Conducting scientific research without permission.",
+      "Interfering with fishing and oil exploration.",
+      "Establishing diplomatic relations with other claimant states.",
+      "Imposing tariffs on Philippine goods."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 32,
+    "question": "The Arbitral Award's impact on the Rule of Law in maritime disputes is that it:",
+    "choices": [
+      "Makes historical claims superior to UNCLOS.",
+      "Suggests that military might is the sole determinant.",
+      "Requires all states to adopt the \"Nine-Dash Line.\"",
+      "Reinforces international rule of law over such disputes."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 33,
+    "question": "RA 9522, the Philippine Baselines Law, is stated to align with which international legal framework?",
+    "choices": [
+      "Kyoto Protocol",
+      "Paris Agreement",
+      "Geneva Conventions",
+      "UNCLOS III"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 34,
+    "question": "Article I of the 1987 Philippine Constitution defines the national territory to include all of the following EXCEPT:",
+    "choices": [
+      "The Philippine archipelago, with all its islands and waters embraced therein.",
+      "Other territories over which the Philippines has sovereignty or jurisdiction.",
+      "Airspace above land and maritime territory.",
+      "International waters beyond any state's jurisdiction."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 35,
+    "question": "The 2016 Arbitral Award on Scarborough Shoal ruled it as:",
+    "choices": [
+      "An island that can generate a full continental shelf.",
+      "A rock that generates only a 12-nm territorial sea.",
+      "Part of China's internal waters.",
+      "A high-tide elevation capable of generating a 200-nm EEZ"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 36,
+    "question": "The Arbitral Award found that China's reclamation activities specifically violated:",
+    "choices": [
+      "UNCLOS provisions on marine environmental protection.",
+      "The Law on the Sea Conventions from the 1950s.",
+      "The 1987 Philippine Constitution.",
+      "Bilateral agreements with Vietnam."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 37,
+    "question": "The Philippines initiated the arbitration case against China at the Permanent Court of Arbitration (PCA) in what year?",
+    "choices": [
+      "2013",
+      "2010",
+      "2016",
+      "2002"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 38,
+    "question": "The Philippine national territory, in its entirety, is described as a comprehensive domain of:",
+    "choices": [
+      "Land, sea, and airspace.",
+      "Contiguous zone and EEZ only.",
+      "Islands and reefs, excluding surrounding waters.",
+      "Land and internal waters only"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 39,
+    "question": "The UNCLOS III treaty was ratified by the Philippines in what year?",
+    "choices": [
+      "2016",
+      "1987",
+      "1984",
+      "1982"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  },
+  {
+    "id": 40,
+    "question": "The conclusion states that understanding national territory principles is crucial for all of the following EXCEPT:",
+    "choices": [
+      "Policymakers",
+      "IT professionals",
+      "All citizens",
+      "Tourist agencies (as their primary focus)"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "National Territory"
+  }
+]
