@@ -56,7 +56,17 @@ export default function Home() {
             <BookOpen className="w-10 h-10" />
           </div>
           <h2 className="text-4xl font-bold text-slate-800 mb-4">Welcome to Synapz</h2>
-          <p className="text-xl text-slate-600 mb-2">Test your knowledge with interactive quizzes</p>
+          <p className="text-xl text-slate-600 mb-2">
+            IF THERE ARE ANY MISTAKES{' '}
+            <a
+              href="https://m.me/reynat.daganta.35"
+              className="text-blue-500 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              MESSAGE ME
+            </a>
+          </p>
           <p className="text-slate-500">Choose a category and start learning today</p>
         </div>
 
