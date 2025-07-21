@@ -15,8 +15,7 @@ import { Play, Home } from 'lucide-react';
 export default function Quiz() {
   const [, setLocation] = useLocation();
   const [showReview, setShowReview] = useState(false);
-  
-  // Get category from URL params
+
   const urlParams = new URLSearchParams(window.location.search);
   const category = urlParams.get('category') || undefined;
 
@@ -32,13 +31,14 @@ export default function Quiz() {
     nextQuestion,
     previousQuestion,
     resetQuiz,
+    submitQuiz,
     canGoPrevious,
     canGoNext,
     isLastQuestion,
   } = useQuiz(category);
 
   const goHome = () => setLocation('/');
-  
+
   const handleRetake = () => {
     setShowReview(false);
     resetQuiz();
@@ -78,7 +78,8 @@ export default function Quiz() {
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800 mb-2">Ready to Start?</h2>
                 <p className="text-slate-600 mb-4">
-                  Test your knowledge with {questions.length} questions {category ? `about ${category}` : 'from all categories'}
+                  Test your knowledge with {questions.length} questions{' '}
+                  {category ? `about ${category}` : 'from all categories'}
                 </p>
                 <div className="text-sm text-slate-500 mb-6">
                   Take your time and choose the best answer for each question
@@ -154,7 +155,7 @@ export default function Quiz() {
   return (
     <div className="min-h-screen bg-slate-50">
       <QuizHeader />
-      
+
       <main className="max-w-4xl mx-auto px-4 py-8">
         <ProgressIndicator
           currentQuestion={quizState.currentQuestionIndex}
@@ -177,6 +178,17 @@ export default function Quiz() {
           onPrevious={previousQuestion}
           onNext={nextQuestion}
         />
+
+        <div className="mt-8 flex justify-end">
+          <Button
+            variant="destructive"
+            onClick={submitQuiz}
+            size="lg"
+            className="px-8 py-3 text-base font-bold rounded-xl shadow-md hover:opacity-90 transition"
+          >
+            Submit Quiz Early
+          </Button>
+        </div>
       </main>
 
       <StatsSidebar

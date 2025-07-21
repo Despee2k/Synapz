@@ -127,6 +127,18 @@ export function useQuiz(category?: string) {
     });
   };
 
+  const submitQuiz = () => {
+    setQuizState(prev => {
+      const completedState = {
+        ...prev,
+        endTime: new Date(),
+        isCompleted: true,
+        score: calculateScore(prev.selectedAnswers, questions),
+      };
+      return completedState;
+    });
+  };
+
   return {
     quizState,
     questions,
@@ -142,6 +154,7 @@ export function useQuiz(category?: string) {
     nextQuestion,
     previousQuestion,
     resetQuiz,
+    submitQuiz,
     canGoPrevious: quizState.currentQuestionIndex > 0,
     canGoNext: quizState.selectedAnswers[quizState.currentQuestionIndex] !== null,
     isLastQuestion: quizState.currentQuestionIndex === questions.length - 1,
