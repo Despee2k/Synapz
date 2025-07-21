@@ -13,7 +13,7 @@ export interface QuizState {
   sessionId: number | null;
 }
 
-export function useQuiz() {
+export function useQuiz(category?: string) {
   const [quizState, setQuizState] = useState<QuizState>({
     currentQuestionIndex: 0,
     selectedAnswers: [],
@@ -25,7 +25,19 @@ export function useQuiz() {
   });
 
   const { data: questions = [], isLoading } = useQuery<QuizQuestion[]>({
-    queryKey: ['/api/questions'],
+    queryKey: category && category !== 'All' 
+      ? ['/api/questions', category] 
+      : ['/api/questions'],
+    queryFn: async () => {
+      const url = category && category !== 'All' 
+        ? `/api/questions/${encodeURIComponent(category)}`
+        : '/api/questions';
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('Failed to fetch questions');
+      }
+      return response.json();
+    },
   });
 
   const createSessionMutation = useMutation({

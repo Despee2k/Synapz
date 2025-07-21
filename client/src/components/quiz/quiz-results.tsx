@@ -1,13 +1,14 @@
-import { Trophy, RotateCcw, Eye } from 'lucide-react';
+import { Trophy, RotateCcw, Eye, Home } from 'lucide-react';
 
 interface QuizResultsProps {
   score: number;
   totalQuestions: number;
   onRetake: () => void;
   onReview?: () => void;
+  onHome?: () => void;
 }
 
-export function QuizResults({ score, totalQuestions, onRetake, onReview }: QuizResultsProps) {
+export function QuizResults({ score, totalQuestions, onRetake, onReview, onHome }: QuizResultsProps) {
   const percentage = Math.round((score / totalQuestions) * 100);
   const incorrectAnswers = totalQuestions - score;
 
@@ -59,6 +60,15 @@ export function QuizResults({ score, totalQuestions, onRetake, onReview }: QuizR
           >
             <Eye className="w-4 h-4" />
             <span>Review Answers</span>
+          </button>
+        )}
+        {onHome && (
+          <button 
+            onClick={onHome}
+            className="flex items-center justify-center space-x-2 px-6 py-3 border-2 border-slate-300 hover:border-slate-400 text-slate-700 hover:text-slate-900 rounded-lg transition-all font-medium"
+          >
+            <Home className="w-4 h-4" />
+            <span>Go Home</span>
           </button>
         )}
       </div>

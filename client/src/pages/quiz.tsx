@@ -1,4 +1,5 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { useLocation } from 'wouter';
 import { useQuiz } from '@/hooks/use-quiz';
 import { QuizHeader } from '@/components/quiz/quiz-header';
 import { ProgressIndicator } from '@/components/quiz/progress-indicator';
@@ -6,11 +7,19 @@ import { QuestionCard } from '@/components/quiz/question-card';
 import { NavigationControls } from '@/components/quiz/navigation-controls';
 import { QuizResults } from '@/components/quiz/quiz-results';
 import { StatsSidebar } from '@/components/quiz/stats-sidebar';
+import { ReviewAnswers } from '@/pages/review';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Play } from 'lucide-react';
 
 export default function Quiz() {
+  const [, setLocation] = useLocation();
+  const [showReview, setShowReview] = useState(false);
+  
+  // Get category from URL params
+  const urlParams = new URLSearchParams(window.location.search);
+  const category = urlParams.get('category') || undefined;
+
   const {
     quizState,
     questions,
@@ -26,12 +35,23 @@ export default function Quiz() {
     canGoPrevious,
     canGoNext,
     isLastQuestion,
-  } = useQuiz();
+  } = useQuiz(category);
+
+  const goHome = () => setLocation('/');
+  
+  const handleRetake = () => {
+    setShowReview(false);
+    resetQuiz();
+  };
+
+  const handleReview = () => {
+    setShowReview(true);
+  };
 
   if (isLoading) {
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader onHome={goHome} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -45,9 +65,10 @@ export default function Quiz() {
   }
 
   if (!quizState.startTime) {
+    const categoryDisplay = category || 'All Categories';
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader category={categoryDisplay} onHome={goHome} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -57,7 +78,7 @@ export default function Quiz() {
                 </div>
                 <h2 className="text-3xl font-bold text-slate-800 mb-2">Ready to Start?</h2>
                 <p className="text-slate-600 mb-4">
-                  Test your knowledge with {questions.length} questions about the Constitution
+                  Test your knowledge with {questions.length} questions {category ? `about ${category}` : 'from all categories'}
                 </p>
                 <div className="text-sm text-slate-500 mb-6">
                   Take your time and choose the best answer for each question
@@ -75,14 +96,28 @@ export default function Quiz() {
   }
 
   if (quizState.isCompleted) {
+    if (showReview) {
+      return (
+        <ReviewAnswers
+          questions={questions}
+          userAnswers={quizState.selectedAnswers}
+          score={quizState.score}
+          onRetake={handleRetake}
+          onHome={goHome}
+        />
+      );
+    }
+
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader onHome={goHome} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <QuizResults
             score={quizState.score}
             totalQuestions={questions.length}
-            onRetake={resetQuiz}
+            onRetake={handleRetake}
+            onReview={handleReview}
+            onHome={goHome}
           />
         </main>
       </div>
@@ -92,7 +127,7 @@ export default function Quiz() {
   if (!currentQuestion) {
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader onHome={goHome} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -106,7 +141,7 @@ export default function Quiz() {
 
   return (
     <div className="min-h-screen bg-slate-50">
-      <QuizHeader />
+      <QuizHeader onHome={goHome} />
       
       <main className="max-w-4xl mx-auto px-4 py-8">
         <ProgressIndicator

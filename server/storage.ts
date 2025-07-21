@@ -29,6 +29,7 @@ export class MemStorage implements IStorage {
 
   private initializeQuestions() {
     const sampleQuestions: QuizQuestion[] = [
+      // Constitution questions
       {
         id: 1,
         question: "Substantive due process focuses on fair procedures in legal sanctions",
@@ -69,77 +70,79 @@ export class MemStorage implements IStorage {
         type: "true-false",
         category: "Constitution"
       },
+      // History questions
       {
         id: 6,
+        question: "World War II ended in which year?",
+        choices: ["1944", "1945", "1946", "1947"],
+        answer: 1,
+        type: "multiple-choice",
+        category: "History"
+      },
+      {
+        id: 7,
+        question: "The American Civil War began in 1861",
+        choices: ["True", "False"],
+        answer: 0,
+        type: "true-false",
+        category: "History"
+      },
+      {
+        id: 8,
+        question: "Who was the first President of the United States?",
+        choices: ["Thomas Jefferson", "George Washington", "John Adams", "Benjamin Franklin"],
+        answer: 1,
+        type: "multiple-choice",
+        category: "History"
+      },
+      {
+        id: 9,
+        question: "The Declaration of Independence was signed in 1776",
+        choices: ["True", "False"],
+        answer: 0,
+        type: "true-false",
+        category: "History"
+      },
+      {
+        id: 10,
+        question: "Which event started World War I?",
+        choices: ["Sinking of the Lusitania", "Assassination of Archduke Franz Ferdinand", "German invasion of Belgium", "Russian Revolution"],
+        answer: 1,
+        type: "multiple-choice",
+        category: "History"
+      },
+      // Government questions
+      {
+        id: 11,
         question: "How many senators does each state have?",
         choices: ["1", "2", "3", "Depends on population"],
         answer: 1,
         type: "multiple-choice",
-        category: "Constitution"
+        category: "Government"
       },
       {
-        id: 7,
+        id: 12,
         question: "The president can serve unlimited terms",
         choices: ["True", "False"],
         answer: 1,
         type: "true-false",
-        category: "Constitution"
+        category: "Government"
       },
       {
-        id: 8,
-        question: "Which amendment gave women the right to vote?",
-        choices: ["15th Amendment", "17th Amendment", "19th Amendment", "21st Amendment"],
-        answer: 2,
-        type: "multiple-choice",
-        category: "Constitution"
-      },
-      {
-        id: 9,
-        question: "The Supreme Court has 9 justices",
-        choices: ["True", "False"],
-        answer: 0,
-        type: "true-false",
-        category: "Constitution"
-      },
-      {
-        id: 10,
-        question: "Which article of the Constitution establishes the executive branch?",
-        choices: ["Article I", "Article II", "Article III", "Article IV"],
-        answer: 1,
-        type: "multiple-choice",
-        category: "Constitution"
-      },
-      {
-        id: 11,
-        question: "The Constitution can never be changed",
-        choices: ["True", "False"],
-        answer: 1,
-        type: "true-false",
-        category: "Constitution"
-      },
-      {
-        id: 12,
+        id: 13,
         question: "How many branches of government are there?",
         choices: ["2", "3", "4", "5"],
         answer: 1,
         type: "multiple-choice",
-        category: "Constitution"
+        category: "Government"
       },
       {
-        id: 13,
+        id: 14,
         question: "The Electoral College directly elects the president",
         choices: ["True", "False"],
         answer: 0,
         type: "true-false",
-        category: "Constitution"
-      },
-      {
-        id: 14,
-        question: "Which amendment protects against unreasonable searches?",
-        choices: ["Second Amendment", "Third Amendment", "Fourth Amendment", "Fifth Amendment"],
-        answer: 2,
-        type: "multiple-choice",
-        category: "Constitution"
+        category: "Government"
       },
       {
         id: 15,
@@ -147,7 +150,48 @@ export class MemStorage implements IStorage {
         choices: ["True", "False"],
         answer: 0,
         type: "true-false",
-        category: "Constitution"
+        category: "Government"
+      },
+      // Law questions
+      {
+        id: 16,
+        question: "What does 'habeas corpus' mean?",
+        choices: ["Right to remain silent", "Right to legal counsel", "Right to be brought before a judge", "Right to trial by jury"],
+        answer: 2,
+        type: "multiple-choice",
+        category: "Law"
+      },
+      {
+        id: 17,
+        question: "Miranda rights must be read before any police questioning",
+        choices: ["True", "False"],
+        answer: 1,
+        type: "true-false",
+        category: "Law"
+      },
+      {
+        id: 18,
+        question: "Which court is the highest in the United States?",
+        choices: ["Federal Court", "District Court", "Appeals Court", "Supreme Court"],
+        answer: 3,
+        type: "multiple-choice",
+        category: "Law"
+      },
+      {
+        id: 19,
+        question: "Double jeopardy means being tried twice for the same crime",
+        choices: ["True", "False"],
+        answer: 0,
+        type: "true-false",
+        category: "Law"
+      },
+      {
+        id: 20,
+        question: "What is the burden of proof in criminal cases?",
+        choices: ["Preponderance of evidence", "Clear and convincing", "Beyond reasonable doubt", "Absolute certainty"],
+        answer: 2,
+        type: "multiple-choice",
+        category: "Law"
       }
     ];
 
