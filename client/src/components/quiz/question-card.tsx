@@ -1,5 +1,13 @@
 import { HelpCircle, Tag, List } from 'lucide-react';
-import type { QuizQuestion } from '@shared/schema';
+
+type QuizQuestion = {
+  id: number;
+  question: string;
+  choices: string[];
+  answer: number;
+  type: 'true-false' | 'multiple-choice';
+  category: string;
+};
 
 interface QuestionCardProps {
   question: QuizQuestion;

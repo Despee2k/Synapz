@@ -8,7 +8,7 @@ import Home from "@/pages/home";
 import Quiz from "@/pages/quiz";
 import Review from "@/pages/review";
 
-function Router() {
+function Routes() {
   return (
     <Switch>
       <Route path="/" component={Home} />
@@ -24,7 +24,9 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        <WouterRouter>
+          <Routes />
+        </WouterRouter>
       </TooltipProvider>
     </QueryClientProvider>
   );
