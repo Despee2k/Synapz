@@ -11,12 +11,10 @@ export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
   const { data: serverCategories = [], isLoading } = useQuery<string[]>({
-    queryKey: ['/api/categories'],
+    queryKey: ['categories'],
     queryFn: async () => {
-      const response = await fetch('/api/categories');
-      if (!response.ok) {
-        throw new Error('Failed to fetch categories');
-      }
+      const response = await fetch('/quiz-data/categories.json');
+      if (!response.ok) throw new Error('Failed to fetch categories');
       return response.json();
     },
   });
