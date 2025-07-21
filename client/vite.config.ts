@@ -14,6 +14,9 @@ export default defineConfig({
       "@quizdata": path.resolve(__dirname, "public/quiz-data"),
     },
   },
+  define: {
+    __DEFINES__: {}, // Prevent reference error
+  },
   build: {
     outDir: "dist",
     emptyOutDir: true,
