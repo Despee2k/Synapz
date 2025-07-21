@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "question": "Substantive due process focuses on fair procedures in legal sanctions",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Constitution"
+  },
+  {
+    "id": 2,
+    "question": "Which amendment protects freedom of speech?",
+    "choices": ["First Amendment", "Second Amendment", "Third Amendment", "Fourth Amendment"],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 3,
+    "question": "The Bill of Rights consists of the first 10 amendments to the Constitution",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Constitution"
+  }
+]
