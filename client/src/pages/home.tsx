@@ -36,61 +36,101 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-6 p-6">
-      <h1 className="text-3xl font-bold flex items-center gap-2">
-        <Brain className="w-8 h-8" />
-        Synapz
-      </h1>
-      <Card className="w-full max-w-xl">
-        <CardContent className="p-6 space-y-4">
-          <h2 className="text-xl font-semibold">Welcome to Synapz</h2>
-          <p>Test your knowledge with interactive quizzes</p>
-          <p>Choose a category and start learning today</p>
-          <div>
-            <label className="text-sm font-medium">Select Quiz Category</label>
-            <Select
-              value={selectedCategory}
-              onValueChange={(value) => setSelectedCategory(value)}
-            >
-              <SelectTrigger className="mt-1">
-                <SelectValue placeholder="Select Category" />
-              </SelectTrigger>
-              <SelectContent>
-                {categories.map((category) => (
-                  <SelectItem key={category} value={category}>
-                    {category}
-                  </SelectItem>
-                ))}
-              </SelectContent>
-            </Select>
+    <div className="min-h-screen bg-slate-50">
+      <header className="bg-white shadow-sm border-b border-slate-200">
+        <div className="max-w-4xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <div className="bg-blue-500 text-white p-2 rounded-lg">
+                <Brain className="w-6 h-6" />
+              </div>
+              <h1 className="text-2xl font-bold text-slate-800">Synapz</h1>
+            </div>
           </div>
-          <Button className="w-full" onClick={startQuiz}>
-            <Play className="mr-2 h-4 w-4" />
-            Start Quiz
-          </Button>
-          <p className="text-sm text-muted-foreground">
-            Questions from {selectedCategory === 'All' ? 'all categories' : selectedCategory} will be included
-          </p>
-        </CardContent>
-      </Card>
+        </div>
+      </header>
 
-      <Card className="w-full max-w-xl grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
-        <div className="flex flex-col items-center text-center">
-          <Brain className="w-6 h-6 mb-2" />
-          <p className="font-medium">Interactive Learning</p>
-          <p className="text-sm">Engage with questions designed to test and improve your knowledge</p>
+      <main className="max-w-4xl mx-auto px-4 py-8">
+        <div className="text-center mb-8">
+          <div className="bg-blue-100 text-blue-600 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+            <BookOpen className="w-10 h-10" />
+          </div>
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">Welcome to Synapz</h2>
+          <p className="text-xl text-slate-600 mb-2">Test your knowledge with interactive quizzes</p>
+          <p className="text-slate-500">Choose a category and start learning today</p>
         </div>
-        <div className="flex flex-col items-center text-center">
-          <Play className="w-6 h-6 mb-2" />
-          <p className="font-medium">Track Progress</p>
-          <p className="text-sm">Monitor your performance and see detailed results after each quiz</p>
+
+        <Card className="max-w-md mx-auto">
+          <CardContent className="p-8">
+            <div className="space-y-6">
+              <div>
+                <label className="block text-sm font-medium text-slate-700 mb-2">
+                  Select Quiz Category
+                </label>
+                <Select
+                  value={selectedCategory}
+                  onValueChange={(value) => setSelectedCategory(value)}
+                  disabled={isLoading}
+                >
+                  <SelectTrigger>
+                    <SelectValue placeholder={isLoading ? "Loading categories..." : "Choose a category"} />
+                  </SelectTrigger>
+                  <SelectContent>
+                    {categories.map((category) => (
+                      <SelectItem key={category} value={category}>
+                        {category}
+                      </SelectItem>
+                    ))}
+                  </SelectContent>
+                </Select>
+              </div>
+
+              <Button onClick={startQuiz} size="lg" className="w-full" disabled={isLoading}>
+                <Play className="w-4 h-4 mr-2" />
+                {isLoading ? 'Loading...' : 'Start Quiz'}
+              </Button>
+
+              <div className="text-center text-sm text-slate-500">
+                {selectedCategory === 'All'
+                  ? 'Questions from all categories will be included'
+                  : `Questions will focus on ${selectedCategory}`}
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+          <Card>
+            <CardContent className="p-6 text-center">
+              <div className="text-blue-500 mb-2">
+                <Brain className="w-8 h-8 mx-auto" />
+              </div>
+              <h3 className="font-semibold text-slate-800 mb-2">Interactive Learning</h3>
+              <p className="text-sm text-slate-600">Engage with questions designed to test and improve your knowledge</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6 text-center">
+              <div className="text-green-500 mb-2">
+                <Play className="w-8 h-8 mx-auto" />
+              </div>
+              <h3 className="font-semibold text-slate-800 mb-2">Track Progress</h3>
+              <p className="text-sm text-slate-600">Monitor your performance and see detailed results after each quiz</p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="p-6 text-center">
+              <div className="text-purple-500 mb-2">
+                <BookOpen className="w-8 h-8 mx-auto" />
+              </div>
+              <h3 className="font-semibold text-slate-800 mb-2">Review Answers</h3>
+              <p className="text-sm text-slate-600">Learn from mistakes by reviewing correct and incorrect answers</p>
+            </CardContent>
+          </Card>
         </div>
-        <div className="flex flex-col items-center text-center">
-          <BookOpen className="w-6 h-6 mb-2" />
-          <p className="font-medium">Review Answers</p>
-          <p className="text-sm">Learn from mistakes by reviewing correct and incorrect answers</p>
-        </div>
-      </Card>
+      </main>
     </div>
   );
 }
