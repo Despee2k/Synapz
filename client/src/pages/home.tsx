@@ -67,7 +67,7 @@ export default function Home() {
                   <SelectContent>
                     {categories.map((category) => (
                       <SelectItem key={category} value={category}>
-                        {category.replace(/-/g, ' ')}
+                        {category}
                       </SelectItem>
                     ))}
                   </SelectContent>
@@ -82,7 +82,7 @@ export default function Home() {
               <div className="text-center text-sm text-slate-500">
                 {selectedCategory === 'All' 
                   ? 'Questions from all categories will be included'
-                  : `Questions will focus on ${selectedCategory.replace(/-/g, ' ')}`
+                  : `Questions will focus on ${selectedCategory}`
                 }
               </div>
             </div>

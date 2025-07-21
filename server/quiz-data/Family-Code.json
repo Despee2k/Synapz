@@ -1,42 +1,212 @@
 [
   {
     "id": 1,
-    "question": "The Family Code governs marriage, divorce, and family relations",
+    "question": "The ground of fraud for annulment under the Family Code includes the non-disclosure of past relationships or financial difficulties.",
     "choices": ["True", "False"],
-    "answer": 0,
+    "answer": 1,
     "type": "true-false",
-    "category": "Family-Code"
+    "category": "Family Code"
   },
   {
     "id": 2,
-    "question": "What is the minimum age for marriage without parental consent?",
-    "choices": ["16 years", "18 years", "21 years", "25 years"],
+    "question": "The Garcia v. Recio case established that a foreign divorce decree automatically terminates marital obligations for a Filipino citizen in the Philippines, even without local recognition.",
+    "choices": ["True", "False"],
     "answer": 1,
-    "type": "multiple-choice",
-    "category": "Family-Code"
+    "type": "true-false",
+    "category": "Family Code"
   },
   {
     "id": 3,
-    "question": "Common law marriage is recognized in all jurisdictions",
+    "question": "The Valdes v. RTC case reinforced that under absolute community of property, only the husband has exclusive control over business assets acquired during the marriage.",
     "choices": ["True", "False"],
     "answer": 1,
     "type": "true-false",
-    "category": "Family-Code"
+    "category": "Family Code"
   },
   {
     "id": 4,
-    "question": "What principle guides child custody decisions?",
-    "choices": ["Parent's preference", "Best interest of the child", "Economic status", "Gender of the parent"],
+    "question": "An action for annulment based on lack of parental consent for a party aged 18 to below 21 must be filed within three (3) years after attaining the age of 21.",
+    "choices": ["True", "False"],
     "answer": 1,
-    "type": "multiple-choice",
-    "category": "Family-Code"
+    "type": "true-false",
+    "category": "Family Code"
   },
   {
     "id": 5,
-    "question": "Adoption creates the same legal relationship as biological parentage",
+    "question": "Legal separation dissolves the marriage bond, allowing spouses to remarry after the decree becomes final.",
     "choices": ["True", "False"],
-    "answer": 0,
+    "answer": 1,
     "type": "true-false",
-    "category": "Family-Code"
+    "category": "Family Code"
+  },
+  {
+    "id": 6,
+    "question": "Chi Ming Tsoi v. CA ruled that a husband's persistent refusal to consummate the marriage, without physical impediment, was a clear case of impotence.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Family Code"
+  },
+  {
+    "id": 7,
+    "question": "A bigamous marriage is always a criminal offense in the Philippines without any exceptions.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Family Code"
+  },
+  {
+    "id": 8,
+    "question": "Psychological incapacity, as a ground for voiding a marriage, is characterized by mere irreconcilable differences or conflicting personalities.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Family Code"
+  },
+  {
+    "id": 9,
+    "question": "The Molina guidelines for psychological incapacity require proof that the psychological condition existed at any point during the marriage, not necessarily at the time of its celebration.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Family Code"
+  },
+  {
+    "id": 10,
+    "question": "In avoidable marriage, the marriage is considered invalid from the very beginning and produces no legal effects.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Family Code"
+  },
+  {
+    "id": 11,
+    "question": "Legal separation, as a judicial remedy, primarily aims to:",
+    "choices": [
+      "Allow spouses to live separately and separate their property without dissolving the marriage.",
+      "Grant the innocent spouse the right to remarry.",
+      "Automatically revoke all parental authority of the offending spouse.",
+      "Dissolve the marriage bond completely"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 12,
+    "question": "The Buenaventura v. CA case highlighted the necessity of joint consent in disposing of conjugal properties, emphasizing the principle of:",
+    "choices": [
+      "Marital secrecy.",
+      "Co-management and co-ownership.",
+      "Absolute control by one spouse.",
+      "Separate ownership."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 13,
+    "question": "Which of the following is NOT a characteristic required for psychological incapacity as a ground for voiding a marriage under the Molina guidelines?",
+    "choices": [
+      "Incurability",
+      "Gravity",
+      "Mere conflicting personalities.",
+      "Juridical antecedence"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 14,
+    "question": "The Republic v. Albios case reinforced that the validity of a marriage primarily depends on:",
+    "choices": [
+      "The approval of family members.",
+      "The intent or motivation for entering into marriage.",
+      "The financial stability of the parties.",
+      "The formalities and substantive requirements provided by law."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 15,
+    "question": "What is the core duty of spouses that requires them to live together in the same conjugal dwelling?",
+    "choices": [
+      "Mutual Respect.",
+      "Fidelity.",
+      "Support and Cooperation.",
+      "Living Together."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 16,
+    "question": "Under the absolute community of property regime, as reinforced by Valdes v. RTC, both spouses have:",
+    "choices": [
+      "Separate ownership of all assets acquired during marriage.",
+      "Unequal rights, with the husband having primary control.",
+      "Control only over assets they personally earned.",
+      "Equal rights of ownership, possession, and administration over communal assets."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 17,
+    "question": "Which of the following is NOT a specific type of fraud that can be a ground for annulment under the Family Code?",
+    "choices": [
+      "Concealment of a serious sexually transmissible disease (STD).",
+      "Concealment of a criminal conviction involving moral turpitude.",
+      "Non-disclosure of significant financial debts.",
+      "Concealment of pregnancy by another man at the time of marriage."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 18,
+    "question": "The Family Code of the Philippines redefined marriage as a permanent union between:",
+    "choices": [
+      "Individuals of any gender who love each other.",
+      "Any two consenting adults.",
+      "A man and a woman.",
+      "A man and a woman, but only for a fixed term."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 19,
+    "question": "Marriages between collateral relatives up to the fourth civil degree (e.g., first cousins) are generally considered:",
+    "choices": [
+      "Voidable.",
+      "Void ab initio (as incestuous marriages).",
+      "Valid, but requires parental consent.",
+      "Subject to legal separation."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Family Code"
+  },
+  {
+    "id": 20,
+    "question": "A voidable marriage is considered valid until:",
+    "choices": [
+      "The parties decide to separate.",
+      "Annulled by a final judgment of a competent court.",
+      "The prescriptive period for filing expires.",
+      "One party files for legal separation."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Family Code"
   }
 ]

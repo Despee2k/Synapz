@@ -1,42 +1,482 @@
 [
   {
-    "id": 1,
-    "question": "The First Amendment protects all forms of speech without restriction",
-    "choices": ["True", "False"],
+    "question": "The Supreme Court in Disini v. Secretary of Justice upheld the constitutionality of the Cybercrime Prevention Act, including those penalizing aiding or abetting.",
+    "choices": [
+      "True",
+      "False"
+    ],
     "answer": 1,
     "type": "true-false",
-    "category": "Freedom-of-Speech-Expression"
+    "category": "Freedom of Speech / Expression",
+    "id": 1
   },
   {
-    "id": 2,
-    "question": "Which type of speech receives the highest level of constitutional protection?",
-    "choices": ["Commercial speech", "Political speech", "Symbolic speech", "Obscene speech"],
-    "answer": 1,
-    "type": "multiple-choice",
-    "category": "Freedom-of-Speech-Expression"
-  },
-  {
-    "id": 3,
-    "question": "Prior restraint on speech is generally prohibited",
-    "choices": ["True", "False"],
+    "question": "For spamming to qualify as unauthorized access or misuse under the Cybercrime Law (RA 10175), it must be tied to phishing, malware, or fraud.",
+    "choices": [
+      "True",
+      "False"
+    ],
     "answer": 0,
     "type": "true-false",
-    "category": "Freedom-of-Speech-Expression"
+    "category": "Freedom of Speech / Expression",
+    "id": 2
   },
   {
-    "id": 4,
-    "question": "What test is applied to content-based speech restrictions?",
-    "choices": ["Rational basis", "Intermediate scrutiny", "Strict scrutiny", "Clear and present danger"],
-    "answer": 2,
-    "type": "multiple-choice",
-    "category": "Freedom-of-Speech-Expression"
-  },
-  {
-    "id": 5,
-    "question": "Fighting words are protected under the First Amendment",
-    "choices": ["True", "False"],
+    "question": "Prior restraint on speech is generally permissible in the Philippines as long as the government has a valid reason for the restriction.",
+    "choices": [
+      "True",
+      "False"
+    ],
     "answer": 1,
     "type": "true-false",
-    "category": "Freedom-of-Speech-Expression"
+    "category": "Freedom of Speech / Expression",
+    "id": 3
+  },
+  {
+    "question": "Freedom of expression, as protected by the 1987 Philippine Constitution, explicitly prohibits all forms of censorship or punishment without exception.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 4
+  },
+  {
+    "question": "The Roth-Miller Test for obscenity requires that content merely appeals to prurient interests to be deemed obscene.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 5
+  },
+  {
+    "question": "Sending spam emails without user consent can potentially violate the right to informational privacy under the Data Privacy Act (RA 10173).",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 6
+  },
+  {
+    "question": "The \u201cPutang Ina\u201d Principle, as discussed, suggests that any use of vulgar language in public automatically constitutes a criminal offense.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 7
+  },
+  {
+    "question": "Fernando v. CA ruled that national standards, not local community standards, must exclusively determine obscenity.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 8
+  },
+  {
+    "question": "Cyberlibel, as defined in RA 10175, requires additional elements beyond those found in traditional libel under the Revised Penal Code.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 9
+  },
+  {
+    "question": "According to US v. Bustos, public officials are subject to a lower standard of protection against criticism compared to private citizens due to their role in a democracy.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression",
+    "id": 10
+  },
+  {
+    "id": 11,
+    "question": "According to Reyes v. People, cursing a traffic enforcer, even in a moment of heated emotion, always constitutes criminal oral defamation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 12,
+    "question": "The important distinction regarding \u201cPutang ina mo!\u201d is that its use in a political protest is never protected speech.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 13,
+    "question": "The \u201cactual malice\u201d standard for criticism of public officials requires proving that the statement was made with knowing falsity or reckless disregard of the truth.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 14,
+    "question": "With the rise of technology, issues like cyberlibel and spam have introduced new legal frontiers that are fully resolved and require no further navigation.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 15,
+    "question": "The National Privacy Commission (NPC) can impose sanctions on marketing firms that send email blasts without proper consent, violating RA 10173.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 16,
+    "question": "The freedom of the press is an independent right under Article III, Section 4, entirely separate from freedom of speech and expression.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 17,
+    "question": "Symbolic speech, such as gestures or protest signs, is generally excluded from the protection of freedom of expression.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 18,
+    "question": "The conviction of Maria Ressa and Reynaldo Santos Jr. for cyberlibel in 2020 was notable for sparking debate about ex post facto application, as the article was published years before RA 10175.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 19,
+    "question": "The right to \u201cseek, receive, and impart information through any media\u201d implies that government restrictions on access to information are generally unconstitutional, regardless of public interest.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 20,
+    "question": "Fair comment on public figures is always protected, regardless of whether it is made with actual malice.",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 21,
+    "question": "The 'actual malice' standard is crucial in cases involving criticism of public officials. It implies:",
+    "choices": [
+      "The statement was based on opinion.",
+      "The speaker had no intent to harm.",
+      "The statement was made with knowing falsity or reckless disregard of the truth.",
+      "Criticism is never allowed for public officials."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 22,
+    "question": "The National Privacy Commission (NPC) is responsible for imposing sanctions for violations of:",
+    "choices": [
+      "Cybercrime Law",
+      "Revised Penal Code",
+      "The Anti-Fake News Act",
+      "The Data Privacy Act"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 23,
+    "question": "The conclusion states that the rise of technology has introduced new legal frontiers requiring navigation with care and constitutional awareness, regarding issues like:",
+    "choices": [
+      "Religious freedom and taxation",
+      "Cyberlibel, spam, and data privacy",
+      "Illegal search and seizure",
+      "Freedom of religion and marriage law"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 24,
+    "question": "The Maria Ressa and Reynaldo Santos Jr. cyberlibel conviction sparked debate primarily about:",
+    "choices": [
+      "Legality of media ownership",
+      "Disinformation campaigns",
+      "The scope of press freedom and retroactive application of laws",
+      "Corruption in journalism"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 25,
+    "question": "What is the fundamental basis for freedom of speech and expression, as stated in the introduction?",
+    "choices": [
+      "Religious authority",
+      "Democratic governance",
+      "Economic freedom",
+      "State propaganda"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 26,
+    "question": "The scope of freedom of expression includes all of the following EXCEPT:",
+    "choices": [
+      "Symbolic protest",
+      "Artistic speech",
+      "Speech that incites immediate violence, regardless of context",
+      "Press freedom"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 27,
+    "question": "In Disini v. Secretary of Justice, the Supreme Court struck down which specific provisions of RA 10175?",
+    "choices": [
+      "Provisions penalizing fake news",
+      "Provisions unduly penalizing aiding or abetting cyberlibel",
+      "Rules on website blocking",
+      "Cyberbullying provisions"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 28,
+    "question": "What does 'prior restraint' on speech primarily refer to?",
+    "choices": [
+      "Censorship before speech is disseminated",
+      "Punishment after speaking",
+      "Blocking access to the internet",
+      "Limiting media licenses"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 29,
+    "question": "Which Article and Section of the 1987 Philippine Constitution protects freedom of speech and expression?",
+    "choices": [
+      "Article II, Section 6",
+      "Article I, Section 1",
+      "Article III, Section 4",
+      "Article IV, Section 2"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 30,
+    "question": "According to the legal principle discussed, public officials are subject to a higher level of criticism because:",
+    "choices": [
+      "They are not private citizens",
+      "Their role is inherently tied to democratic governance",
+      "They are exempt from libel",
+      "They receive more media coverage"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 31,
+    "question": "What type of speech includes gestures or protest signs?",
+    "choices": [
+      "Obscene speech",
+      "Political speech",
+      "Symbolic speech",
+      "Religious expression"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 32,
+    "question": "Under the Cybercrime Law (RA 10175), spamming may qualify as an offense if it is specifically tied to:",
+    "choices": [
+      "Viral marketing",
+      "Phishing, malware, or fraud",
+      "Annoyance",
+      "Political propaganda"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 33,
+    "question": "Sending spam emails without user consent may violate which specific right under the Data Privacy Act (RA 10173)?",
+    "choices": [
+      "Right to commercial privacy",
+      "Right to remain silent",
+      "Right to informational privacy",
+      "Right to access content"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 34,
+    "question": "The Roth-Miller Test for obscenity requires content to meet which set of conditions?",
+    "choices": [
+      "Appeals to prurient interests, offends community standards, and lacks serious literary/artistic/political/scientific value",
+      "It annoys the viewer",
+      "It uses religious references",
+      "It contains graphic violence"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 35,
+    "question": "Which of the following is NOT a general category of restriction on free speech mentioned in the conclusion?",
+    "choices": [
+      "Obscenity",
+      "Political protest",
+      "Libel",
+      "Incitement"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 36,
+    "question": "According to Reyes v. People, the context of an utterance, such as 'heated emotions,' can be considered when determining if profanity constitutes:",
+    "choices": [
+      "Violation of press freedom",
+      "A criminal offense like oral defamation",
+      "Obscenity",
+      "Cybercrime"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 37,
+    "question": "What is the defining characteristic that differentiates Cyberlibel from traditional Libel?",
+    "choices": [
+      "The level of punishment",
+      "The person accused",
+      "The medium through which it is committed (ICT)",
+      "The jurisdiction of the court"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 38,
+    "question": "What case emphasized that community standards must determine obscenity?",
+    "choices": [
+      "Borja v. CA",
+      "Disini v. Secretary of Justice",
+      "Fernando v. CA",
+      "US v. Bustos"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 39,
+    "question": "The freedom to comment on public affairs, even with \"strong, even harsh criticism,\" is protected as long as it's not malicious, according to which case?",
+    "choices": [
+      "US v. Bustos", 
+      "Borja v. CA", 
+      "Disini v. Secretary of Justice", 
+      "Fernando v. CA"
+    ],
+    "answer": 0,
+    "type": "multiple choice",
+    "category": "Freedom of Speech / Expression"
+  },
+  {
+    "id": 40,
+    "question": "The \"Putang Ina\" Principle suggests that profane language is generally NOT criminal if it:",
+    "choices": [
+      "Does not rise to the level of defamation, incitement, or disorderly conduct.",
+      "Is not directed at a public official.",
+      "Is used as part of a political protest.",
+      "Is spoken in private."
+    ],
+    "answer": 3,
+    "type": "multiple choice",
+    "category": "Freedom of Speech / Expression"
   }
 ]

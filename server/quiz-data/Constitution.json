@@ -1,40 +1,194 @@
 [
   {
     "id": 1,
-    "question": "The Constitution was written in 1787",
-    "choices": ["True", "False"],
-    "answer": 0,
+    "question": "Substantive due process focuses on fair procedures in legal sanctions",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
     "type": "true-false",
     "category": "Constitution"
   },
   {
     "id": 2,
-    "question": "Which branch of government has the power to declare war?",
-    "choices": ["Executive", "Legislative", "Judicial", "All branches equally"],
+    "question": "Equal protection allows different treatment among people with no justification",
+    "choices": [
+      "True",
+      "False"
+    ],
     "answer": 1,
-    "type": "multiple-choice",
+    "type": "true-false",
     "category": "Constitution"
   },
   {
     "id": 3,
-    "question": "How many branches of government are there?",
-    "choices": ["2", "3", "4", "5"],
+    "question": "RA 10173 ensures equal protection in the employment of seniors",
+    "choices": [
+      "True",
+      "False"
+    ],
     "answer": 1,
-    "type": "multiple-choice",
+    "type": "true-false",
     "category": "Constitution"
   },
   {
     "id": 4,
-    "question": "The Electoral College directly elects the president",
-    "choices": ["True", "False"],
+    "question": "Judicial review is the process by which courts determine if laws align with the constitution",
+    "choices": [
+      "True",
+      "False"
+    ],
     "answer": 0,
     "type": "true-false",
     "category": "Constitution"
   },
   {
     "id": 5,
-    "question": "Which article of the Constitution establishes the executive branch?",
-    "choices": ["Article I", "Article II", "Article III", "Article IV"],
+    "question": "Procedural due process requires fair procedures like notice and hearing",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Constitution"
+  },
+  {
+    "id": 6,
+    "question": "The constitution is the highest law in the Philippines",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Constitution"
+  },
+  {
+    "id": 7,
+    "question": "The 1987 constitution was enacted during the Commonwealth era",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Constitution"
+  },
+  {
+    "id": 8,
+    "question": "What is the supreme legal authority in the Philippines?",
+    "choices": [
+      "Supreme Court",
+      "President",
+      "Congress",
+      "Constitution"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 9,
+    "question": "The constitutional guarantee that no person shall be deprived of life, liberty or property without due process is found in?",
+    "choices": [
+      "Article IV",
+      "Article I",
+      "Article III",
+      "Article II"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 10,
+    "question": "The principle that declares all unconstitutional laws void is called?",
+    "choices": [
+      "Equal protection doctrine",
+      "Constitutional supremacy",
+      "Due process rule",
+      "Non-delegation doctrine"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 11,
+    "question": "Which constitution was ratified during the Marcos regime?",
+    "choices": [
+      "1973",
+      "1899",
+      "1935",
+      "1987"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 12,
+    "question": "What law protects data privacy and ensures consent in processing information?",
+    "choices": [
+      "RA 10173 \u2013 Data Privacy Act of 2012",
+      "RA 9262 \u2013 Anti-Violence Against Women and Children",
+      "RA 10918 \u2013 Philippine Pharmacy Act",
+      "RA 11166 \u2013 HIV and AIDS Policy Act"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 13,
+    "question": "Which constitution introduced the bill of rights that remains central today?",
+    "choices": [
+      "1899",
+      "1935",
+      "1973",
+      "1987"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 14,
+    "question": "RA 10175 addresses which of the following concerns?",
+    "choices": [
+      "Age discrimination",
+      "Sexual harassment",
+      "Tax exemption",
+      "Cybercrime"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 15,
+    "question": "What rule must legal classifications satisfy to meet the equal protection clause?",
+    "choices": [
+      "Legislative discretion",
+      "Reasonableness only",
+      "Government necessity",
+      "Substantial distinction and equal application"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 16,
+    "question": "Which type of due process concerns the fairness of the government's purpose or objective?",
+    "choices": [
+      "Civil",
+      "Substantial",
+      "Criminal",
+      "Procedural"
+    ],
     "answer": 1,
     "type": "multiple-choice",
     "category": "Constitution"

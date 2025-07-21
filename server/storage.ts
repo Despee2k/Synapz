@@ -56,6 +56,10 @@ export class MemStorage implements IStorage {
 
       this.currentQuestionId = questionId;
       console.log(`Loaded ${this.questions.size} questions from ${files.length} categories`);
+      
+      // Log the actual categories found in the data
+      const actualCategories = this.getAvailableCategories();
+      console.log('Available categories:', actualCategories);
     } catch (error) {
       console.error('Error loading quiz data from files:', error);
       // Fallback to empty questions map
@@ -77,9 +81,25 @@ export class MemStorage implements IStorage {
   }
 
   async getQuestionsByCategory(category: string): Promise<QuizQuestion[]> {
-    return Array.from(this.questions.values()).filter(
-      question => question.category === category
+    // Create a mapping between URL-encoded category names and actual category names
+    const categoryMappings: { [key: string]: string } = {
+      'Freedom-of-Religion': 'Freedom of Religion',
+      'Criminal-Law': 'Criminal Law',
+      'Family-Code': 'Family Code',
+      'Freedom-of-Speech-Expression': 'Freedom of Speech / Expression',
+      'National-Territory': 'National Territory',
+      'Search-and-Seizures': 'Philippine Law on Searches and Seizures'
+    };
+
+    // Use the mapping if it exists, otherwise use the category as-is
+    const actualCategory = categoryMappings[category] || category;
+    
+    const filteredQuestions = Array.from(this.questions.values()).filter(
+      question => question.category === actualCategory
     );
+    
+    console.log(`Filtering for category: "${category}" -> "${actualCategory}", found ${filteredQuestions.length} questions`);
+    return filteredQuestions;
   }
 
   async createSession(insertSession: InsertQuizSession): Promise<QuizSession> {
