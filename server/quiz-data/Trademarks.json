@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "A trademark protects words, phrases, symbols, or designs that identify goods or services",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 2,
+    "question": "How long does trademark protection last?",
+    "choices": ["10 years", "20 years", "Life of the creator", "Indefinitely with proper renewal"],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 3,
+    "question": "Trademark rights are acquired through use in commerce",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Trademarks"
+  },
+  {
+    "id": 4,
+    "question": "Which symbol indicates a federally registered trademark?",
+    "choices": ["™", "©", "®", "℠"],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Trademarks"
+  },
+  {
+    "id": 5,
+    "question": "Generic terms can be trademarked",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Trademarks"
+  }
+]

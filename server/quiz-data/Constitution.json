@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The Constitution was written in 1787",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Constitution"
+  },
+  {
+    "id": 2,
+    "question": "Which branch of government has the power to declare war?",
+    "choices": ["Executive", "Legislative", "Judicial", "All branches equally"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 3,
+    "question": "How many branches of government are there?",
+    "choices": ["2", "3", "4", "5"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  },
+  {
+    "id": 4,
+    "question": "The Electoral College directly elects the president",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Constitution"
+  },
+  {
+    "id": 5,
+    "question": "Which article of the Constitution establishes the executive branch?",
+    "choices": ["Article I", "Article II", "Article III", "Article IV"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Constitution"
+  }
+]

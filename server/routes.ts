@@ -5,6 +5,16 @@ import { insertQuizSessionSchema } from "@shared/schema";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  // Get available categories
+  app.get("/api/categories", async (req, res) => {
+    try {
+      const categories = storage.getAvailableCategories();
+      res.json(categories);
+    } catch (error) {
+      res.status(500).json({ message: "Failed to fetch categories" });
+    }
+  });
+
   // Get all quiz questions
   app.get("/api/questions", async (req, res) => {
     try {

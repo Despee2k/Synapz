@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The Family Code governs marriage, divorce, and family relations",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Family-Code"
+  },
+  {
+    "id": 2,
+    "question": "What is the minimum age for marriage without parental consent?",
+    "choices": ["16 years", "18 years", "21 years", "25 years"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Family-Code"
+  },
+  {
+    "id": 3,
+    "question": "Common law marriage is recognized in all jurisdictions",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Family-Code"
+  },
+  {
+    "id": 4,
+    "question": "What principle guides child custody decisions?",
+    "choices": ["Parent's preference", "Best interest of the child", "Economic status", "Gender of the parent"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Family-Code"
+  },
+  {
+    "id": 5,
+    "question": "Adoption creates the same legal relationship as biological parentage",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Family-Code"
+  }
+]

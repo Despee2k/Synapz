@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The First Amendment protects all forms of speech without restriction",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom-of-Speech-Expression"
+  },
+  {
+    "id": 2,
+    "question": "Which type of speech receives the highest level of constitutional protection?",
+    "choices": ["Commercial speech", "Political speech", "Symbolic speech", "Obscene speech"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom-of-Speech-Expression"
+  },
+  {
+    "id": 3,
+    "question": "Prior restraint on speech is generally prohibited",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom-of-Speech-Expression"
+  },
+  {
+    "id": 4,
+    "question": "What test is applied to content-based speech restrictions?",
+    "choices": ["Rational basis", "Intermediate scrutiny", "Strict scrutiny", "Clear and present danger"],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Freedom-of-Speech-Expression"
+  },
+  {
+    "id": 5,
+    "question": "Fighting words are protected under the First Amendment",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Freedom-of-Speech-Expression"
+  }
+]

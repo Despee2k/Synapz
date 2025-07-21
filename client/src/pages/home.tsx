@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
+import { useQuery } from '@tanstack/react-query';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -9,13 +10,18 @@ export default function Home() {
   const [, setLocation] = useLocation();
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
-  const categories = [
-    'All',
-    'Constitution',
-    'History',
-    'Government',
-    'Law'
-  ];
+  const { data: serverCategories = [], isLoading } = useQuery<string[]>({
+    queryKey: ['/api/categories'],
+    queryFn: async () => {
+      const response = await fetch('/api/categories');
+      if (!response.ok) {
+        throw new Error('Failed to fetch categories');
+      }
+      return response.json();
+    },
+  });
+
+  const categories = ['All', ...serverCategories];
 
   const startQuiz = () => {
     const params = selectedCategory !== 'All' ? `?category=${encodeURIComponent(selectedCategory)}` : '';
@@ -54,29 +60,29 @@ export default function Home() {
                 <label className="block text-sm font-medium text-slate-700 mb-2">
                   Select Quiz Category
                 </label>
-                <Select value={selectedCategory} onValueChange={setSelectedCategory}>
+                <Select value={selectedCategory} onValueChange={setSelectedCategory} disabled={isLoading}>
                   <SelectTrigger>
-                    <SelectValue placeholder="Choose a category" />
+                    <SelectValue placeholder={isLoading ? "Loading categories..." : "Choose a category"} />
                   </SelectTrigger>
                   <SelectContent>
                     {categories.map((category) => (
                       <SelectItem key={category} value={category}>
-                        {category}
+                        {category.replace(/-/g, ' ')}
                       </SelectItem>
                     ))}
                   </SelectContent>
                 </Select>
               </div>
 
-              <Button onClick={startQuiz} size="lg" className="w-full">
+              <Button onClick={startQuiz} size="lg" className="w-full" disabled={isLoading}>
                 <Play className="w-4 h-4 mr-2" />
-                Start Quiz
+                {isLoading ? 'Loading...' : 'Start Quiz'}
               </Button>
 
               <div className="text-center text-sm text-slate-500">
                 {selectedCategory === 'All' 
                   ? 'Questions from all categories will be included'
-                  : `Questions will focus on ${selectedCategory}`
+                  : `Questions will focus on ${selectedCategory.replace(/-/g, ' ')}`
                 }
               </div>
             </div>

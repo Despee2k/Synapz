@@ -19,6 +19,10 @@ Preferred communication style: Simple, everyday language.
 ✓ Updated backend with expanded question bank (20 questions across 4 categories)
 ✓ Implemented category-based question filtering in API
 ✓ Renamed application from QuizMaster to Synapz
+✓ Created file-based quiz data system in server/quiz-data/ folder
+✓ Added 9 category JSON files with dummy data ready for user uploads
+✓ Implemented dynamic category loading from server files
+✓ Added API endpoint for fetching available categories
 
 ## System Architecture
 
@@ -68,12 +72,15 @@ Preferred communication style: Simple, everyday language.
 ### Backend Components
 1. **Storage Layer**: 
    - IStorage interface for data persistence
-   - MemStorage implementation for development
+   - MemStorage implementation with file-based quiz data loading
+   - Quiz data stored in server/quiz-data/ as individual JSON files per category
+   - Dynamic category detection from available files
    - Prepared for PostgreSQL integration via Drizzle
 
 2. **API Routes**:
+   - GET /api/categories - Retrieve available quiz categories
    - GET /api/questions - Retrieve all quiz questions
-   - GET /api/questions/:category - Filter questions by category (Constitution, History, Government, Law)
+   - GET /api/questions/:category - Filter questions by category
    - POST /api/sessions - Create new quiz session
    - PATCH /api/sessions/:id - Update quiz session progress
    - GET /api/sessions/:id - Retrieve quiz session details
@@ -85,13 +92,39 @@ Preferred communication style: Simple, everyday language.
 
 ## Data Flow
 
-1. **Home Page**: User selects quiz category (All, Constitution, History, Government, Law)
-2. **Quiz Initialization**: User starts quiz, creating a new session via POST /api/sessions
-3. **Question Retrieval**: Frontend fetches questions from GET /api/questions or GET /api/questions/:category
-4. **Answer Tracking**: User selections stored in React state and periodically synced to backend
-5. **Progress Updates**: Session updates sent via PATCH /api/sessions/:id
-6. **Score Calculation**: Final scoring computed and stored when quiz completes
-7. **Review Mode**: Users can review all answers showing correct/incorrect responses with navigation
+1. **Category Loading**: Frontend fetches available categories from GET /api/categories 
+2. **Home Page**: User selects quiz category from dynamically loaded options
+3. **Quiz Initialization**: User starts quiz, creating a new session via POST /api/sessions
+4. **Question Retrieval**: Frontend fetches questions from GET /api/questions or GET /api/questions/:category
+5. **Answer Tracking**: User selections stored in React state and periodically synced to backend
+6. **Progress Updates**: Session updates sent via PATCH /api/sessions/:id
+7. **Score Calculation**: Final scoring computed and stored when quiz completes
+8. **Review Mode**: Users can review all answers showing correct/incorrect responses with navigation
+
+## Quiz Data Structure
+
+Quiz data is stored in individual JSON files within `server/quiz-data/` directory:
+- Constitution.json
+- Freedom-of-Religion.json  
+- Search-and-Seizures.json
+- Freedom-of-Speech-Expression.json
+- National-Territory.json
+- Patent.json
+- Criminal-Law.json
+- Family-Code.json
+- Trademarks.json
+
+Each file contains an array of question objects with format:
+```json
+{
+  "id": 1,
+  "question": "Question text",
+  "choices": ["Option 1", "Option 2", "Option 3", "Option 4"],
+  "answer": 0,
+  "type": "multiple-choice" | "true-false",
+  "category": "Category Name"
+}
+```
 
 ## External Dependencies
 

@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The national territory comprises the Philippine archipelago with all islands and waters",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "National-Territory"
+  },
+  {
+    "id": 2,
+    "question": "How many nautical miles from the baseline constitute the territorial sea?",
+    "choices": ["3 nautical miles", "12 nautical miles", "200 nautical miles", "24 nautical miles"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "National-Territory"
+  },
+  {
+    "id": 3,
+    "question": "The exclusive economic zone extends 200 nautical miles from the baseline",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "National-Territory"
+  },
+  {
+    "id": 4,
+    "question": "What law defines the baselines of the Philippine archipelago?",
+    "choices": ["Republic Act 9522", "Republic Act 8371", "Republic Act 7160", "Republic Act 6657"],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "National-Territory"
+  },
+  {
+    "id": 5,
+    "question": "Internal waters are subject to foreign jurisdiction",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "National-Territory"
+  }
+]

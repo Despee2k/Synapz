@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The First Amendment protects freedom of religion",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom-of-Religion"
+  },
+  {
+    "id": 2,
+    "question": "Which clause prevents the government from establishing a national religion?",
+    "choices": ["Free Exercise Clause", "Establishment Clause", "Due Process Clause", "Equal Protection Clause"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom-of-Religion"
+  },
+  {
+    "id": 3,
+    "question": "The government can regulate religious practices if they violate criminal laws",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom-of-Religion"
+  },
+  {
+    "id": 4,
+    "question": "What test is used to determine if government action violates the Establishment Clause?",
+    "choices": ["Strict Scrutiny Test", "Lemon Test", "Rational Basis Test", "Intermediate Scrutiny Test"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Freedom-of-Religion"
+  },
+  {
+    "id": 5,
+    "question": "Religious beliefs are absolutely protected under the Constitution",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Freedom-of-Religion"
+  }
+]

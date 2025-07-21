@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The Fourth Amendment protects against unreasonable searches and seizures",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Search-and-Seizures"
+  },
+  {
+    "id": 2,
+    "question": "What is generally required for a legal search?",
+    "choices": ["Probable cause", "Warrant", "Both probable cause and warrant", "Reasonable suspicion"],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Search-and-Seizures"
+  },
+  {
+    "id": 3,
+    "question": "Police can search a vehicle without a warrant if they have probable cause",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Search-and-Seizures"
+  },
+  {
+    "id": 4,
+    "question": "Which doctrine allows evidence obtained illegally to be excluded from trial?",
+    "choices": ["Miranda Rule", "Exclusionary Rule", "Good Faith Exception", "Plain View Doctrine"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Search-and-Seizures"
+  },
+  {
+    "id": 5,
+    "question": "Stop and frisk requires probable cause",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Search-and-Seizures"
+  }
+]

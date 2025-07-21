@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "A patent grants exclusive rights to an invention for a limited time",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Patent"
+  },
+  {
+    "id": 2,
+    "question": "How long does a utility patent last from the filing date?",
+    "choices": ["15 years", "17 years", "20 years", "25 years"],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Patent"
+  },
+  {
+    "id": 3,
+    "question": "An invention must be novel, non-obvious, and useful to be patentable",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Patent"
+  },
+  {
+    "id": 4,
+    "question": "Which of these cannot be patented?",
+    "choices": ["Software algorithms", "Laws of nature", "Business methods", "Chemical compounds"],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Patent"
+  },
+  {
+    "id": 5,
+    "question": "Patent applications must include detailed specifications and claims",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Patent"
+  }
+]

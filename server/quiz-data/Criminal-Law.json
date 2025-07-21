@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "question": "The burden of proof in criminal cases is beyond reasonable doubt",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Criminal-Law"
+  },
+  {
+    "id": 2,
+    "question": "What are the two elements required to establish a crime?",
+    "choices": ["Mens rea and actus reus", "Intent and motive", "Cause and effect", "Guilt and innocence"],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Criminal-Law"
+  },
+  {
+    "id": 3,
+    "question": "Double jeopardy means being tried twice for the same crime",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Criminal-Law"
+  },
+  {
+    "id": 4,
+    "question": "Which principle states that there is no crime without a law?",
+    "choices": ["Nullum crimen sine lege", "Res ipsa loquitur", "Habeas corpus", "Stare decisis"],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Criminal-Law"
+  },
+  {
+    "id": 5,
+    "question": "Miranda rights must be read before any police questioning",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Criminal-Law"
+  }
+]
