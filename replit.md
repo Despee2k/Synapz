@@ -1,8 +1,8 @@
-# Replit.md - Quiz Application
+# Replit.md - Synapz Quiz Application
 
 ## Overview
 
-This is a full-stack quiz application built with React, TypeScript, Express.js, and designed for PostgreSQL with Drizzle ORM. The application features a modern UI using shadcn/ui components and provides an interactive quiz experience with session tracking and scoring capabilities.
+Synapz is a full-stack quiz application built with React, TypeScript, Express.js, and designed for PostgreSQL with Drizzle ORM. The application features a modern UI using shadcn/ui components and provides an interactive quiz experience with session tracking and scoring capabilities.
 
 ## User Preferences
 
@@ -18,6 +18,7 @@ Preferred communication style: Simple, everyday language.
 ✓ Enhanced quiz results with review functionality
 ✓ Updated backend with expanded question bank (20 questions across 4 categories)
 ✓ Implemented category-based question filtering in API
+✓ Renamed application from QuizMaster to Synapz
 
 ## System Architecture
 

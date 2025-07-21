@@ -31,7 +31,7 @@ export default function Home() {
               <div className="bg-blue-500 text-white p-2 rounded-lg">
                 <Brain className="w-6 h-6" />
               </div>
-              <h1 className="text-2xl font-bold text-slate-800">QuizMaster</h1>
+              <h1 className="text-2xl font-bold text-slate-800">Synapz</h1>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@ export default function Home() {
           <div className="bg-blue-100 text-blue-600 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
             <BookOpen className="w-10 h-10" />
           </div>
-          <h2 className="text-4xl font-bold text-slate-800 mb-4">Welcome to QuizMaster</h2>
+          <h2 className="text-4xl font-bold text-slate-800 mb-4">Welcome to Synapz</h2>
           <p className="text-xl text-slate-600 mb-2">Test your knowledge with interactive quizzes</p>
           <p className="text-slate-500">Choose a category and start learning today</p>
         </div>
