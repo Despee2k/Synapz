@@ -136,7 +136,7 @@ export function useQuiz(category?: string) {
       questions.length === 0
         ? 0
         : Math.round((quizState.currentQuestionIndex / questions.length) * 100),
-    selectedAnswer: quizState.selectedAnswers[quizState.currentQuestionIndex] || null,
+    selectedAnswer: quizState.selectedAnswers[quizState.currentQuestionIndex] ?? null,
     startQuiz,
     selectAnswer,
     nextQuestion,
