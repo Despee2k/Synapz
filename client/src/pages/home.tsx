@@ -158,7 +158,8 @@ export default function Home() {
             <DialogTitle>Notice</DialogTitle>
           </DialogHeader>
           <p className="text-sm text-slate-600">
-            I added my own questions for <strong>Copyright</strong> and <strong>Intellectual Property</strong>.
+            <li>I added my own questions for <strong>Copyright</strong> and <strong>Intellectual Property</strong>.</li>
+            <li>I added the ability to <strong>shuffle</strong> questions and choices.</li>
           </p>
         </DialogContent>
       </Dialog>
