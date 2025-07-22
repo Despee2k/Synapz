@@ -1,7 +1,7 @@
-import { useState } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { useState, useEffect } from 'react';
+import { useQuery, UseQueryResult, QueryFunction } from '@tanstack/react-query';
 
-type QuizQuestion = {
+export type QuizQuestion = {
   id: number;
   question: string;
   choices: string[];
@@ -18,9 +18,11 @@ export interface QuizState {
   endTime: Date | null;
   isCompleted: boolean;
   sessionId: null;
+  questions: QuizQuestion[];
 }
 
 export function useQuiz(category?: string) {
+  const [shuffled, setShuffled] = useState(false);
   const [quizState, setQuizState] = useState<QuizState>({
     currentQuestionIndex: 0,
     selectedAnswers: [],
@@ -29,51 +31,66 @@ export function useQuiz(category?: string) {
     endTime: null,
     isCompleted: false,
     sessionId: null,
+    questions: [],
   });
 
-  const { data: questions = [], isLoading } = useQuery<QuizQuestion[]>({
-    queryKey: ['questions', category],
-    queryFn: async () => {
-      if (!category || category === 'All') {
-        // Fetch all categories from categories.json
-        const res = await fetch('/quiz-data/categories.json');
-        if (!res.ok) throw new Error('Failed to load category list');
-        const categoryList: string[] = await res.json();
+  const shuffleArray = <T,>(arr: T[]): T[] => {
+    return [...arr].sort(() => Math.random() - 0.5);
+  };
 
-        const allQuestions: QuizQuestion[] = [];
+  const queryFn: QueryFunction<QuizQuestion[]> = async () => {
+    if (!category || category === 'All') {
+      const res = await fetch('/quiz-data/categories.json');
+      if (!res.ok) throw new Error('Failed to load category list');
+      const categoryList: string[] = await res.json();
 
-        for (const file of categoryList) {
-          try {
-            const qRes = await fetch(`/quiz-data/${file}.json`);
-            if (qRes.ok) {
-              const data: QuizQuestion[] = await qRes.json();
-              allQuestions.push(...data);
-            }
-          } catch (err) {
-            console.error(`Failed to load ${file}.json`, err);
+      const allQuestions: QuizQuestion[] = [];
+      for (const file of categoryList) {
+        try {
+          const qRes = await fetch(`/quiz-data/${file}.json`);
+          if (qRes.ok) {
+            const data: QuizQuestion[] = await qRes.json();
+            allQuestions.push(...data);
           }
+        } catch (err) {
+          console.error(`Failed to load ${file}.json`, err);
         }
-
-        return allQuestions;
-      } else {
-        const res = await fetch(`/quiz-data/${category}.json`);
-        if (!res.ok) throw new Error('Failed to load questions');
-        return res.json();
       }
-    },
+      return allQuestions;
+    } else {
+      const res = await fetch(`/quiz-data/${category}.json`);
+      if (!res.ok) throw new Error('Failed to load questions');
+      return res.json();
+    }
+  };
+
+  const queryResult: UseQueryResult<QuizQuestion[], Error> = useQuery({
+    queryKey: ['questions', category],
+    queryFn,
   });
+
+  useEffect(() => {
+    if (queryResult.data) {
+      const prepared = shuffled ? shuffleArray(queryResult.data) : queryResult.data;
+      setQuizState((prev) => ({
+        ...prev,
+        questions: prepared,
+        selectedAnswers: new Array(prepared.length).fill(null),
+      }));
+    }
+  }, [queryResult.data, shuffled]);
 
   const startQuiz = () => {
     const startTime = new Date();
-    setQuizState(prev => ({
+    setQuizState((prev) => ({
       ...prev,
       startTime,
-      selectedAnswers: new Array(questions.length).fill(null),
+      currentQuestionIndex: 0,
     }));
   };
 
   const selectAnswer = (answerIndex: number) => {
-    setQuizState(prev => {
+    setQuizState((prev) => {
       const updated = [...prev.selectedAnswers];
       updated[prev.currentQuestionIndex] = answerIndex;
       return { ...prev, selectedAnswers: updated };
@@ -81,15 +98,15 @@ export function useQuiz(category?: string) {
   };
 
   const nextQuestion = () => {
-    setQuizState(prev => {
+    setQuizState((prev) => {
       const nextIndex = prev.currentQuestionIndex + 1;
-      if (nextIndex >= questions.length) return completeQuiz(prev);
+      if (nextIndex >= prev.questions.length) return completeQuiz(prev);
       return { ...prev, currentQuestionIndex: nextIndex };
     });
   };
 
   const previousQuestion = () => {
-    setQuizState(prev => ({
+    setQuizState((prev) => ({
       ...prev,
       currentQuestionIndex: Math.max(0, prev.currentQuestionIndex - 1),
     }));
@@ -97,7 +114,7 @@ export function useQuiz(category?: string) {
 
   const completeQuiz = (state: QuizState): QuizState => {
     const endTime = new Date();
-    const score: number = calculateScore(state.selectedAnswers, questions);
+    const score = calculateScore(state.selectedAnswers, state.questions);
     return {
       ...state,
       endTime,
@@ -116,38 +133,43 @@ export function useQuiz(category?: string) {
   };
 
   const resetQuiz = () => {
+    let resetQuestions = queryResult.data ?? [];
+    if (shuffled) resetQuestions = shuffleArray(resetQuestions);
     setQuizState({
       currentQuestionIndex: 0,
-      selectedAnswers: [],
+      selectedAnswers: new Array(resetQuestions.length).fill(null),
       score: 0,
       startTime: null,
       endTime: null,
       isCompleted: false,
       sessionId: null,
+      questions: resetQuestions,
     });
   };
 
   const submitQuiz = () => {
-    setQuizState(prev => {
-      const completedState = {
-        ...prev,
-        endTime: new Date(),
-        isCompleted: true,
-        score: calculateScore(prev.selectedAnswers, questions),
-      };
-      return completedState;
+    setQuizState((prev) => completeQuiz(prev));
+  };
+
+  const toggleShuffle = () => setShuffled((prev) => !prev);
+
+  const shuffleChoices = () => {
+    const updated = [...quizState.questions];
+    updated.forEach((q) => {
+      q.choices = shuffleArray(q.choices);
     });
+    setQuizState((prev) => ({ ...prev, questions: updated }));
   };
 
   return {
     quizState,
-    questions,
-    isLoading,
-    currentQuestion: questions[quizState.currentQuestionIndex] || null,
+    questions: quizState.questions,
+    isLoading: queryResult.isLoading,
+    currentQuestion: quizState.questions[quizState.currentQuestionIndex] || null,
     progress:
-      questions.length === 0
+      quizState.questions.length === 0
         ? 0
-        : Math.round((quizState.currentQuestionIndex / questions.length) * 100),
+        : Math.round((quizState.currentQuestionIndex / quizState.questions.length) * 100),
     selectedAnswer: quizState.selectedAnswers[quizState.currentQuestionIndex] ?? null,
     startQuiz,
     selectAnswer,
@@ -157,6 +179,9 @@ export function useQuiz(category?: string) {
     submitQuiz,
     canGoPrevious: quizState.currentQuestionIndex > 0,
     canGoNext: quizState.selectedAnswers[quizState.currentQuestionIndex] !== null,
-    isLastQuestion: quizState.currentQuestionIndex === questions.length - 1,
+    isLastQuestion: quizState.currentQuestionIndex === quizState.questions.length - 1,
+    shuffleChoices,
+    toggleShuffle,
+    shuffled,
   };
 }

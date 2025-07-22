@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useLocation } from 'wouter';
 import { useQuiz } from '@/hooks/use-quiz';
 import { QuizHeader } from '@/components/quiz/quiz-header';
@@ -10,7 +10,7 @@ import { StatsSidebar } from '@/components/quiz/stats-sidebar';
 import { ReviewAnswers } from '@/pages/review';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Play, Home } from 'lucide-react';
+import { Play, Home, Shuffle } from 'lucide-react';
 
 export default function Quiz() {
   const [, setLocation] = useLocation();
@@ -35,6 +35,9 @@ export default function Quiz() {
     canGoPrevious,
     canGoNext,
     isLastQuestion,
+    shuffleChoices,
+    toggleShuffle,
+    shuffled,
   } = useQuiz(category);
 
   const goHome = () => setLocation('/');
@@ -90,10 +93,14 @@ export default function Quiz() {
                   <Play className="w-4 h-4 mr-2" />
                   Start Quiz
                 </Button>
-                <div>
+                <div className="flex justify-center gap-3">
                   <Button variant="outline" onClick={goHome} size="sm">
                     <Home className="w-4 h-4 mr-2" />
                     Go Home
+                  </Button>
+                  <Button variant={shuffled ? 'default' : 'outline'} onClick={toggleShuffle} size="sm">
+                    <Shuffle className="w-4 h-4 mr-2" />
+                    {shuffled ? 'Shuffling On' : 'Shuffle Questions'}
                   </Button>
                 </div>
               </div>
