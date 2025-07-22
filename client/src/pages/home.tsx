@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useLocation } from 'wouter';
 import { useQuery } from '@tanstack/react-query';
 import { Card, CardContent } from '@/components/ui/card';
@@ -10,11 +10,13 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
+import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Brain, Play, BookOpen } from 'lucide-react';
 
 export default function Home() {
   const [, setLocation] = useLocation();
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
+  const [showDialog, setShowDialog] = useState(false);
 
   const { data: serverCategories = [], isLoading } = useQuery<string[]>({
     queryKey: ['categories'],
@@ -34,6 +36,14 @@ export default function Home() {
         : '';
     setLocation(`/quiz${params}`);
   };
+
+  useEffect(() => {
+    const hasSeenPopup = localStorage.getItem('hasSeenCopyrightNotice');
+    if (!hasSeenPopup) {
+      setShowDialog(true);
+      localStorage.setItem('hasSeenCopyrightNotice', 'true');
+    }
+  }, []);
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -141,6 +151,17 @@ export default function Home() {
           </Card>
         </div>
       </main>
+
+      <Dialog open={showDialog} onOpenChange={setShowDialog}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>Notice</DialogTitle>
+          </DialogHeader>
+          <p className="text-sm text-slate-600">
+            I added my own questions for <strong>Copyright</strong> and <strong>Intellectual Property</strong>.
+          </p>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
