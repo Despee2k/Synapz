@@ -1,0 +1,154 @@
+[
+  {
+    "id": 1,
+    "question": "Copyright in the Philippines arises automatically upon the creation of a work.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Copyright"
+  },
+  {
+    "id": 2,
+    "question": "Economic rights under copyright include the right of attribution.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Copyright"
+  },
+  {
+    "id": 3,
+    "question": "Joint works grant exclusive copyright to the main contributor only.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Copyright"
+  },
+  {
+    "id": 4,
+    "question": "AI-generated works are currently protected under traditional copyright law in the Philippines.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Copyright"
+  },
+  {
+    "id": 5,
+    "question": "Fair use considers whether the use harms the market value of the original work.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Copyright"
+  },
+  {
+    "id": 6,
+    "question": "Digital piracy is easily enforced due to the centralized nature of torrenting.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Copyright"
+  },
+  {
+    "id": 7,
+    "question": "What is one of the economic rights granted to copyright owners?",
+    "choices": [
+      "Right of Attribution",
+      "Right of Withdrawal",
+      "Reproduction Right",
+      "Right of Integrity"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 8,
+    "question": "Which of the following is NOT a criterion for fair use?",
+    "choices": [
+      "Purpose & Character",
+      "Nature of Work",
+      "Author’s Education",
+      "Amount & Substantiality"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 9,
+    "question": "Under Philippine copyright law, who owns a government work by default?",
+    "choices": [
+      "The president",
+      "The public domain",
+      "The employee who created it",
+      "The government agency involved"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 10,
+    "question": "Which landmark case involved textbook photocopying and copyright infringement?",
+    "choices": [
+      "Perez v. Pearson",
+      "Pearson Education, Inc. v. National Book Store, Inc.",
+      "Book Nation v. Republic",
+      "National Press v. Education Department"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 11,
+    "question": "Which type of work is NOT explicitly listed as copyrightable under the IP Code?",
+    "choices": [
+      "Audiovisual Works",
+      "Visual Arts",
+      "Mathematical Equations",
+      "Musical Compositions"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is a moral right of a copyright owner?",
+    "choices": [
+      "Distribution Right",
+      "Right of Attribution",
+      "Public Performance Right",
+      "Adaptation Right"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 13,
+    "question": "What does the fair use doctrine aim to balance?",
+    "choices": [
+      "Market power and regulation",
+      "Private property and public funds",
+      "Creator's rights and public interest",
+      "Revenue and licensing fees"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  },
+  {
+    "id": 14,
+    "question": "Who typically owns the copyright for commissioned works under Philippine law?",
+    "choices": [
+      "The contractor",
+      "The government",
+      "The employer",
+      "The employee"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Copyright"
+  }
+]

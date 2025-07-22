@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "question": "Intellectual Property protects ideas themselves, not their expression.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 2,
+    "question": "A patent can protect a company's logo or slogan.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 3,
+    "question": "Trade secrets protect confidential business information like formulas.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 4,
+    "question": "Owning an NFT guarantees automatic copyright over the digital asset.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 5,
+    "question": "Courts in the DABUS AI case have generally accepted AI as a legal inventor.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 6,
+    "question": "The Shell v. Customs case confirmed that software is copyrightable.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 7,
+    "question": "The Apple v. Samsung case set a precedent that patent protection can cover design elements.",
+    "choices": ["True", "False"],
+    "answer": 0,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 8,
+    "question": "Trademark infringement requires exact copying of a logo or name.",
+    "choices": ["True", "False"],
+    "answer": 1,
+    "type": "true-false",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 9,
+    "question": "Which of the following is protected by copyright?",
+    "choices": [
+      "A recipe for a soda",
+      "A company’s logo",
+      "A novel or poem",
+      "A list of customer emails"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 10,
+    "question": "What type of IP protects inventions like machines or processes?",
+    "choices": [
+      "Trademark",
+      "Copyright",
+      "Patent",
+      "Trade Secret"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 11,
+    "question": "What was the legal issue in McDonald's vs. MacJoy?",
+    "choices": [
+      "Patent infringement on recipes",
+      "Copyright on mascots",
+      "Trademark confusion",
+      "Trade secret theft"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 12,
+    "question": "Which case involved trademark issues in the NFT space?",
+    "choices": [
+      "Shell vs. Customs",
+      "Hermès vs. MetaBirkins",
+      "Apple vs. Samsung",
+      "McDonald's vs. MacJoy"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 13,
+    "question": "Why can't naturally occurring genes be patented in the U.S.?",
+    "choices": [
+      "They are considered public knowledge",
+      "They are protected by copyright",
+      "They are not novel inventions",
+      "They are not legally defined as property"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 14,
+    "question": "What is a challenge associated with IP in the Global South?",
+    "choices": [
+      "Protecting trade secrets from Western countries",
+      "Balancing innovation with access to knowledge",
+      "Preventing import of fake products",
+      "Over-patenting by local startups"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 15,
+    "question": "Which of the following is an emerging issue related to AI and IP?",
+    "choices": [
+      "The right to fair use",
+      "Recognition of AI as an inventor",
+      "The enforcement of trade secrets",
+      "Ownership of global patents"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  },
+  {
+    "id": 16,
+    "question": "What should IP professionals do in the face of digital transformation?",
+    "choices": [
+      "Focus only on past rulings",
+      "Resist any form of innovation",
+      "Adapt and innovate",
+      "Ignore global trends"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Intellectual Property"
+  }
+]
