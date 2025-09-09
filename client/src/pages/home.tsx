@@ -158,8 +158,9 @@ export default function Home() {
             <DialogTitle>Notice</DialogTitle>
           </DialogHeader>
           <p className="text-sm text-slate-600">
-            <li>I added questions about IAS.</li>
-            <li>I deleted questions about Social Issues.</li>
+            <li>Added questions about IAS.</li>
+            <li>Deleted questions about Social Issues.</li>
+            <li>Fixed can't choose multiple choices even if question asked to choose multiple.</li>
           </p>
         </DialogContent>
       </Dialog>
