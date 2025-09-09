@@ -7,6 +7,7 @@ type QuizQuestion = {
   answer: number | number[];
   type: 'true-false' | 'multiple-choice' | 'multiple-choice-v2';
   category: string;
+  image?: string;
 };
 
 interface QuestionCardProps {
@@ -22,11 +23,11 @@ export function QuestionCard({
   onSelectAnswer,
   multiSelect,
 }: QuestionCardProps) {
-  const isMulti = typeof multiSelect === 'boolean'
-    ? multiSelect
-    : question.type === 'multiple-choice-v2';
+  const isMulti =
+    typeof multiSelect === 'boolean'
+      ? multiSelect
+      : question.type === 'multiple-choice-v2';
 
-  // Helpers to test selection for single vs multi
   const isIndexSelected = (idx: number) => {
     if (isMulti) {
       return Array.isArray(selectedAnswer) ? selectedAnswer.includes(idx) : false;
@@ -64,6 +65,20 @@ export function QuestionCard({
         </div>
       </div>
 
+      {/* Optional Image */}
+      {question.image && (
+        <div className="mb-6">
+          <figure className="rounded-lg border border-slate-200 overflow-hidden bg-slate-50">
+            <img
+              src={question.image}
+              alt=""
+              loading="lazy"
+              className="w-full h-auto object-contain"
+            />
+          </figure>
+        </div>
+      )}
+
       {/* Choices */}
       <div className="space-y-3">
         {question.choices.map((choice, index) => {
@@ -96,7 +111,9 @@ export function QuestionCard({
                 {isMulti ? (
                   <div
                     className={`w-5 h-5 rounded-md border-2 flex items-center justify-center transition-colors ${
-                      isSelected ? 'border-blue-500 bg-blue-500' : 'border-slate-300 group-hover:border-blue-500'
+                      isSelected
+                        ? 'border-blue-500 bg-blue-500'
+                        : 'border-slate-300 group-hover:border-blue-500'
                     }`}
                   >
                     {/* check mark */}

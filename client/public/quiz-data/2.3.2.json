@@ -89,7 +89,8 @@
     ],
     "answer": 0,
     "type": "multiple-choice",
-    "category": "2.3.2 Securing Networks Quiz"
+    "category": "2.3.2 Securing Networks Quiz",
+    "image": "/quiz-data/assets/2.3.2_no7.jpg"
   },
   {
     "id": 8,

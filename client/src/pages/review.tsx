@@ -11,6 +11,7 @@ type QuizQuestion = {
   answer: number | number[];
   type: 'true-false' | 'multiple-choice' | 'multiple-choice-v2';
   category: string;
+  image?: string;
 };
 
 interface ReviewProps {

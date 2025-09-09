@@ -75,7 +75,8 @@
     ],
     "answer": 3,
     "type": "multiple-choice",
-    "category": "6.3.2 Network Security Infrastructure Quiz"
+    "category": "6.3.2 Network Security Infrastructure Quiz",
+    "image": "/quiz-data/assets/6.3.2_no6.jpg"
   },
   {
     "id": 7,
