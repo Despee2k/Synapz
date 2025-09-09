@@ -5,14 +5,14 @@ export type QuizQuestion = {
   id: number;
   question: string;
   choices: string[];
-  answer: number;
-  type: 'true-false' | 'multiple-choice';
+  answer: number | number[];
+  type: 'true-false' | 'multiple-choice' | 'multiple-choice-v2';
   category: string;
 };
 
 export interface QuizState {
   currentQuestionIndex: number;
-  selectedAnswers: (number | null)[];
+  selectedAnswers: (number | number[] | null)[];
   score: number;
   startTime: Date | null;
   endTime: Date | null;
@@ -91,8 +91,22 @@ export function useQuiz(category?: string) {
 
   const selectAnswer = (answerIndex: number) => {
     setQuizState((prev) => {
+      const q = prev.questions[prev.currentQuestionIndex];
       const updated = [...prev.selectedAnswers];
-      updated[prev.currentQuestionIndex] = answerIndex;
+
+      if (q?.type === 'multiple-choice-v2') {
+        const current = Array.isArray(updated[prev.currentQuestionIndex])
+          ? (updated[prev.currentQuestionIndex] as number[])
+          : [];
+        const exists = current.includes(answerIndex);
+        const next = exists
+          ? current.filter((i) => i !== answerIndex)
+          : [...current, answerIndex].sort((a, b) => a - b);
+        updated[prev.currentQuestionIndex] = next;
+      } else {
+        updated[prev.currentQuestionIndex] = answerIndex;
+      }
+
       return { ...prev, selectedAnswers: updated };
     });
   };
@@ -123,14 +137,47 @@ export function useQuiz(category?: string) {
     };
   };
 
-  const calculateScore = (answers: (number | null)[], questions: QuizQuestion[]) => {
-    return answers.reduce((acc: number, answer, i) => {
-      if (answer !== null && answer === questions[i]?.answer) {
-        return acc + 1;
+  const calculateScore = (
+    answers: (number | number[] | null)[],
+    questions: QuizQuestion[]
+  ) => {
+    const uniqueSorted = (arr: number[]) => {
+      const seen: Record<number, true> = Object.create(null);
+      const out: number[] = [];
+      for (let i = 0; i < arr.length; i++) {
+        const v = arr[i];
+        if (seen[v]) continue;
+        seen[v] = true;
+        out.push(v);
       }
-      return acc;
+      out.sort((a, b) => a - b);
+      return out;
+    };
+
+    return answers.reduce((acc: number, ans, i) => {
+      const q = questions[i];
+      if (!q) return acc;
+
+      if (q.type === 'multiple-choice-v2') {
+        if (!Array.isArray(ans) || !Array.isArray(q.answer)) return acc;
+
+        const aNorm = uniqueSorted(ans);
+        const bNorm = uniqueSorted(q.answer as number[]);
+
+        if (aNorm.length !== bNorm.length) return acc;
+        for (let j = 0; j < aNorm.length; j++) {
+          if (aNorm[j] !== bNorm[j]) return acc;
+        }
+        return acc + 1;
+      } else {
+        if (typeof ans === 'number' && typeof q.answer === 'number' && ans === q.answer) {
+          return acc + 1;
+        }
+        return acc;
+      }
     }, 0);
   };
+
 
   const resetQuiz = () => {
     let resetQuestions = queryResult.data ?? [];
@@ -154,12 +201,39 @@ export function useQuiz(category?: string) {
   const toggleShuffle = () => setShuffled((prev) => !prev);
 
   const shuffleChoices = () => {
-    const updated = [...quizState.questions];
-    updated.forEach((q) => {
-      q.choices = shuffleArray(q.choices);
+    const updatedQuestions = quizState.questions.map((q) => {
+      const perm = q.choices.map((_, idx) => idx);
+      const shuffledPerm = shuffleArray(perm);
+      const newChoices = shuffledPerm.map((oldIdx) => q.choices[oldIdx]);
+
+      let newAnswer: number | number[];
+      if (Array.isArray(q.answer)) {
+        // For each old correct index, find its new index position in the permutation
+        newAnswer = q.answer
+          .map((oldIdx) => shuffledPerm.indexOf(oldIdx))
+          .sort((a, b) => a - b);
+      } else {
+        newAnswer = shuffledPerm.indexOf(q.answer);
+      }
+
+      return { ...q, choices: newChoices, answer: newAnswer };
     });
-    setQuizState((prev) => ({ ...prev, questions: updated }));
+
+    setQuizState((prev) => ({
+      ...prev,
+      questions: updatedQuestions,
+      selectedAnswers: new Array(updatedQuestions.length).fill(null),
+      currentQuestionIndex: 0,
+    }));
   };
+
+  const currentSelection = quizState.selectedAnswers[quizState.currentQuestionIndex];
+  const canGoNext =
+    quizState.questions.length === 0
+      ? false
+      : Array.isArray(currentSelection)
+      ? currentSelection.length > 0
+      : currentSelection !== null;
 
   return {
     quizState,
@@ -170,7 +244,7 @@ export function useQuiz(category?: string) {
       quizState.questions.length === 0
         ? 0
         : Math.round((quizState.currentQuestionIndex / quizState.questions.length) * 100),
-    selectedAnswer: quizState.selectedAnswers[quizState.currentQuestionIndex] ?? null,
+    selectedAnswer: currentSelection ?? null,
     startQuiz,
     selectAnswer,
     nextQuestion,
@@ -178,7 +252,7 @@ export function useQuiz(category?: string) {
     resetQuiz,
     submitQuiz,
     canGoPrevious: quizState.currentQuestionIndex > 0,
-    canGoNext: quizState.selectedAnswers[quizState.currentQuestionIndex] !== null,
+    canGoNext,
     isLastQuestion: quizState.currentQuestionIndex === quizState.questions.length - 1,
     shuffleChoices,
     toggleShuffle,

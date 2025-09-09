@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useLocation } from 'wouter';
-import { useQuery } from '@tanstack/react-query';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { CheckCircle, XCircle, Home, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
@@ -9,32 +8,53 @@ type QuizQuestion = {
   id: number;
   question: string;
   choices: string[];
-  answer: number;
-  type: 'true-false' | 'multiple-choice';
+  answer: number | number[];
+  type: 'true-false' | 'multiple-choice' | 'multiple-choice-v2';
   category: string;
 };
 
 interface ReviewProps {
   questions: QuizQuestion[];
-  userAnswers: (number | null)[];
+  userAnswers: (number | number[] | null)[];
   score: number;
   onRetake: () => void;
   onHome: () => void;
 }
 
+function isEqualNumberSets(a: number[] | null | undefined, b: number[] | null | undefined) {
+  if (!a || !b) return false;
+  if (a.length !== b.length) return false;
+  // compare sorted arrays
+  const as = [...a].sort((x, y) => x - y);
+  const bs = [...b].sort((x, y) => x - y);
+  for (let i = 0; i < as.length; i++) {
+    if (as[i] !== bs[i]) return false;
+  }
+  return true;
+}
+
 export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome }: ReviewProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const currentQuestion = questions[currentIndex];
   const userAnswer = userAnswers[currentIndex];
-  const isCorrect = userAnswer === currentQuestion?.answer;
+
+  // Determine correctness for single vs multi
+  const isCorrect =
+    currentQuestion?.type === 'multiple-choice-v2'
+      ? Array.isArray(userAnswer) && Array.isArray(currentQuestion.answer)
+        ? isEqualNumberSets(userAnswer, currentQuestion.answer)
+        : false
+      : typeof userAnswer === 'number' && typeof currentQuestion?.answer === 'number'
+        ? userAnswer === currentQuestion.answer
+        : false;
 
   const nextQuestion = () => {
-    setCurrentIndex(prev => Math.min(prev + 1, questions.length - 1));
+    setCurrentIndex((prev) => Math.min(prev + 1, questions.length - 1));
   };
 
   const previousQuestion = () => {
-    setCurrentIndex(prev => Math.max(prev - 1, 0));
+    setCurrentIndex((prev) => Math.max(prev - 1, 0));
   };
 
   if (!currentQuestion) {
@@ -52,6 +72,21 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
       </div>
     );
   }
+
+  const isMulti = currentQuestion.type === 'multiple-choice-v2';
+  const correctSet = Array.isArray(currentQuestion.answer)
+    ? new Set(currentQuestion.answer)
+    : new Set<number>([currentQuestion.answer as number]);
+  const userSet = Array.isArray(userAnswer)
+    ? new Set(userAnswer)
+    : typeof userAnswer === 'number'
+      ? new Set<number>([userAnswer])
+      : new Set<number>();
+
+  const typeLabel =
+    currentQuestion.type === 'multiple-choice-v2'
+      ? 'multiple/answers'
+      : currentQuestion.type.replace('-', '/');
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -73,24 +108,20 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
               <span className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-sm font-medium">
                 Question {currentIndex + 1} of {questions.length}
               </span>
-              <div className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm font-medium ${
-                isCorrect 
-                  ? 'bg-green-100 text-green-700' 
-                  : 'bg-red-100 text-red-700'
-              }`}>
-                {isCorrect ? (
-                  <CheckCircle className="w-4 h-4" />
-                ) : (
-                  <XCircle className="w-4 h-4" />
-                )}
+              <div
+                className={`flex items-center space-x-1 px-3 py-1 rounded-full text-sm font-medium ${
+                  isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-700'
+                }`}
+              >
+                {isCorrect ? <CheckCircle className="w-4 h-4" /> : <XCircle className="w-4 h-4" />}
                 <span>{isCorrect ? 'Correct' : 'Incorrect'}</span>
               </div>
             </div>
           </div>
-          
+
           <div className="w-full bg-slate-200 rounded-full h-2">
-            <div 
-              className="bg-blue-500 h-2 rounded-full transition-all duration-300" 
+            <div
+              className="bg-blue-500 h-2 rounded-full transition-all duration-300"
               style={{ width: `${((currentIndex + 1) / questions.length) * 100}%` }}
             />
           </div>
@@ -104,52 +135,50 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
               </h2>
               <div className="flex items-center space-x-4 text-sm text-slate-500 mb-6">
                 <span>Category: {currentQuestion.category}</span>
-                <span>Type: {currentQuestion.type.replace('-', '/')}</span>
+                <span>Type: {typeLabel}</span>
               </div>
             </div>
 
             <div className="space-y-3">
               {currentQuestion.choices.map((choice, index) => {
-                const isUserAnswer = userAnswer === index;
-                const isCorrectAnswer = currentQuestion.answer === index;
-                
+                const userPicked = userSet.has(index);
+                const isRight = correctSet.has(index);
+
                 let bgClass = 'bg-slate-50 border-slate-200';
                 let textClass = 'text-slate-700';
-                
-                if (isCorrectAnswer) {
+
+                if (isRight) {
                   bgClass = 'bg-green-100 border-green-300';
                   textClass = 'text-green-800';
-                } else if (isUserAnswer && !isCorrectAnswer) {
+                } else if (userPicked && !isRight) {
                   bgClass = 'bg-red-100 border-red-300';
                   textClass = 'text-red-800';
                 }
 
                 return (
-                  <div 
+                  <div
                     key={index}
                     className={`flex items-center justify-between p-4 border-2 rounded-lg ${bgClass}`}
                   >
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center space-x-2">
-                        {isCorrectAnswer && <CheckCircle className="w-5 h-5 text-green-600" />}
-                        {isUserAnswer && !isCorrectAnswer && <XCircle className="w-5 h-5 text-red-600" />}
+                        {isRight && <CheckCircle className="w-5 h-5 text-green-600" />}
+                        {userPicked && !isRight && <XCircle className="w-5 h-5 text-red-600" />}
                       </div>
-                      <span className={`text-lg ${textClass}`}>
-                        {choice}
-                      </span>
+                      <span className={`text-lg ${textClass}`}>{choice}</span>
                     </div>
                     <div className="flex items-center space-x-2 text-sm">
-                      {isCorrectAnswer && (
+                      {isRight && (
                         <span className="bg-green-200 text-green-800 px-2 py-1 rounded text-xs font-medium">
                           Correct Answer
                         </span>
                       )}
-                      {isUserAnswer && (
-                        <span className={`px-2 py-1 rounded text-xs font-medium ${
-                          isCorrectAnswer 
-                            ? 'bg-green-200 text-green-800' 
-                            : 'bg-red-200 text-red-800'
-                        }`}>
+                      {userPicked && (
+                        <span
+                          className={`px-2 py-1 rounded text-xs font-medium ${
+                            isRight ? 'bg-green-200 text-green-800' : 'bg-red-200 text-red-800'
+                          }`}
+                        >
                           Your Answer
                         </span>
                       )}
@@ -162,11 +191,7 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
         </Card>
 
         <div className="flex items-center justify-between">
-          <Button 
-            variant="outline" 
-            onClick={previousQuestion}
-            disabled={currentIndex === 0}
-          >
+          <Button variant="outline" onClick={previousQuestion} disabled={currentIndex === 0}>
             <ChevronLeft className="w-4 h-4 mr-2" />
             Previous
           </Button>
@@ -182,8 +207,8 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
             </Button>
           </div>
 
-          <Button 
-            variant="outline" 
+          <Button
+            variant="outline"
             onClick={nextQuestion}
             disabled={currentIndex === questions.length - 1}
           >
@@ -198,11 +223,8 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
 
 export default function Review() {
   const [, setLocation] = useLocation();
-
-  // This component should receive props from the quiz completion
-  // For now, redirect to home if accessed directly
   const goHome = () => setLocation('/');
-  
+
   return (
     <div className="min-h-screen bg-slate-50 flex items-center justify-center">
       <Card>

@@ -6,7 +6,7 @@ interface QuizHeaderProps {
   onHome?: () => void;
 }
 
-export function QuizHeader({ title = "Synapz", category = "Constitution Quiz", onHome }: QuizHeaderProps) {
+export function QuizHeader({ title = "Synapz", category, onHome }: QuizHeaderProps) {
   return (
     <header className="bg-white shadow-sm border-b border-slate-200">
       <div className="max-w-4xl mx-auto px-4 py-4">

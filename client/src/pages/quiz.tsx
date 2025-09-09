@@ -18,6 +18,7 @@ export default function Quiz() {
 
   const urlParams = new URLSearchParams(window.location.search);
   const category = urlParams.get('category') || undefined;
+  const categoryDisplay = category || 'All Categories';
 
   const {
     quizState,
@@ -54,7 +55,7 @@ export default function Quiz() {
   if (isLoading) {
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader category={categoryDisplay} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -68,7 +69,6 @@ export default function Quiz() {
   }
 
   if (!quizState.startTime) {
-    const categoryDisplay = category || 'All Categories';
     return (
       <div className="min-h-screen bg-slate-50">
         <QuizHeader category={categoryDisplay} />
@@ -88,19 +88,31 @@ export default function Quiz() {
                   Take your time and choose the best answer for each question
                 </div>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-3">
                 <Button onClick={startQuiz} size="lg" className="px-8">
                   <Play className="w-4 h-4 mr-2" />
                   Start Quiz
                 </Button>
-                <div className="flex justify-center gap-3">
+
+                <div className="flex flex-wrap justify-center gap-3">
                   <Button variant="outline" onClick={goHome} size="sm">
                     <Home className="w-4 h-4 mr-2" />
                     Go Home
                   </Button>
+
                   <Button variant={shuffled ? 'default' : 'outline'} onClick={toggleShuffle} size="sm">
                     <Shuffle className="w-4 h-4 mr-2" />
                     {shuffled ? 'Shuffling On' : 'Shuffle Questions'}
+                  </Button>
+
+                  <Button
+                    variant="outline"
+                    onClick={shuffleChoices}
+                    size="sm"
+                    title="Shuffle choices for all questions"
+                  >
+                    <Shuffle className="w-4 h-4 mr-2" />
+                    Shuffle Choices
                   </Button>
                 </div>
               </div>
@@ -126,7 +138,7 @@ export default function Quiz() {
 
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader category={categoryDisplay} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <QuizResults
             score={quizState.score}
@@ -143,7 +155,7 @@ export default function Quiz() {
   if (!currentQuestion) {
     return (
       <div className="min-h-screen bg-slate-50">
-        <QuizHeader />
+        <QuizHeader category={categoryDisplay} />
         <main className="max-w-4xl mx-auto px-4 py-8">
           <Card>
             <CardContent className="p-8 text-center">
@@ -159,9 +171,11 @@ export default function Quiz() {
     );
   }
 
+  const isMultiSelect = currentQuestion.type === 'multiple-choice-v2';
+
   return (
     <div className="min-h-screen bg-slate-50">
-      <QuizHeader />
+      <QuizHeader category={categoryDisplay} />
 
       <main className="max-w-4xl mx-auto px-4 py-8">
         <ProgressIndicator
@@ -174,6 +188,7 @@ export default function Quiz() {
           question={currentQuestion}
           selectedAnswer={selectedAnswer}
           onSelectAnswer={selectAnswer}
+          multiSelect={isMultiSelect}
         />
 
         <NavigationControls
