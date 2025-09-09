@@ -1,0 +1,185 @@
+[
+  {
+    "id": 1,
+    "question": "City Center Hospital provides WLAN connectivity to its employees. The security policy requires that communication between employee mobile devices and the access points must be encrypted. What is the purpose of this requirement?",
+    "choices": [
+      "to ensure that users who connect to an AP are employees of the hospital",
+      "to prevent a computer virus on a mobile device from infecting other devices",
+      "to prevent the contents of intercepted messages from being read",
+      "to block denial of service attacks originating on the Internet"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 2,
+    "question": "What is a feature that can be used by an administrator to prevent unauthorized users from connecting to a wireless access point?",
+    "choices": [
+      "software firewall",
+      "MAC filtering",
+      "proxy server",
+      "WPA encryption"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 3,
+    "question": "What is an advantage of SSID cloaking?",
+    "choices": [
+      "Clients will have to manually identify the SSID to connect to the network.",
+      "SSIDs are very difficult to discover because APs do not broadcast them.",
+      "It is the best way to secure a wireless network.",
+      "It provides free Internet access in public locations where knowing the SSID is of no concern."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 4,
+    "question": "For which discovery mode will an AP generate the most traffic on a WLAN?",
+    "choices": [
+      "active mode",
+      "open mode",
+      "mixed mode",
+      "passive mode"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 5,
+    "question": "At a local college, students are allowed to connect to the wireless network without using a password. Which mode is the access point using?",
+    "choices": [
+      "network",
+      "passive",
+      "open",
+      "shared-key"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 6,
+    "question": "An employee connects wirelessly to the company network using a cell phone. The employee then configures the cell phone to act as a wireless access point that will allow new employees to connect to the company network. Which type of security threat best describes this situation?",
+    "choices": [
+      "denial of service",
+      "spoofing",
+      "rogue access point",
+      "cracking"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 7,
+    "question": "The company handbook states that employees cannot have microwave ovens in their offices. Instead, all employees must use the microwave ovens located in the employee cafeteria. What wireless security risk is the company trying to avoid?",
+    "choices": [
+      "interception of data",
+      "accidental interference",
+      "improperly configured devices",
+      "rogue access points"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 8,
+    "question": "Which two roles are typically performed by a wireless router that is used in a home or small business? (Choose two.)",
+    "choices": [
+      "access point",
+      "repeater",
+      "Ethernet switch",
+      "RADIUS authentication server",
+      "WLAN controller"
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 9,
+    "question": "What method of wireless authentication is dependent on a RADIUS authentication server?",
+    "choices": [
+      "WEP",
+      "WPA2 Enterprise",
+      "WPA Personal",
+      "WPA2 Personal"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 10,
+    "question": "Which wireless encryption method is the most secure?",
+    "choices": [
+      "WPA2 with TKIP",
+      "WPA2 with AES",
+      "WPA",
+      "WEP"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 11,
+    "question": "Which parameter is commonly used to identify a wireless network name when a home wireless AP is being configured?",
+    "choices": [
+      "ad hoc",
+      "ESS",
+      "BESS",
+      "SSID"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 12,
+    "question": "Which wireless parameter refers to the frequency bands used to transmit data to a wireless access point?",
+    "choices": [
+      "scanning mode",
+      "channel settings",
+      "SSID",
+      "security mode"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 13,
+    "question": "Which device can control and manage a large number of corporate APs?",
+    "choices": [
+      "router",
+      "LWAP",
+      "WLC",
+      "switch"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  },
+  {
+    "id": 14,
+    "question": "A wireless engineer is comparing the deployment of a network using WPA2 versus WPA3 authentication. How is WPA3 authentication more secure when deployed in an open WLAN network in a newly built company-owned cafe shop?",
+    "choices": [
+      "WPA3 uses DPP to securely onboard available IoT devices",
+      "WPA3 prevents brute force attacks by using SAE",
+      "WPA3 requires the use of a 192-bit cryptographic suite",
+      "WPA3 uses OWE to encrypt wireless traffic"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "5.4.2 Wireless Network Communication Quiz"
+  }
+]

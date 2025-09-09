@@ -1,0 +1,159 @@
+[
+  {
+    "id": 1,
+    "question": "Which security measure is typically found both inside and outside a data center facility?",
+    "choices": [
+      "a gate",
+      "exit sensors",
+      "security traps",
+      "biometrics access",
+      "continuous video surveillance"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 2,
+    "question": "What is hyperjacking?",
+    "choices": [
+      "taking over a virtual machine hypervisor as part of a data center attack",
+      "overclocking the mesh network which connects the data center servers",
+      "adding outdated security software to a virtual machine to gain access to a data center server",
+      "using processors from multiple computers to increase data processing power"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 3,
+    "question": "Which statement accurately characterizes the evolution of threats to network security?",
+    "choices": [
+      "Internal threats can cause even greater damage than external threats.",
+      "Internet architects planned for network security from the beginning.",
+      "Early Internet users often engaged in activities that would harm other users.",
+      "Threats have become less sophisticated while the technical knowledge needed by an attacker has grown."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 4,
+    "question": "When considering network security, what is the most valuable asset of an organization?",
+    "choices": [
+      "customers",
+      "data",
+      "financial resources",
+      "personnel"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 5,
+    "question": "Which resource is affected due to weak security settings for a device owned by the company, but housed in another location?",
+    "choices": [
+      "cloud storage device",
+      "hard copy",
+      "removable media",
+      "social networking"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 6,
+    "question": "In the video that describes the anatomy of an attack, a threat actor was able to gain access through a network device, download data, and destroy it. Which flaw allowed the threat actor to do this?",
+    "choices": [
+      "open ports on the firewall",
+      "lack of a strong password policy",
+      "a flat network with no subnets or VLANs",
+      "improper physical security to gain access to the building"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 7,
+    "question": "Refer to the exhibit. An IT security manager is planning security updates on this particular network. Which type of network is displayed in the exhibit and is being considered for updates?",
+    "choices": [
+      "CAN",
+      "WAN",
+      "SOHO",
+      "data center"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 8,
+    "question": "What are two security features commonly found in a WAN design? (Choose two.)",
+    "choices": [
+      "port security on all user-facing ports",
+      "VPNs used by mobile workers between sites",
+      "firewalls protecting the main and remote sites",
+      "WPA2 for data encryption of all data between sites",
+      "outside perimeter security including continuous video surveillance"
+    ],
+    "answer": [1, 2],
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 9,
+    "question": "Which security technology is commonly used by a teleworker when accessing resources on the main corporate office network?",
+    "choices": [
+      "IPS",
+      "VPN",
+      "SecureX",
+      "biometric access"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 10,
+    "question": "Which technology is used to secure, monitor, and manage mobile devices?",
+    "choices": [
+      "MDM",
+      "VPN",
+      "rootkit",
+      "ASA firewall4"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 11,
+    "question": "Match the type of hackers to the description.",
+    "choices": [
+      "Black hat hackers - They are unethical criminals who violate computer and network security for personal gain, or for malicious reasons, such as attacking networks.",
+      "White hat hackers - They are ethical hackers who use their programming skills for good, ethical, and legal purposes. They may perform network penetration tests to compromise networks and systems by using their knowledge of computer security systems to discover network vulnerabilities.",
+      "Gray hat hackers - They are individuals who commit crimes and do arguably unethical things, but not for personal gain or to cause damage. An example would be someone who compromises a network without permission and then discloses the vulnerability publicly."
+    ],
+    "answer": [0, 1, 2],
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  },
+  {
+    "id": 12,
+    "question": "Which term refers to the type of threat actors who are either self-employed or working for large cybercrime organizations?",
+    "choices": [
+      "Cybercriminals",
+      "Hacktivists",
+      "State-Sponsored",
+      "Vulnerability brokers"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "2.3.2 Securing Networks Quiz"
+  }
+]
