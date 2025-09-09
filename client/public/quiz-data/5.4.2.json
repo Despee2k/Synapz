@@ -101,7 +101,7 @@
       "WLAN controller"
     ],
     "answer": [0, 2],
-    "type": "multiple-choice",
+    "type": "multiple-choice-v2",
     "category": "5.4.2 Wireless Network Communication Quiz"
   },
   {

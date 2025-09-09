@@ -140,7 +140,7 @@
       "cross-site scripting"
     ],
     "answer": [0, 4],
-    "type": "multiple-choice",
+    "type": "multiple-choice-v2",
     "category": "4.4.2 Attacking What We Do Quiz"
   },
   {

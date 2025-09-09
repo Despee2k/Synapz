@@ -101,7 +101,7 @@
       "NTP servers at stratum 1 are directly connected to an authoritative time source."
     ],
     "answer": [1, 4],
-    "type": "multiple-choice",
+    "type": "multiple-choice-v2",
     "category": "6.3.2 Network Security Infrastructure Quiz"
   },
   {
