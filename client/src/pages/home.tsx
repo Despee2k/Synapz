@@ -161,6 +161,7 @@ export default function Home() {
             <li>Added questions about IAS.</li>
             <li>Deleted questions about Social Issues.</li>
             <li>Fixed can't choose multiple choices even if question asked to choose multiple.</li>
+            <li>Add image support and images to certain questions.</li>
           </p>
         </DialogContent>
       </Dialog>
