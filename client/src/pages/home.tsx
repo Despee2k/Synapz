@@ -13,6 +13,9 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Brain, Play, BookOpen } from 'lucide-react';
 
+const NOTICE_VERSION = '2025-09-09-a'; // 👈 bump this when you want the notice to reappear
+const NOTICE_STORAGE_KEY = 'release_notice_version';
+
 export default function Home() {
   const [, setLocation] = useLocation();
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -37,13 +40,28 @@ export default function Home() {
     setLocation(`/quiz${params}`);
   };
 
+  // Show the notice if this build/version hasn't been acknowledged yet
   useEffect(() => {
-    const hasSeenPopup = localStorage.getItem('hasSeenCopyrightNotice');
-    if (!hasSeenPopup) {
-      setShowDialog(true);
-      localStorage.setItem('hasSeenCopyrightNotice', 'true');
+    try {
+      const seen = localStorage.getItem(NOTICE_STORAGE_KEY);
+      if (seen !== NOTICE_VERSION) {
+        setShowDialog(true);
+      }
+    } catch {
+      // ignore localStorage errors
     }
   }, []);
+
+  const handleDialogChange = (open: boolean) => {
+    if (!open) {
+      try {
+        localStorage.setItem(NOTICE_STORAGE_KEY, NOTICE_VERSION);
+      } catch {
+        // ignore
+      }
+    }
+    setShowDialog(open);
+  };
 
   return (
     <div className="min-h-screen bg-slate-50">
@@ -93,7 +111,9 @@ export default function Home() {
                   disabled={isLoading}
                 >
                   <SelectTrigger>
-                    <SelectValue placeholder={isLoading ? "Loading categories..." : "Choose a category"} />
+                    <SelectValue
+                      placeholder={isLoading ? 'Loading categories...' : 'Choose a category'}
+                    />
                   </SelectTrigger>
                   <SelectContent>
                     {categories.map((category) => (
@@ -126,7 +146,9 @@ export default function Home() {
                 <Brain className="w-8 h-8 mx-auto" />
               </div>
               <h3 className="font-semibold text-slate-800 mb-2">Interactive Learning</h3>
-              <p className="text-sm text-slate-600">Engage with questions designed to test and improve your knowledge</p>
+              <p className="text-sm text-slate-600">
+                Engage with questions designed to test and improve your knowledge
+              </p>
             </CardContent>
           </Card>
 
@@ -136,7 +158,9 @@ export default function Home() {
                 <Play className="w-8 h-8 mx-auto" />
               </div>
               <h3 className="font-semibold text-slate-800 mb-2">Track Progress</h3>
-              <p className="text-sm text-slate-600">Monitor your performance and see detailed results after each quiz</p>
+              <p className="text-sm text-slate-600">
+                Monitor your performance and see detailed results after each quiz
+              </p>
             </CardContent>
           </Card>
 
@@ -146,23 +170,27 @@ export default function Home() {
                 <BookOpen className="w-8 h-8 mx-auto" />
               </div>
               <h3 className="font-semibold text-slate-800 mb-2">Review Answers</h3>
-              <p className="text-sm text-slate-600">Learn from mistakes by reviewing correct and incorrect answers</p>
+              <p className="text-sm text-slate-600">
+                Learn from mistakes by reviewing correct and incorrect answers
+              </p>
             </CardContent>
           </Card>
         </div>
       </main>
 
-      <Dialog open={showDialog} onOpenChange={setShowDialog}>
+      <Dialog open={showDialog} onOpenChange={handleDialogChange}>
         <DialogContent>
           <DialogHeader>
             <DialogTitle>Notice</DialogTitle>
           </DialogHeader>
-          <p className="text-sm text-slate-600">
+          <ul className="text-sm text-slate-600 list-disc pl-5 space-y-1">
             <li>Added questions about IAS.</li>
             <li>Deleted questions about Social Issues.</li>
-            <li>Fixed can't choose multiple choices even if question asked to choose multiple.</li>
+            <li>
+              Fixed can&apos;t choose multiple choices even if question asked to choose multiple.
+            </li>
             <li>Add image support and images to certain questions.</li>
-          </p>
+          </ul>
         </DialogContent>
       </Dialog>
     </div>
