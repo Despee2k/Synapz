@@ -13,7 +13,7 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Brain, Play, BookOpen } from 'lucide-react';
 
-const NOTICE_VERSION = '2025-09-09-a'; // 👈 bump this when you want the notice to reappear
+const NOTICE_VERSION = '2025-10-19-a'; // BUMP THIS FOR NOTICE
 const NOTICE_STORAGE_KEY = 'release_notice_version';
 
 export default function Home() {
@@ -184,12 +184,7 @@ export default function Home() {
             <DialogTitle>Notice</DialogTitle>
           </DialogHeader>
           <ul className="text-sm text-slate-600 list-disc pl-5 space-y-1">
-            <li>Added questions about IAS.</li>
-            <li>Deleted questions about Social Issues.</li>
-            <li>
-              Fixed can&apos;t choose multiple choices even if question asked to choose multiple.
-            </li>
-            <li>Add image support and images to certain questions.</li>
+            <li>Added OS quizzes and archived old quizzes.</li>
           </ul>
         </DialogContent>
       </Dialog>

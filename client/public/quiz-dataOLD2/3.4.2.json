@@ -1,0 +1,159 @@
+[
+  {
+    "id": 1,
+    "question": "Which field in an IPv6 packet is used by the router to determine if a packet has expired and should be dropped?",
+    "choices": [
+      "TTL",
+      "Hop Limit",
+      "Address Unreachable",
+      "No Route to Destination"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 2,
+    "question": "An attacker is using a laptop as a rogue access point to capture all network traffic from a targeted user. Which type of attack is this?",
+    "choices": [
+      "trust exploitation",
+      "buffer overflow",
+      "man in the middle",
+      "port redirection"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 3,
+    "question": "Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?",
+    "choices": [
+      "Time-to-Live",
+      "Sequence Number",
+      "Acknowledgment Number",
+      "Differentiated Services"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 4,
+    "question": "What is involved in an IP address spoofing attack?",
+    "choices": [
+      "A legitimate network IP address is hijacked by a rogue node.",
+      "A rogue node replies to an ARP request with its own MAC address indicated for the target IP address.",
+      "A rogue DHCP server provides false IP configuration parameters to legitimate DHCP clients.",
+      "Bogus DHCPDISCOVER messages are sent to consume all the available IP addresses on a DHCP server."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 5,
+    "question": "Which type of attack involves the unauthorized discovery and mapping of network systems and services?",
+    "choices": [
+      "reconnaissance",
+      "DoS",
+      "access",
+      "trust exploitation"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 6,
+    "question": "In which TCP attack is the cybercriminal attempting to overwhelm a target host with half-open TCP connections?",
+    "choices": [
+      "reset attack",
+      "port scan attack",
+      "SYN flood attack",
+      "session hijacking attack"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 7,
+    "question": "How is optional network layer information carried by IPv6 packets?",
+    "choices": [
+      "inside an options field that is part of the IPv6 packet header",
+      "inside the Flow Label field",
+      "inside an extension header attached to the main IPv6 packet header",
+      "inside the payload carried by the IPv6 packet"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 8,
+    "question": "A threat actor wants to interrupt a normal TCP communication between two hosts by sending a spoofed packet to both endpoints. Which TCP option bit would the threat actor set in the spoofed packet?",
+    "choices": [
+      "ACK",
+      "FIN",
+      "RST",
+      "SYN"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 9,
+    "question": "A threat actor uses a program to launch an attack by sending a flood of UDP packets to a server on the network. The program sweeps through all of the known ports trying to find closed ports. It causes the server to reply with an ICMP port unreachable message and is similar to a DoS attack. Which two programs could be used by the threat actor to launch the attack? (Choose two.)",
+    "choices": [
+      "ping",
+      "Smurf",
+      "WireShark",
+      "UDP Unicorn",
+      "Low Orbit Ion Cannon"
+    ],
+    "answer": [3, 4],
+    "type": "multiple-choice-v2",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 10,
+    "question": "Which term describes a field in the IPv4 packet header used to detect corruption in the IPv4 header?",
+    "choices": [
+      "header checksum",
+      "source IPv4 address",
+      "protocol",
+      "TTL"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 11,
+    "question": "What kind of ICMP message can be used by threat actors to map an internal IP network?",
+    "choices": [
+      "ICMP echo request",
+      "ICMP router discovery",
+      "ICMP mask reply",
+      "ICMP redirects"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  },
+  {
+    "id": 12,
+    "question": "Users in a company have complained about network performance. After investigation, the IT staff has determined that an attacker has used a specific technique that affects the TCP three-way handshake. Wha is the name of this type of network attack?",
+    "choices": [
+      "SYN flood",
+      "DDoS",
+      "DNS poisoning",
+      "session hijacking"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "3.4.2 Attacking the Foundation Quiz"
+  }
+]
