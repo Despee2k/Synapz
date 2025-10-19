@@ -1,0 +1,340 @@
+[
+  {
+    "id": 1,
+    "question": "In the context of I/O management, what is spooling?",
+    "choices": [
+      "Storing data temporarily while it is being transferred (buffering)",
+      "The overlapping of output of one job with input of other jobs",
+      "Storing parts of data in faster storage for performance (caching)",
+      "Hiding the peculiarities of hardware devices from the user"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 2,
+    "question": "What is a key feature of a Peer-to-Peer (P2P) network?",
+    "choices": [
+      "It distinguishes between clients and servers",
+      "A central lookup service is always required",
+      "All nodes are considered peers",
+      "It is primarily used for high-performance computing"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 3,
+    "question": "A doubly linked list is different from a singly linked list because:",
+    "choices": [
+      "It can be traversed in only one direction",
+      "Each node contains a pointer to the previous node as well as the next node",
+      "It connects the last element back to the first",
+      "It can only store two pieces of data"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 4,
+    "question": "What is the fundamental principle of caching?",
+    "choices": [
+      "Copying information into a faster storage system temporarily",
+      "Moving data permanently from a slow device to a faster one",
+      "Ensuring all CPUs have different data in their cache for efficiency",
+      "Using only nonvolatile memory for temporary storage"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 5,
+    "question": "In a modern computer system, how do the CPU and device controllers execute?",
+    "choices": [
+      "Sequentially, where the CPU must wait for every device to finish",
+      "Concurrently, competing for memory cycles",
+      "Independently, with no access to shared memory",
+      "The CPU controls all devices directly without the need for controllers"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 6,
+    "question": "Providing a software stack ready for application use over the internet (e.g., a database server) is an example of:",
+    "choices": [
+      "Software as a Service (SaaS)",
+      "Platform as a Service (PaaS)",
+      "Infrastructure as a Service (IaaS)",
+      "Public Cloud"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 7,
+    "question": "An OS must provide mechanisms for process synchronization and communication to handle:",
+    "choices": [
+      "Concurrency",
+      "Virtualization",
+      "Storage allocation",
+      "System startup"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 8,
+    "question": "What is a key benefit of the open-source movement for students of operating systems?",
+    "choices": [
+      "It makes operating systems more available and affordable",
+      "It prevents students from modifying the OS code",
+      "It allows students to study operating systems by examining the source code itself",
+      "It has led to fewer operating systems being available"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 9,
+    "question": "In Operating Systems, memory management is responsible for:",
+    "choices": [
+      "Keeping track of which parts of memory are being used and by whom",
+      "Mapping files onto secondary storage",
+      "Providing mechanisms for deadlock handling",
+      "Scheduling disk access for optimal performance"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 10,
+    "question": "In virtualization, when is emulation typically used?",
+    "choices": [
+      "When the guest OS is natively compiled for the same CPU as the host",
+      "When the source CPU type is different from the target CPU type",
+      "When running applications within data centers",
+      "When the Virtual Machine Manager (VMM) runs natively on the hardware"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 11,
+    "question": "What is the function of the system timer?",
+    "choices": [
+      "To keep track of the time of day for the user",
+      "To measure the speed of I/O devices",
+      "To prevent a process from getting stuck in an infinite loop",
+      "To trigger the bootstrap program on startup"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following is NOT an activity of process management?",
+    "choices": [
+      "Creating and deleting user and system processes",
+      "Deciding which processes to move into and out of memory",
+      "Providing mechanisms for process synchronization",
+      "Suspending and resuming processes"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 13,
+    "question": "A system where a server responds to requests generated by clients is known as:",
+    "choices": [
+      "Peer-to-Peer computing",
+      "Client-Server computing",
+      "Traditional computing",
+      "Real-time embedded computing"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 14,
+    "question": "Mobile computing environments like iOS and Android differ from traditional laptops by offering:",
+    "choices": [
+      "Less connectivity options",
+      "Slower processors and less memory",
+      "No operating system features",
+      "Additional OS features like GPS and gyroscopes, enabling new app types"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 15,
+    "question": "The OS provides a uniform, logical view of information storage by abstracting physical properties into a:",
+    "choices": [
+      "File",
+      "Process",
+      "System call",
+      "Cache"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 16,
+    "question": "What is the difference between a program and a process?",
+    "choices": [
+      "A program is active, while a process is passive",
+      "A program is passive, while a process is active",
+      "A program has a program counter, while a process does not",
+      "There is no difference; the terms are interchangeable"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 17,
+    "question": "How does a user process transition from user mode to kernel mode?",
+    "choices": [
+      "By directly setting the hardware mode bit to 'kernel'",
+      "Through a system call, which triggers a trap",
+      "By causing a hardware interrupt",
+      "The user process never runs in kernel mode"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 18,
+    "question": "Which of the following is an activity of Mass-Storage Management?",
+    "choices": [
+      "Providing mechanisms for process communication",
+      "Allocating and deallocating memory space as needed",
+      "Disk scheduling and free-space management",
+      "Creating and deleting files and directories"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 19,
+    "question": "What is privilege escalation?",
+    "choices": [
+      "The process of a user changing their password",
+      "An attack that defends the system against worms and viruses",
+      "The process of allowing a user to change to an effective ID with more rights",
+      "A mechanism for controlling access to resources defined by the OS"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 20,
+    "question": "What is a VMM (Virtual Machine Manager)?",
+    "choices": [
+      "The guest operating system running on a host",
+      "A set of software frameworks like databases and multimedia services",
+      "A program that provides virtualization services to create and run VMs",
+      "An application program running inside a virtual machine"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 21,
+    "question": "Which technology is the logical base for cloud computing?",
+    "choices": [
+      "Virtualization",
+      "Peer-to-peer networking",
+      "Multiprogramming",
+      "Asymmetric multiprocessing"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 22,
+    "question": "In a multiprocessor environment, what is cache coherency?",
+    "choices": [
+      "A situation where each CPU has a different version of the same data in its cache",
+      "A hardware-level mechanism to ensure all CPUs have the most recent value in their cache",
+      "A software protocol for managing cache replacement policies",
+      "The process of clearing all caches during a context switch"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 23,
+    "question": "What is the purpose of dual-mode operation (user and kernel mode)?",
+    "choices": [
+      "To allow the computer to run two different operating systems at once",
+      "To allow the OS to protect itself and other system components from user programs",
+      "To enable a single user to run two programs simultaneously",
+      "To distinguish between single-core and dual-core processors"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 24,
+    "question": "A dual-core processor design involves:",
+    "choices": [
+      "Two separate processor chips on the motherboard",
+      "Two CPU cores on a single chip",
+      "A chassis containing two separate computer systems",
+      "A CPU with two caches but only one execution core"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 25,
+    "question": "What is the primary difference between protection and security?",
+    "choices": [
+      "Protection controls access by processes/users, while security defends against internal/external attacks",
+      "Protection defends against external attacks, while security controls internal access",
+      "Protection involves user IDs, while security involves group IDs",
+      "There is no difference; the terms are synonymous in operating systems"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  },
+  {
+    "id": 26,
+    "question": "Which of the following is an advantage of multiprocessor systems?",
+    "choices": [
+      "Increased throughput and economy of scale",
+      "Improved reliability",
+      "Simple and advanced programming models",
+      "Slower performance than single-processor systems"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 2"
+  }
+]

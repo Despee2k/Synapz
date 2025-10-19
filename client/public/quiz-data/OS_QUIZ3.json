@@ -1,0 +1,338 @@
+[
+  {
+    "id": 1,
+    "question": "What is the main philosophy of the microkernel approach?",
+    "choices": [
+      "To place all operating system services into a single, large kernel for performance",
+      "To move as much functionality as possible from the kernel into user space",
+      "To structure the operating system in strict, hierarchical layers",
+      "To implement the kernel entirely in assembly language"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 2,
+    "question": "Which method of passing parameters to a system call does NOT limit the number or length of parameters?",
+    "choices": [
+      "Passing parameters in registers",
+      "Passing the address of a block in memory",
+      "Pushing parameters onto the stack",
+      "Both B and C"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 3,
+    "question": "Services that launch at boot time and run in the user context to provide facilities like error logging and process scheduling are known as:",
+    "choices": [
+      "Application programs",
+      "Shells",
+      "Daemons, services, or subsystems",
+      "Compilers"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 4,
+    "question": "The Graphical User Interface (GUI) was famously initiated at IBM",
+    "choices": [
+      "True",
+      "False"
+    ],
+    "answer": 1,
+    "type": "true-false",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 5,
+    "question": "The OS service of \"Protection\" involves:",
+    "choices": [
+      "Ensuring that all access to system resources is controlled",
+      "Defending the system from outsiders via user authentication",
+      "Keeping track of which users use which resources",
+      "Loading a program into memory and running it"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following is considered an OS service that is helpful to the user?",
+    "choices": [
+      "Resource allocation",
+      "Logging",
+      "Program execution",
+      "Protection and security"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 7,
+    "question": "An Arduino device is an example of a system that is:",
+    "choices": [
+      "A multitasking system with a full OS",
+      "A single-tasking system",
+      "A hybrid system based on macOS",
+      "A microkernel-based system"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 8,
+    "question": "Creating, deleting, opening, and closing files are all examples of which type of system call?",
+    "choices": [
+      "Process control",
+      "Device management",
+      "Communications",
+      "File management"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 9,
+    "question": "Most users' view of the operating system is defined by:",
+    "choices": [
+      "The actual system calls",
+      "System programs and services",
+      "The kernel's internal structure",
+      "The boot loader"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 10,
+    "question": "Which of the following is considered a \"user goal\" in OS design?",
+    "choices": [
+      "The OS should be easy to design and implement",
+      "The OS should be flexible and efficient",
+      "The OS should be convenient to use, reliable, and fast",
+      "The OS should be easy to maintain"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 11,
+    "question": "What is a primary disadvantage of the microkernel approach?",
+    "choices": [
+      "It is less reliable and less secure than a monolithic kernel",
+      "It is more difficult to extend or port to new architectures",
+      "It suffers from performance overhead due to communication between user space and kernel space",
+      "It does not support loadable kernel modules"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 12,
+    "question": "For which of the following areas does the OS need to perform error detection?",
+    "choices": [
+      "Only in user programs",
+      "Only in the CPU and memory hardware",
+      "Only in I/O devices",
+      "In the CPU, memory, I/O devices, and user programs"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 13,
+    "question": "A monolithic kernel, like the original UNIX, is characterized by:",
+    "choices": [
+      "Having all OS functions in a single level above the hardware",
+      "Moving as much functionality as possible into user space",
+      "Being divided into a number of distinct layers",
+      "Using message passing for all internal communication"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 14,
+    "question": "In the layered approach to OS structure, Layer 0 is the:",
+    "choices": [
+      "User interface",
+      "Hardware",
+      "System-call interface",
+      "Shell"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 15,
+    "question": "The design principle that separates what should be done from how it should be done is known as:",
+    "choices": [
+      "User goals vs. System goals",
+      "Monolithic vs. Microkernel structure",
+      "Separation of policy from mechanism",
+      "Dynamic linking vs. Static linking"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 16,
+    "question": "What is the primary function of an Application Programming Interface (API)?",
+    "choices": [
+      "To provide direct hardware access to user programs",
+      "To serve as a high-level interface through which programs access system calls",
+      "To define the user interface (CLI or GUI)",
+      "To manage resource allocation for the system"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 17,
+    "question": "What is the role of a boot loader?",
+    "choices": [
+      "To compile the operating system source code",
+      "To locate the kernel, load it into memory, and start it",
+      "To link object files into a single executable",
+      "To debug the operating system after a crash"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 18,
+    "question": "A C program calls the printf() function. This function is typically part of:",
+    "choices": [
+      "The operating system kernel",
+      "The standard C library",
+      "The command-line interpreter",
+      "A system service"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 19,
+    "question": "A program that combines several object files into a single binary executable file is called a:",
+    "choices": [
+      "Loader",
+      "Compiler",
+      "Linker",
+      "Interpreter"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 20,
+    "question": "Why is a high-level language generally preferred for writing an OS over assembly language?",
+    "choices": [
+      "It is faster and easier to implement compared to assembly",
+      "It is easier to port to other hardware",
+      "It provides better security",
+      "It consumes less memory"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 21,
+    "question": "What is a dynamically linked library (DLL)?",
+    "choices": [
+      "A library that is combined into the executable file by the linker",
+      "A library that is loaded into memory as needed and can be shared by multiple programs",
+      "A set of system calls implemented directly in the kernel",
+      "Source code that is compiled into an object file"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 22,
+    "question": "What are the two primary methods for communication between processes?",
+    "choices": [
+      "System calls and the user interface",
+      "Shared memory and message passing",
+      "The kernel and shell programs",
+      "Logging and error detection"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 23,
+    "question": "Many modern operating systems like Linux and Solaris use loadable kernel modules (LKMs). This approach is:",
+    "choices": [
+      "A pure layered approach",
+      "Similar to layers but more flexible, allowing functionality to be loaded as needed",
+      "A pure microkernel approach",
+      "An outdated method replaced by monolithic kernels"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 24,
+    "question": "Why are applications compiled on one operating system often not executable on another?",
+    "choices": [
+      "Because programming languages are OS-specific",
+      "Because each OS provides its own unique system calls and file formats",
+      "Because linkers and loaders work differently on every computer",
+      "Because applications are written in different languages"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 25,
+    "question": "A system that combines multiple OS design approaches, such as being monolithic with modular components, is called a:",
+    "choices": [
+      "Simple system",
+      "Layered system",
+      "Hybrid system",
+      "Microkernel system"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  },
+  {
+    "id": 26,
+    "question": "Communication between user modules in a microkernel system takes place using:",
+    "choices": [
+      "Direct function calls",
+      "System calls",
+      "Message passing",
+      "Shared memory"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 3"
+  }
+]

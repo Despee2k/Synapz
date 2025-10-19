@@ -1,0 +1,340 @@
+[
+  {
+    "id": 1,
+    "question": "When an interrupt occurs, what structure does the system use to find the address of the correct handler for that specific interrupt?",
+    "choices": [
+      "The device-status table",
+      "The bootstrap program",
+      "The interrupt vector",
+      "The local buffer of the device controller"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 2,
+    "question": "What is the primary goal of multiprogramming?",
+    "choices": [
+      "To allow a user to interact with multiple running programs simultaneously.",
+      "To ensure the CPU always has a job to execute, thereby maximizing its utilization.",
+      "To allow a program to run even if it's not completely in memory.",
+      "To switch between jobs so frequently that it creates interactive computing."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 3,
+    "question": "The concept that an operating system is 'interrupt driven' means that the OS:",
+    "choices": [
+      "Is idle until an event, signaled by an interrupt, requires it to perform a task.",
+      "Constantly interrupts running programs to check their status.",
+      "Can only be installed using a special interrupt sequence.",
+      "Generates random interrupts to test hardware stability."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 4,
+    "question": "Based on the abstract view of a computer system, if a programmer wants to ensure their new application can run, they must ensure it is compatible with the:",
+    "choices": [
+      "Operating System",
+      "Hardware",
+      "User Interface",
+      "CPU only"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 5,
+    "question": "An engineering student is writing a compiler. According to the system structure, this compiler would be an example of:",
+    "choices": [
+      "A part of the operating system kernel.",
+      "An application program.",
+      "A hardware device controller.",
+      "A type of user."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 6,
+    "question": "When does the operating system in a multiprogramming environment switch from one job to another?",
+    "choices": [
+      "When the current job has to wait, for example, for an I/O operation.",
+      "After a very short, predefined time slice has expired.",
+      "Only when a job completes its entire execution.",
+      "When the user manually selects a different application window."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following is NOT listed as a primary goal of an operating system?",
+    "choices": [
+      "To execute user programs",
+      "To make the computer system convenient to use",
+      "To manufacture computer hardware efficiently",
+      "To use the computer hardware in an efficient manner"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 8,
+    "question": "A user program makes a 'system call' to request a service from the operating system, such as opening a file. This is an example of what type of event?",
+    "choices": [
+      "A hardware interrupt",
+      "A software-generated interrupt, also known as a trap",
+      "A timer interrupt",
+      "A hardware malfunction"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 9,
+    "question": "The statement 'The OS is a program that acts as an intermediary between a user of a computer and the computer hardware' implies that:",
+    "choices": [
+      "Users can interact directly with the hardware if they choose.",
+      "The OS prevents application programs from accessing the hardware.",
+      "The OS provides a layer of abstraction, making the hardware easier for applications and users to interact with.",
+      "The OS is the only program that runs on a computer."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 10,
+    "question": "When a user runs a web browser to access a website, which entity is considered the 'user' in the four-component model?",
+    "choices": [
+      "The web browser itself",
+      "The operating system",
+      "The person operating the computer",
+      "The computer's CPU"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 11,
+    "question": "What is the most critical first step in the interrupt handling process to ensure that the interrupted program can resume exactly where it left off?",
+    "choices": [
+      "Determining which device caused the interrupt.",
+      "Preserving the state of the CPU by storing its registers and the program counter.",
+      "Immediately starting the next process in the queue.",
+      "Sending a confirmation signal back to the device."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 12,
+    "question": "In the abstract, layered view of a computer system, the operating system serves as the direct intermediary between which two components?",
+    "choices": [
+      "The user and the application programs",
+      "The application programs and the hardware",
+      "The hardware and the CPU",
+      "The user and the hardware"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 13,
+    "question": "What is the primary mechanism through which an I/O device controller informs the CPU that it has completed an operation?",
+    "choices": [
+      "It writes a message to a log file.",
+      "It causes an interrupt.",
+      "It halts the CPU until the user intervenes.",
+      "It waits for the CPU to poll its status."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 14,
+    "question": "A software developer is creating a new video game. In the context of the four-component model of a computer system, how is this video game classified?",
+    "choices": [
+      "Hardware",
+      "Operating System",
+      "Application Program",
+      "User"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 15,
+    "question": "A user is experiencing significant lag while browsing the web and streaming video, even though their computer has a high-end CPU and ample memory. From the user's perspective, which primary goal of the operating system is failing?",
+    "choices": [
+      "Using computer hardware in an efficient manner",
+      "Making the computer system convenient and easy to use",
+      "Ensuring all users are happy on a shared computer",
+      "Providing good performance"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 16,
+    "question": "Which of the following statements best captures the fundamental conflict that an OS must manage?",
+    "choices": [
+      "The user's desire for performance vs. the high cost of hardware.",
+      "The user's desire for convenience vs. the OS's need for efficient hardware utilization.",
+      "The need for application programs vs. the limitations of the OS.",
+      "The complexity of hardware vs. the simplicity desired by users."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 17,
+    "question": "A user launches a word processor (application) and opens a file. This action sends a request to the OS to retrieve data from the hard disk (hardware). The OS then presents this data to the word processor. This entire process illustrates that the relationship between layers is:",
+    "choices": [
+      "One-way, from user to hardware",
+      "Static and unchanging",
+      "Bi-directional and interactive",
+      "Independent and disconnected"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 18,
+    "question": "A hospital's MRI machine is controlled by an internal computer system. Within the computer's four-component model, how is the MRI machine itself, which relies on the computer to function, best classified?",
+    "choices": [
+      "An Application Program",
+      "Hardware",
+      "The Operating System",
+      "A User"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 19,
+    "question": "How is multitasking (or timesharing) primarily defined in relation to multiprogramming?",
+    "choices": [
+      "It is an older system that was replaced by multiprogramming.",
+      "It is a logical extension of multiprogramming that switches between jobs so frequently that users can interact with them as they run.",
+      "It is a system that uses only one CPU, whereas multiprogramming uses several.",
+      "It is a system that keeps only one job in memory at a time for security."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 20,
+    "question": "The primary goal to 'use the computer hardware in an efficient manner' logically implies that the OS must act as a:",
+    "choices": [
+      "Resource allocator",
+      "User interface designer",
+      "Compiler",
+      "Hardware manufacturer"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 21,
+    "question": "The operating system's function to 'control and coordinate the use of hardware among various applications and users' is most critical in which scenario?",
+    "choices": [
+      "A single user playing a single-player game on a dedicated console.",
+      "A smart thermostat that only runs one program.",
+      "A university server being used by hundreds of students simultaneously.",
+      "A personal laptop being used to write an essay."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 22,
+    "question": "Imagine a computer with no operating system. What would be the most significant challenge for a developer creating a web browser for this computer?",
+    "choices": [
+      "The user would not be able to provide power to the computer.",
+      "The web browser application would need to contain its own code to directly manage the network card, memory, screen, and CPU.",
+      "The computer would be faster since there is no OS overhead.",
+      "The hardware would be unable to provide basic computing resources."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 23,
+    "question": "A user who values 'convenience and ease of use' above all else would most likely prefer an OS with:",
+    "choices": [
+      "The most efficient memory management algorithms.",
+      "An intuitive graphical user interface (GUI) and simple controls.",
+      "The fastest possible raw processing speed.",
+      "Open-source code that they can modify themselves."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 24,
+    "question": "A user on a personal workstation is editing a very large video file. The editing software shows that 98% of the computer's memory is in use, causing the system to slow down. This situation is an exception to which general observation?",
+    "choices": [
+      "Users want good performance.",
+      "The hardware provides basic computing resources.",
+      "The operating system's goal is to be convenient.",
+      "Users don’t care about resource utilization."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 25,
+    "question": "What are the four components of a computer system, listed from the lowest level to the highest level?",
+    "choices": [
+      "Hardware, Application Programs, Operating System, User",
+      "User, Application Programs, Operating System, Hardware",
+      "Hardware, Operating System, Application Programs, User",
+      "Application Programs, Hardware, User, Operating System"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  },
+  {
+    "id": 26,
+    "question": "A systems administrator is setting up a new server. Which component of the computer system provides the basic computing resources like the CPU, memory, and I/O devices?",
+    "choices": [
+      "Application Programs",
+      "Users",
+      "Operating System",
+      "Hardware"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 1"
+  }
+]

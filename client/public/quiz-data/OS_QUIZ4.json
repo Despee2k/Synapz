@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "question": "Immediately after a child process is created via fork(), what is the purpose of the exec() system call?",
+    "choices": [
+      "To terminate the child process.",
+      "To replace the process's memory space with a new program.",
+      "To create another, separate process.",
+      "To make the parent process wait for the child to finish."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 2,
+    "question": "Which part of a process's memory layout is dynamically allocated during program runtime and commonly used for data structures whose size is unknown at compile time?",
+    "choices": [
+      "The text section",
+      "The data section",
+      "The stack",
+      "The heap"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 3,
+    "question": "A process that is in main memory, fully ready to execute, but is waiting to be assigned to a CPU core is in which state?",
+    "choices": [
+      "New",
+      "Waiting",
+      "Running",
+      "Ready"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 4,
+    "question": "A process that has terminated, but whose parent process has not yet called wait() to collect its status, is known as a:",
+    "choices": [
+      "Orphan process",
+      "Zombie process",
+      "Waiting process",
+      "New process"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 5,
+    "question": "If a parent process terminates without invoking wait() on its child processes, those children are now considered:",
+    "choices": [
+      "Zombie processes",
+      "Terminated processes",
+      "Ready processes",
+      "Orphan processes"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 6,
+    "question": "A process that spends more of its time performing I/O operations than it spends doing computations is known as a(n):",
+    "choices": [
+      "CPU-bound process",
+      "I/O-bound process",
+      "Parent process",
+      "Zombie process"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 7,
+    "question": "Which of the following best describes a process?",
+    "choices": [
+      "A program stored on a disk.",
+      "A passive entity containing a set of instructions.",
+      "An active entity representing a program in execution.",
+      "The data section of a program in memory."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 8,
+    "question": "Which scheduler is responsible for selecting which processes should be brought from the job queue into the ready queue, thereby controlling the degree of multiprogramming?",
+    "choices": [
+      "The short-term scheduler",
+      "The long-term scheduler",
+      "The medium-term scheduler",
+      "The dispatcher"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 9,
+    "question": "The set of all processes residing in main memory and waiting to execute is kept in the:",
+    "choices": [
+      "Job queue",
+      "Ready queue",
+      "Device queue",
+      "Wait queue"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 10,
+    "question": "The mechanism that saves the state of the currently running process and loads the saved state of the next scheduled process is called a:",
+    "choices": [
+      "System call",
+      "Process swap",
+      "Context switch",
+      "Program load"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 11,
+    "question": "In a UNIX-based system, which system call is used to create a new process that is a near-exact duplicate of the calling process?",
+    "choices": [
+      "exec()",
+      "create()",
+      "wait()",
+      "fork()"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  },
+  {
+    "id": 12,
+    "question": "Which of the following pieces of information is typically stored in a Process Control Block (PCB)?",
+    "choices": [
+      "The location of the program on disk.",
+      "The name of the user who owns the process.",
+      "The value of the program counter and CPU registers.",
+      "The source code of the program."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "OS QUIZ 4"
+  }
+]
