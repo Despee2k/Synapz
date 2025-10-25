@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement describes a feature of a zone-based policy firewall?",
+    "choices": [
+      "It does not depend on ACLs.",
+      "All traffic through a given interface is subject to the same inspection.",
+      "It uses a flat, non-hierarchical data structure making it easier to configure and troubleshoot.",
+      "The router security posture is to allow traffic unless explicitly blocked."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 2,
+    "question": "Which statement describes a zone when implementing ZPF on a Cisco router?",
+    "choices": [
+      "Only one zone can be attached to a single interface.",
+      "A zone establishes a security border of a network.",
+      "A zone is used to define security policies for a unique interface on the router.",
+      "A zone is used to implement traffic filtering for either TCP or UDP."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 3,
+    "question": "Designing a ZPF requires several steps. Which step involves defining boundaries where traffic is subjected to policy restrictions as it crosses to another region of the network?",
+    "choices": [
+      "design the physical infrastructure",
+      "determine the zones",
+      "identify subsets within zones and merge traffic requirements",
+      "establish policies between zones"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 4,
+    "question": "Which statement describes one of the rules that govern interface behavior in the context of implementing a zone-based policy firewall configuration?",
+    "choices": [
+      "By default, traffic is allowed to flow between a zone member interface and any interface that is not a zone member.",
+      "By default, traffic is allowed to flow among interfaces that are members of the same zone.",
+      "An administrator can assign an interface to multiple security zones.",
+      "An administrator can assign interfaces to zones, regardless of whether the zone has been configured."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 5,
+    "question": "Which three statements describe zone-based policy firewall rules that govern interface behavior and the traffic moving between zone member interfaces? (Choose three.)",
+    "choices": [
+      "An interface can be assigned to multiple security zones.",
+      "Pass, inspect, and drop options can only be applied between two zones.",
+      "If traffic is to flow between all interfaces in a router, each interface must be a member of a zone.",
+      "Traffic is implicitly prevented from flowing by default among interfaces that are members of the same zone.",
+      "To permit traffic to and from a zone member interface, a policy allowing or inspecting traffic must be configured between that zone and any other zone.",
+      "Interfaces can be assigned to a zone before the zone is created."
+    ],
+    "answer": [1, 2, 4],
+    "type": "multiple-choice-v2",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 6,
+    "question": "In ZPF design, what is described as the self zone?",
+    "choices": [
+      "a predefined cluster of servers with configured interfaces",
+      "the router itself, including all interfaces with assigned IP addresses",
+      "a predefined cluster of routers with configured interfaces",
+      "the outward facing interface on the edge router"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 7,
+    "question": "How does ZPF handle traffic between an interface that is a zone member and another interface that does not belong to any zone?",
+    "choices": [
+      "pass",
+      "inspect",
+      "drop",
+      "allow"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 8,
+    "question": "Which statement describes a factor to be considered when configuring a zone-based policy firewall?",
+    "choices": [
+      "A zone must be configured with the zone security global command before it can be used in the zone-member security command.",
+      "An interface can belong to multiple zones.",
+      "The router always filters the traffic between interfaces in the same zone.",
+      "The classic firewall ip inspect command can coexist with ZPF as long as it is used on interfaces that are in the same security zones."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 9,
+    "question": "Which statement accurately describes Cisco IOS zone-based policy firewall operation?",
+    "choices": [
+      "A router interface can belong to multiple zones.",
+      "Service policies are applied in interface configuration mode.",
+      "The pass action works in only one direction.",
+      "Router management interfaces must be manually assigned to the self zone."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 10,
+    "question": "When a Cisco IOS zone-based policy firewall is being configured, which two actions can be applied to a traffic class? (Choose two.)",
+    "choices": [
+      "forward",
+      "log",
+      "copy",
+      "drop",
+      "hold",
+      "inspect"
+    ],
+    "answer": [3, 5],
+    "type": "multiple-choice-v2",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 11,
+    "question": "In what step of zone-based policy firewall configuration is traffic identified for policy application?",
+    "choices": [
+      "creating policy maps",
+      "configuring class maps",
+      "defining zones",
+      "assigning policy maps to zones"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 12,
+    "question": "When configuring a class map for a zone-based policy firewall, how is the match criteria applied when using the match-all parameter?",
+    "choices": [
+      "Traffic must match at least one of the match criteria statements.",
+      "Traffic must match all of the criteria solely defined by ACLs.",
+      "Traffic must match the first criteria in the statement.",
+      "Traffic must match all of the match criteria specified in the statement."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  }
+]

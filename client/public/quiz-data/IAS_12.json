@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "question": "A user has created a new program and wants to distribute it to everyone in the company. The user wants to ensure that when the program is downloaded that the program is not changed while in transit. What can the user do to ensure that the program is not changed when downloaded?",
+    "choices": [
+      "Create a hash of the program file that can be used to verify the integrity of the file after it is downloaded.",
+      "Turn off antivirus on all the computers.",
+      "Install the program on individual computers.",
+      "Distribute the program on a thumb drive.",
+      "Encrypt the program and require a password after it is downloaded."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 2,
+    "question": "A user is running a routine audit of the server hardware in the company data center. Several servers are using single drives to host operating systems and multiple types of attached storage solutions for storing data. The user wants to offer a better solution to provide fault tolerance during a drive failure. Which solution is best?",
+    "choices": [
+      "offsite backup",
+      "RAID",
+      "tape backup",
+      "UPS"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 3,
+    "question": "A user was hired by a company to provide a highly available network infrastructure. The user wants to build redundancy into the network in case of a switch failure, but wants to prevent Layer 2 looping. What would the user implement in the network?",
+    "choices": [
+      "Spanning Tree Protocol",
+      "GLBP",
+      "HSRP",
+      "VRRP"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 4,
+    "question": "Why is WPA2 better than WPA?",
+    "choices": [
+      "reduced keyspace",
+      "reduced processing time",
+      "mandatory use of AES algorithms",
+      "supports TKIP"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 5,
+    "question": "An administrator of a small data center wants a flexible, secure method of remotely connecting to servers. Which protocol would be best to use?",
+    "choices": [
+      "Secure Shell",
+      "Remote Desktop",
+      "Telnet",
+      "Secure Copy"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 6,
+    "question": "Which service will resolve a specific web address into an IP address of the destination web server?",
+    "choices": [
+      "DHCP",
+      "ICMP",
+      "NTP",
+      "DNS"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 7,
+    "question": "A company wants to implement biometric access to its data center. The company is concerned with people being able to circumvent the system by being falsely accepted as legitimate users. What type of error is false acceptance?",
+    "choices": [
+      "Type II",
+      "CER",
+      "false rejection",
+      "Type I"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 8,
+    "question": "Mutual authentication can prevent which type of attack?",
+    "choices": [
+      "wireless sniffing",
+      "wireless IP spoofing",
+      "wireless poisoning",
+      "man-in-the-middle"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 9,
+    "question": "Which utility uses the Internet Control Messaging Protocol (ICMP)?",
+    "choices": [
+      "RIP",
+      "DNS",
+      "NTP",
+      "ping"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 10,
+    "question": "Which technology can be used to protect VoIP against eavesdropping?",
+    "choices": [
+      "ARP",
+      "strong authentication",
+      "SSH",
+      "encrypted voice messages"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of a DMZ?",
+    "choices": [
+      "It analyzes traffic for intrusion attempts and sends reports to management stations.",
+      "It creates an encrypted and authenticated tunnel for remote hosts to access the internal network.",
+      "It provides secure connectivity for clients that connect to the internal network through a wireless LAN.",
+      "It allows external hosts to access specific company servers while maintaining the security restrictions for the internal network."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 12,
+    "question": "What two steps should be taken before connecting any IoT device to a home or business network? (Choose 2.)",
+    "choices": [
+      "Update the device firmware with all relevant security patches.",
+      "Reset all IoT device settings to their defaults before connecting to a live network.",
+      "Record the administrative credentials on the login plate in case you forget them.",
+      "Change all default administrator credentials.",
+      "Ensure all IoT devices are isolated to a single broadcast domain."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  }
+]

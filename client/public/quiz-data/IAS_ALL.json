@@ -1,0 +1,856 @@
+[
+  {
+    "id": 1,
+    "question": "A user has created a new program and wants to distribute it to everyone in the company. The user wants to ensure that when the program is downloaded that the program is not changed while in transit. What can the user do to ensure that the program is not changed when downloaded?",
+    "choices": [
+      "Create a hash of the program file that can be used to verify the integrity of the file after it is downloaded.",
+      "Turn off antivirus on all the computers.",
+      "Install the program on individual computers.",
+      "Distribute the program on a thumb drive.",
+      "Encrypt the program and require a password after it is downloaded."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 2,
+    "question": "A user is running a routine audit of the server hardware in the company data center. Several servers are using single drives to host operating systems and multiple types of attached storage solutions for storing data. The user wants to offer a better solution to provide fault tolerance during a drive failure. Which solution is best?",
+    "choices": [
+      "offsite backup",
+      "RAID",
+      "tape backup",
+      "UPS"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 3,
+    "question": "A user was hired by a company to provide a highly available network infrastructure. The user wants to build redundancy into the network in case of a switch failure, but wants to prevent Layer 2 looping. What would the user implement in the network?",
+    "choices": [
+      "Spanning Tree Protocol",
+      "GLBP",
+      "HSRP",
+      "VRRP"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 4,
+    "question": "Why is WPA2 better than WPA?",
+    "choices": [
+      "reduced keyspace",
+      "reduced processing time",
+      "mandatory use of AES algorithms",
+      "supports TKIP"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 5,
+    "question": "An administrator of a small data center wants a flexible, secure method of remotely connecting to servers. Which protocol would be best to use?",
+    "choices": [
+      "Secure Shell",
+      "Remote Desktop",
+      "Telnet",
+      "Secure Copy"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 6,
+    "question": "Which service will resolve a specific web address into an IP address of the destination web server?",
+    "choices": [
+      "DHCP",
+      "ICMP",
+      "NTP",
+      "DNS"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 7,
+    "question": "A company wants to implement biometric access to its data center. The company is concerned with people being able to circumvent the system by being falsely accepted as legitimate users. What type of error is false acceptance?",
+    "choices": [
+      "Type II",
+      "CER",
+      "false rejection",
+      "Type I"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 8,
+    "question": "Mutual authentication can prevent which type of attack?",
+    "choices": [
+      "wireless sniffing",
+      "wireless IP spoofing",
+      "wireless poisoning",
+      "man-in-the-middle"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 9,
+    "question": "Which utility uses the Internet Control Messaging Protocol (ICMP)?",
+    "choices": [
+      "RIP",
+      "DNS",
+      "NTP",
+      "ping"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 10,
+    "question": "Which technology can be used to protect VoIP against eavesdropping?",
+    "choices": [
+      "ARP",
+      "strong authentication",
+      "SSH",
+      "encrypted voice messages"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of a DMZ?",
+    "choices": [
+      "It analyzes traffic for intrusion attempts and sends reports to management stations.",
+      "It creates an encrypted and authenticated tunnel for remote hosts to access the internal network.",
+      "It provides secure connectivity for clients that connect to the internal network through a wireless LAN.",
+      "It allows external hosts to access specific company servers while maintaining the security restrictions for the internal network."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 12,
+    "question": "What two steps should be taken before connecting any IoT device to a home or business network? (Choose 2.)",
+    "choices": [
+      "Update the device firmware with all relevant security patches.",
+      "Reset all IoT device settings to their defaults before connecting to a live network.",
+      "Record the administrative credentials on the login plate in case you forget them.",
+      "Change all default administrator credentials.",
+      "Ensure all IoT devices are isolated to a single broadcast domain."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice-v2",
+    "category": "System and Network Defense Quiz (12)"
+  },
+  {
+    "id": 1,
+    "question": "Which three processes are examples of logical access controls? (Choose three.)",
+    "choices": [
+      "swipe cards to allow access to a restricted area",
+      "fences to protect the perimeter of a building",
+      "guards to monitor security screens",
+      "biometrics to validate physical characteristics",
+      "firewalls to monitor traffic",
+      "intrusion detection system (IDS) to watch for suspicious network activity"
+    ],
+    "answer": [3, 4, 5],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 2,
+    "question": "Match the type of multifactor authentication with the description.",
+    "choices": [
+      "something you know - a password",
+      "something you have - a security key fob",
+      "something you are - a fingerprint scan"
+    ],
+    "answer": [0, 1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 3,
+    "question": "An organization plans to implement security training to educate employees about security policies. What type of access control is the organization trying to implement?",
+    "choices": [
+      "technological",
+      "logical",
+      "administrative",
+      "physical"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 4,
+    "question": "When a security audit is performed at a company, the auditor reports that new users have access to network resources beyond their normal job roles. Additionally, users who move to different positions retain their prior permissions. What kind of violation is occurring?",
+    "choices": [
+      "password",
+      "network policy",
+      "least privilege",
+      "audit"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 5,
+    "question": "Which access control model assigns security privileges based on the position, responsibilities, or job classification of an individual or group within an organization?",
+    "choices": [
+      "rule-based",
+      "discretionary",
+      "role-based",
+      "mandatory"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 6,
+    "question": "Which type of access control applies the strictest access control and is commonly used in military or mission critical applications?",
+    "choices": [
+      "discretionary access control (DAC)",
+      "Non-discretionary access control",
+      "mandatory access control (MAC)",
+      "attribute-based access control (ABAC)"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 7,
+    "question": "Which component is a pillar of the zero trust security approach that focuses on the secure access of devices, such as servers, printers, and other endpoints, including devices attached to IoT?",
+    "choices": [
+      "workforce",
+      "workplace",
+      "workloads",
+      "workflows"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 8,
+    "question": "A user has been asked to implement IPsec for inbound external connections. The user plans to use SHA-1 as part of the implementation. The user wants to ensure the integrity and authenticity of the connection. What security tool can the user use?",
+    "choices": [
+      "HMAC",
+      "ISAKMP",
+      "SHA256",
+      "MD5"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 9,
+    "question": "After a security audit for an organization, multiple accounts were found to have privileged access to systems and devices. Which three best practices for securing privileged accounts should be included in the audit report? (Choose three.)",
+    "choices": [
+      "Secure password storage.",
+      "Reduce the number of privileged accounts.",
+      "Only the CIO should have privileged access.",
+      "No one should have privileged access.",
+      "Enforce the principle of least privilege.",
+      "Only managers should have privileged access."
+    ],
+    "answer": [0, 1, 4],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 10,
+    "question": "What Windows utility should be used to configure password rules and account lockout policies on a system that is not part of a domain?",
+    "choices": [
+      "Active Directory Security tool",
+      "Event Viewer security log",
+      "Computer Management",
+      "Local Security Policy tool"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of the network security accounting function?",
+    "choices": [
+      "to require users to prove who they are",
+      "to determine which resources a user can access",
+      "to provide challenge and response questions",
+      "to keep track of the actions of a user"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 12,
+    "question": "Because of implemented security controls, a user can only access a server with FTP. Which AAA component accomplishes this?",
+    "choices": [
+      "auditing",
+      "accessibility",
+      "authorization",
+      "accounting",
+      "authentication"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 13,
+    "question": "What is used to scan a BYOD device to verify that it is compliant with company security policies before the device is permitted to access the network?",
+    "choices": [
+      "ACL",
+      "NAC",
+      "reconnaissance",
+      "proxy server",
+      "IDS"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 14,
+    "question": "Which AAA component can be established using token cards?",
+    "choices": [
+      "authentication",
+      "auditing",
+      "authorization",
+      "accounting"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 1,
+    "question": "In applying an ACL to a router interface, which traffic is designated as outbound?",
+    "choices": [
+      "traffic that is coming from the source IP address into the router",
+      "traffic that is going from the destination IP address into the router",
+      "traffic that is leaving the router and going toward the destination host",
+      "traffic for which the router can find no routing table entry"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 2,
+    "question": "What is the quickest way to remove a single ACE from a named ACL?",
+    "choices": [
+      "Use the no access-list command to remove the entire ACL, then recreate it without the ACE.",
+      "Copy the ACL into a text editor, remove the ACE, then copy the ACL back into the router.",
+      "Use the no keyword and the sequence number of the ACE to be removed.",
+      "Create a new ACL with a different number and apply the new ACL to the router interface."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 3,
+    "question": "Which ICMP message type should be stopped inbound?",
+    "choices": [
+      "echo-reply",
+      "echo",
+      "source quench",
+      "unreachable"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 4,
+    "question": "Which scenario would cause an ACL misconfiguration and deny all traffic?",
+    "choices": [
+      "Apply a standard ACL using the ip access-group out command.",
+      "Apply an ACL that has all deny ACE statements.",
+      "Apply a standard ACL in the inbound direction.",
+      "Apply a named ACL to a VTY line."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 5,
+    "question": "Refer to the exhibit. A network administrator is configuring an IPv6 ACL to allow hosts on the 2001:DB8:CAFE:10::/64 network to access remote web servers, except for PC1. However, a user on PC1 can successfully access the web server PC2. Why is this possible?",
+    "choices": [
+      "The IPv6 ACL Deny_WEB is spelled incorrectly when applied to the interface.",
+      "The IPv6 ACL Deny_WEB is applied to the wrong interface of router R1.",
+      "The IPv6 ACL Deny_WEB is permitting all web traffic before the specific host is blocked.",
+      "The IPv6 ACL Deny_WEB is applied in the incorrect direction on router R1."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 6,
+    "question": "Refer to the exhibit. A network administrator wants to create a standard ACL to prevent Network 1 traffic from being transmitted to the Research and Development network. On which router interface and in which direction should the standard ACL be applied?",
+    "choices": [
+      "R1 Gi0/0 outbound",
+      "R2 S0/0/0 inbound",
+      "R1 S0/0/0 outbound",
+      "R2 Gi0/0 outbound",
+      "R2 Gi0/0 inbound",
+      "R1 Gi0/0 inbound"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 7,
+    "question": "Which two statements describe appropriate general guidelines for configuring and applying ACLs? (Choose two.)",
+    "choices": [
+      "Standard ACLS are placed closest to the source, whereas extended ACLS are placed closest to the destination.",
+      "If an ACL contains no permit statements, all traffic is denied by default.",
+      "The most specific ACL statements should be entered first because of the top-down sequential nature of ACLs.",
+      "If a single ACL is to be applied to multiple interfaces, it must be configured with a unique number for each interface.",
+      "Multiple ACLS per protocol and per direction can be applied to an interface."
+    ],
+    "answer": [1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 8,
+    "question": "Refer to the exhibit. Which statement describes the function of the ACEs?",
+    "choices": [
+      "These ACEs automatically appear at the end of every IPv6 ACL to allow IPv6 routing to occur.",
+      "These ACEs must be manually added to the end of every IPv6 ACL to allow IPv6 routing to occur.",
+      "These are optional ACEs that can be added to the end of an IPv6 ACL to allow ICMP messages that are defined in object groups named nd-na and nd-ns.",
+      "These ACEs allow for IPv6 neighbor discovery traffic."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 9,
+    "question": "What wild card mask will match networks 172.16.0.0 through 172.19.0.0?",
+    "choices": [
+      "0.0.3.255",
+      "0.252.255.255",
+      "0.3.255.255",
+      "0.0.255.255"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 10,
+    "question": "What method is used to apply an IPv6 ACL to a router interface?",
+    "choices": [
+      "the use of the access-class command",
+      "the use of the ipv6 traffic-filter command",
+      "the use of the ip access-group command",
+      "the use of the ipv6 access-list command"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 11,
+    "question": "What type of ACL offers greater flexibility and control over network access?",
+    "choices": [
+      "named standard",
+      "numbered standard",
+      "flexible",
+      "extended"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 12,
+    "question": "Which operator is used in an ACL statement to match packets of a specific application?",
+    "choices": [
+      "established",
+      "gt",
+      "lt",
+      "eq"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 13,
+    "question": "Which two keywords can be used in an access control list to replace a wildcard mask or address and wildcard mask pair? (Choose two.)",
+    "choices": [
+      "some",
+      "any",
+      "gt",
+      "most",
+      "all",
+      "host"
+    ],
+    "answer": [1, 5],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 14,
+    "question": "Consider the following access list.\n\naccess-list 100 permit ip host 192.168.10.1 any\naccess-list 100 deny icmp 192.168.10.0 0.0.0.255 any echo\naccess-list 100 permit ip any any\nWhich two actions are taken if the access list is placed inbound on a router Gigabit Ethernet port that has the IP address 192.168.10.254 assigned? (Choose two.)",
+    "choices": [
+      "Only the network device assigned the IP address 192.168.10.1 is allowed to access the router.",
+      "Devices on the 192.168.10.0/24 network are allowed to reply to any ping requests.",
+      "A Telnet or SSH session is allowed from any device on the 192.168.10.0 into the router with this access list assigned.",
+      "Devices on the 192.168.10.0/24 network can sucessfully ping devices on the 192.168.11.0 network.",
+      "Only Layer 3 connections are allowed to be made from the router to any other network device."
+    ],
+    "answer": [1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists Quiz (14)"
+  },
+  {
+    "id": 1,
+    "question": "Which statement is a characteristic of a packet filtering firewall?",
+    "choices": [
+      "They are susceptible to IP spoofing.",
+      "They examine each packet in the context of the state of a connection.",
+      "They have a high impact on network performance.",
+      "They filter fragmented packets."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 2,
+    "question": "What is one benefit of using a next-generation firewall rather than a stateful firewall?",
+    "choices": [
+      "integrated use of an intrusion prevention system (IPS)",
+      "reactive protection against Internet threats",
+      "support of logging",
+      "support of TCP-based packet filtering"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 3,
+    "question": "What are two characteristics of an application gateway firewall? (Choose two.)",
+    "choices": [
+      "Performs most filtering and firewall control in software.",
+      "Provides an integrated intrusion prevention and detection feature.",
+      "Uses connection information maintained in a state table and analyzes traffic at OSI Layers 3, 4, and 5.",
+      "Analyzes traffic at Layers 3, 4, 5 and 7 of the OSI model.",
+      "Uses a simple policy table look-up to filter traffic based on Layer 3 and Layer 4 information."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 4,
+    "question": "What are two benefits of implementing a firewall in a network? (Choose two.)",
+    "choices": [
+      "A firewall will sanitize protocol flow.",
+      "A firewall will inspect network traffic and forward traffic based solely on the Layer 2 Ethernet MAC address.",
+      "A firewall will reduce security management complexity.",
+      "A firewall will provide accessibility of applications and sensitive resources to external untrusted users.",
+      "A firewall will prevent unauthorized traffic from being tunneled or hidden as legitimate traffic through an enterprise network."
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 5,
+    "question": "Which type of firewall is commonly part of a router firewall and allows or blocks traffic based on Layer 3 or 4 information?",
+    "choices": [
+      "proxy firewall",
+      "next generation firewall",
+      "stateful firewall",
+      "packet filtering firewall"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 6,
+    "question": "Which three layers of the OSI model include information that is commonly inspected by a stateful firewall? (Choose three.)",
+    "choices": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 5",
+      "Layer 7"
+    ],
+    "answer": [2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 7,
+    "question": "Which type of firewall is supported by most routers and is the easiest to implement?",
+    "choices": [
+      "application gateway firewall",
+      "stateful firewall",
+      "next generation firewall",
+      "packet filtering firewall"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 8,
+    "question": "Which type of firewall generally has a low impact on network performance?",
+    "choices": [
+      "stateless firewall",
+      "application gateway firewall",
+      "next generation firewall",
+      "stateful firewall"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 9,
+    "question": "Which two protocols are stateless and do not generate connection information needed to build a state table? (Choose two.)",
+    "choices": [
+      "ICMP",
+      "UDP",
+      "HTTP",
+      "FTP",
+      "TCP"
+    ],
+    "answer": [0, 1],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 10,
+    "question": "Which type of traffic is usually blocked when implementing a demilitarized zone?",
+    "choices": [
+      "traffic originating from the DMZ network and traveling to the private network",
+      "traffic that is returning from the public network and traveling to the DMZ network",
+      "traffic originating from the private network and traveling to the DMZ network",
+      "traffic that is returning from the DMZ network and traveling to the private network"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 11,
+    "question": "How does a firewall handle traffic that is originating from the DMZ network and traveling to a private network?",
+    "choices": [
+      "Traffic is usually allowed when it is originating from the DMZ network and traveling to a private network.",
+      "Traffic is allowed when it is originating from the private network, but the response traffic from the DMZ network will be blocked.",
+      "Traffic is usually blocked when it is originating from the DMZ network and traveling to a private network.",
+      "Traffic is usually not filtered using firewall rules when it is originating from the DMZ network and traveling to a private network."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 12,
+    "question": "When implementing a ZPF, which statement describes a zone?",
+    "choices": [
+      "A zone is a group of one or more devices that provide backup and disaster recovery mechanisms.",
+      "A zone is a group of administrative devices that protect against rogue access point installations.",
+      "A zone is a group of hardened computers known as bastion hosts.",
+      "A zone is a group of one or more interfaces that have similar functions or features."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 1,
+    "question": "Which statement describes a feature of a zone-based policy firewall?",
+    "choices": [
+      "It does not depend on ACLs.",
+      "All traffic through a given interface is subject to the same inspection.",
+      "It uses a flat, non-hierarchical data structure making it easier to configure and troubleshoot.",
+      "The router security posture is to allow traffic unless explicitly blocked."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 2,
+    "question": "Which statement describes a zone when implementing ZPF on a Cisco router?",
+    "choices": [
+      "Only one zone can be attached to a single interface.",
+      "A zone establishes a security border of a network.",
+      "A zone is used to define security policies for a unique interface on the router.",
+      "A zone is used to implement traffic filtering for either TCP or UDP."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 3,
+    "question": "Designing a ZPF requires several steps. Which step involves defining boundaries where traffic is subjected to policy restrictions as it crosses to another region of the network?",
+    "choices": [
+      "design the physical infrastructure",
+      "determine the zones",
+      "identify subsets within zones and merge traffic requirements",
+      "establish policies between zones"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 4,
+    "question": "Which statement describes one of the rules that govern interface behavior in the context of implementing a zone-based policy firewall configuration?",
+    "choices": [
+      "By default, traffic is allowed to flow between a zone member interface and any interface that is not a zone member.",
+      "By default, traffic is allowed to flow among interfaces that are members of the same zone.",
+      "An administrator can assign an interface to multiple security zones.",
+      "An administrator can assign interfaces to zones, regardless of whether the zone has been configured."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 5,
+    "question": "Which three statements describe zone-based policy firewall rules that govern interface behavior and the traffic moving between zone member interfaces? (Choose three.)",
+    "choices": [
+      "An interface can be assigned to multiple security zones.",
+      "Pass, inspect, and drop options can only be applied between two zones.",
+      "If traffic is to flow between all interfaces in a router, each interface must be a member of a zone.",
+      "Traffic is implicitly prevented from flowing by default among interfaces that are members of the same zone.",
+      "To permit traffic to and from a zone member interface, a policy allowing or inspecting traffic must be configured between that zone and any other zone.",
+      "Interfaces can be assigned to a zone before the zone is created."
+    ],
+    "answer": [1, 2, 4],
+    "type": "multiple-choice-v2",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 6,
+    "question": "In ZPF design, what is described as the self zone?",
+    "choices": [
+      "a predefined cluster of servers with configured interfaces",
+      "the router itself, including all interfaces with assigned IP addresses",
+      "a predefined cluster of routers with configured interfaces",
+      "the outward facing interface on the edge router"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 7,
+    "question": "How does ZPF handle traffic between an interface that is a zone member and another interface that does not belong to any zone?",
+    "choices": [
+      "pass",
+      "inspect",
+      "drop",
+      "allow"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 8,
+    "question": "Which statement describes a factor to be considered when configuring a zone-based policy firewall?",
+    "choices": [
+      "A zone must be configured with the zone security global command before it can be used in the zone-member security command.",
+      "An interface can belong to multiple zones.",
+      "The router always filters the traffic between interfaces in the same zone.",
+      "The classic firewall ip inspect command can coexist with ZPF as long as it is used on interfaces that are in the same security zones."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 9,
+    "question": "Which statement accurately describes Cisco IOS zone-based policy firewall operation?",
+    "choices": [
+      "A router interface can belong to multiple zones.",
+      "Service policies are applied in interface configuration mode.",
+      "The pass action works in only one direction.",
+      "Router management interfaces must be manually assigned to the self zone."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 10,
+    "question": "When a Cisco IOS zone-based policy firewall is being configured, which two actions can be applied to a traffic class? (Choose two.)",
+    "choices": [
+      "forward",
+      "log",
+      "copy",
+      "drop",
+      "hold",
+      "inspect"
+    ],
+    "answer": [3, 5],
+    "type": "multiple-choice-v2",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 11,
+    "question": "In what step of zone-based policy firewall configuration is traffic identified for policy application?",
+    "choices": [
+      "creating policy maps",
+      "configuring class maps",
+      "defining zones",
+      "assigning policy maps to zones"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  },
+  {
+    "id": 12,
+    "question": "When configuring a class map for a zone-based policy firewall, how is the match criteria applied when using the match-all parameter?",
+    "choices": [
+      "Traffic must match at least one of the match criteria statements.",
+      "Traffic must match all of the criteria solely defined by ACLs.",
+      "Traffic must match the first criteria in the statement.",
+      "Traffic must match all of the match criteria specified in the statement."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Zone-Based Firewalls Quiz (16)"
+  }
+]

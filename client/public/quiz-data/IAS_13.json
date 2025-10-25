@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "question": "Which three processes are examples of logical access controls? (Choose three.)",
+    "choices": [
+      "swipe cards to allow access to a restricted area",
+      "fences to protect the perimeter of a building",
+      "guards to monitor security screens",
+      "biometrics to validate physical characteristics",
+      "firewalls to monitor traffic",
+      "intrusion detection system (IDS) to watch for suspicious network activity"
+    ],
+    "answer": [3, 4, 5],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 2,
+    "question": "Match the type of multifactor authentication with the description.",
+    "choices": [
+      "something you know - a password",
+      "something you have - a security key fob",
+      "something you are - a fingerprint scan"
+    ],
+    "answer": [0, 1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 3,
+    "question": "An organization plans to implement security training to educate employees about security policies. What type of access control is the organization trying to implement?",
+    "choices": [
+      "technological",
+      "logical",
+      "administrative",
+      "physical"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 4,
+    "question": "When a security audit is performed at a company, the auditor reports that new users have access to network resources beyond their normal job roles. Additionally, users who move to different positions retain their prior permissions. What kind of violation is occurring?",
+    "choices": [
+      "password",
+      "network policy",
+      "least privilege",
+      "audit"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 5,
+    "question": "Which access control model assigns security privileges based on the position, responsibilities, or job classification of an individual or group within an organization?",
+    "choices": [
+      "rule-based",
+      "discretionary",
+      "role-based",
+      "mandatory"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 6,
+    "question": "Which type of access control applies the strictest access control and is commonly used in military or mission critical applications?",
+    "choices": [
+      "discretionary access control (DAC)",
+      "Non-discretionary access control",
+      "mandatory access control (MAC)",
+      "attribute-based access control (ABAC)"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 7,
+    "question": "Which component is a pillar of the zero trust security approach that focuses on the secure access of devices, such as servers, printers, and other endpoints, including devices attached to IoT?",
+    "choices": [
+      "workforce",
+      "workplace",
+      "workloads",
+      "workflows"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 8,
+    "question": "A user has been asked to implement IPsec for inbound external connections. The user plans to use SHA-1 as part of the implementation. The user wants to ensure the integrity and authenticity of the connection. What security tool can the user use?",
+    "choices": [
+      "HMAC",
+      "ISAKMP",
+      "SHA256",
+      "MD5"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 9,
+    "question": "After a security audit for an organization, multiple accounts were found to have privileged access to systems and devices. Which three best practices for securing privileged accounts should be included in the audit report? (Choose three.)",
+    "choices": [
+      "Secure password storage.",
+      "Reduce the number of privileged accounts.",
+      "Only the CIO should have privileged access.",
+      "No one should have privileged access.",
+      "Enforce the principle of least privilege.",
+      "Only managers should have privileged access."
+    ],
+    "answer": [0, 1, 4],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 10,
+    "question": "What Windows utility should be used to configure password rules and account lockout policies on a system that is not part of a domain?",
+    "choices": [
+      "Active Directory Security tool",
+      "Event Viewer security log",
+      "Computer Management",
+      "Local Security Policy tool"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 11,
+    "question": "What is the purpose of the network security accounting function?",
+    "choices": [
+      "to require users to prove who they are",
+      "to determine which resources a user can access",
+      "to provide challenge and response questions",
+      "to keep track of the actions of a user"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 12,
+    "question": "Because of implemented security controls, a user can only access a server with FTP. Which AAA component accomplishes this?",
+    "choices": [
+      "auditing",
+      "accessibility",
+      "authorization",
+      "accounting",
+      "authentication"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 13,
+    "question": "What is used to scan a BYOD device to verify that it is compliant with company security policies before the device is permitted to access the network?",
+    "choices": [
+      "ACL",
+      "NAC",
+      "reconnaissance",
+      "proxy server",
+      "IDS"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  },
+  {
+    "id": 14,
+    "question": "Which AAA component can be established using token cards?",
+    "choices": [
+      "authentication",
+      "auditing",
+      "authorization",
+      "accounting"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Quiz (13)"
+  }
+]

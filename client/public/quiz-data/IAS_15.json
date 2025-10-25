@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "question": "Which statement is a characteristic of a packet filtering firewall?",
+    "choices": [
+      "They are susceptible to IP spoofing.",
+      "They examine each packet in the context of the state of a connection.",
+      "They have a high impact on network performance.",
+      "They filter fragmented packets."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 2,
+    "question": "What is one benefit of using a next-generation firewall rather than a stateful firewall?",
+    "choices": [
+      "integrated use of an intrusion prevention system (IPS)",
+      "reactive protection against Internet threats",
+      "support of logging",
+      "support of TCP-based packet filtering"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 3,
+    "question": "What are two characteristics of an application gateway firewall? (Choose two.)",
+    "choices": [
+      "Performs most filtering and firewall control in software.",
+      "Provides an integrated intrusion prevention and detection feature.",
+      "Uses connection information maintained in a state table and analyzes traffic at OSI Layers 3, 4, and 5.",
+      "Analyzes traffic at Layers 3, 4, 5 and 7 of the OSI model.",
+      "Uses a simple policy table look-up to filter traffic based on Layer 3 and Layer 4 information."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 4,
+    "question": "What are two benefits of implementing a firewall in a network? (Choose two.)",
+    "choices": [
+      "A firewall will sanitize protocol flow.",
+      "A firewall will inspect network traffic and forward traffic based solely on the Layer 2 Ethernet MAC address.",
+      "A firewall will reduce security management complexity.",
+      "A firewall will provide accessibility of applications and sensitive resources to external untrusted users.",
+      "A firewall will prevent unauthorized traffic from being tunneled or hidden as legitimate traffic through an enterprise network."
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 5,
+    "question": "Which type of firewall is commonly part of a router firewall and allows or blocks traffic based on Layer 3 or 4 information?",
+    "choices": [
+      "proxy firewall",
+      "next generation firewall",
+      "stateful firewall",
+      "packet filtering firewall"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 6,
+    "question": "Which three layers of the OSI model include information that is commonly inspected by a stateful firewall? (Choose three.)",
+    "choices": [
+      "Layer 1",
+      "Layer 2",
+      "Layer 3",
+      "Layer 4",
+      "Layer 5",
+      "Layer 7"
+    ],
+    "answer": [2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 7,
+    "question": "Which type of firewall is supported by most routers and is the easiest to implement?",
+    "choices": [
+      "application gateway firewall",
+      "stateful firewall",
+      "next generation firewall",
+      "packet filtering firewall"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 8,
+    "question": "Which type of firewall generally has a low impact on network performance?",
+    "choices": [
+      "stateless firewall",
+      "application gateway firewall",
+      "next generation firewall",
+      "stateful firewall"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 9,
+    "question": "Which two protocols are stateless and do not generate connection information needed to build a state table? (Choose two.)",
+    "choices": [
+      "ICMP",
+      "UDP",
+      "HTTP",
+      "FTP",
+      "TCP"
+    ],
+    "answer": [0, 1],
+    "type": "multiple-choice-v2",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 10,
+    "question": "Which type of traffic is usually blocked when implementing a demilitarized zone?",
+    "choices": [
+      "traffic originating from the DMZ network and traveling to the private network",
+      "traffic that is returning from the public network and traveling to the DMZ network",
+      "traffic originating from the private network and traveling to the DMZ network",
+      "traffic that is returning from the DMZ network and traveling to the private network"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 11,
+    "question": "How does a firewall handle traffic that is originating from the DMZ network and traveling to a private network?",
+    "choices": [
+      "Traffic is usually allowed when it is originating from the DMZ network and traveling to a private network.",
+      "Traffic is allowed when it is originating from the private network, but the response traffic from the DMZ network will be blocked.",
+      "Traffic is usually blocked when it is originating from the DMZ network and traveling to a private network.",
+      "Traffic is usually not filtered using firewall rules when it is originating from the DMZ network and traveling to a private network."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  },
+  {
+    "id": 12,
+    "question": "When implementing a ZPF, which statement describes a zone?",
+    "choices": [
+      "A zone is a group of one or more devices that provide backup and disaster recovery mechanisms.",
+      "A zone is a group of administrative devices that protect against rogue access point installations.",
+      "A zone is a group of hardened computers known as bastion hosts.",
+      "A zone is a group of one or more interfaces that have similar functions or features."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Firewall Technologies Quiz (15)"
+  }
+]
