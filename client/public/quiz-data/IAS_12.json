@@ -154,7 +154,7 @@
       "Ensure all IoT devices are isolated to a single broadcast domain."
     ],
     "answer": [0, 3],
-    "type": "multiple-choice",
+    "type": "multiple-choice-v2",
     "category": "System and Network Defense Quiz (12)"
   }
 ]

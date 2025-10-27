@@ -62,7 +62,8 @@
     ],
     "answer": 2,
     "type": "multiple-choice",
-    "category": "Access Control Lists Quiz (14)"
+    "category": "Access Control Lists Quiz (14)",
+    "image": "/quiz-data/assets/14_no5.jpg"
   },
   {
     "id": 6,
@@ -77,7 +78,8 @@
     ],
     "answer": 3,
     "type": "multiple-choice",
-    "category": "Access Control Lists Quiz (14)"
+    "category": "Access Control Lists Quiz (14)",
+    "image": "/quiz-data/assets/14_no6.jpg"
   },
   {
     "id": 7,
@@ -104,7 +106,8 @@
     ],
     "answer": 3,
     "type": "multiple-choice",
-    "category": "Access Control Lists Quiz (14)"
+    "category": "Access Control Lists Quiz (14)",
+    "image": "/quiz-data/assets/14_no8.jpg"
   },
   {
     "id": 9,
