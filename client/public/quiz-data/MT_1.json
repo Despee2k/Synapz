@@ -1,0 +1,486 @@
+[
+  {
+    "id": 1,
+    "question": "In application security, what does normalization help prevent?",
+    "choices": [
+      "Malicious input using different data representations",
+      "Session timeouts during login",
+      "Excessive CPU usage during queries",
+      "Database index corruption",
+      "Credential reuse by administrators"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 2,
+    "question": "What is the most critical factor when selecting a biometric system?",
+    "choices": [
+      "Storage requirements",
+      "Accuracy",
+      "Speed",
+      "Enrollment time",
+      "User acceptability"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 3,
+    "question": "What is the main goal of input validation in application security?",
+    "choices": [
+      "Increase application throughput and data size",
+      "Allow flexible user data formats",
+      "Facilitate faster user form completion",
+      "Prevent malformed data from compromising applications",
+      "Improve database replication efficiency"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 4,
+    "question": "Which component ensures that redundant network links do not create loops?",
+    "choices": [
+      "Dynamic Host Configuration Protocol",
+      "Network Time Protocol",
+      "Spanning Tree Protocol",
+      "Border Gateway Protocol",
+      "Domain Name System"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 5,
+    "question": "What best describes the Zero Trust model?",
+    "choices": [
+      "Trust is granted based on prior authentication only",
+      "Only administrators are excluded from monitoring",
+      "No user or device is automatically trusted",
+      "External users are trusted once verified",
+      "Trust depends on firewall zones alone"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 6,
+    "question": "What is the role of a demilitarized zone (DMZ)?",
+    "choices": [
+      "Store internal database backups",
+      "Monitor VLAN traffic between routers",
+      "Host private internal DNS servers",
+      "Isolate internal networks from untrusted external networks",
+      "Encrypt wireless communications"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 7,
+    "question": "Which is a correct example of a secure file transfer protocol?",
+    "choices": ["SNMP", "HTTP", "FTPS", "FTP", "POP3"],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 8,
+    "question": "Why must privileged accounts be tightly managed?",
+    "choices": [
+      "They are used only for guest operations",
+      "They cannot perform configuration changes",
+      "They lack audit and logging capabilities",
+      "They store no sensitive credentials",
+      "They provide broad control and high risk if misused"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 9,
+    "question": "Why is multi-factor authentication more secure?",
+    "choices": [
+      "It uses more than one type of verification",
+      "It hides user identity from the system",
+      "It removes passwords completely",
+      "It guarantees no account lockouts",
+      "It replaces encryption and hashing"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 10,
+    "question": "What is the effect of an account lockout policy?",
+    "choices": [
+      "It blocks accounts that remain idle for days",
+      "It deletes passwords after each session",
+      "It allows only local device sign-ins",
+      "It locks users after repeated failed logins",
+      "It changes group policy without notice"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 11,
+    "question": "Which are the three pillars of Zero Trust?",
+    "choices": [
+      "Users, Servers, Storage",
+      "Identity, Devices, Defense",
+      "Authentication, Authorization, Accounting",
+      "Workforce, Workloads, Workplace",
+      "People, Processes, Policy"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 12,
+    "question": "What is a key risk in federated identity management?",
+    "choices": [
+      "A breach in one domain can affect others",
+      "Users must maintain multiple credentials",
+      "It cannot link any external accounts",
+      "It blocks all single sign-on capabilities",
+      "It requires physical device pairing every session"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 13,
+    "question": "What do Network Access Control (NAC) systems enforce?",
+    "choices": [
+      "Malware sandboxing for attachments",
+      "Local user activity on file systems",
+      "Access policies for users and devices",
+      "Encryption for all outgoing emails",
+      "Password reuse prevention rules"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 14,
+    "question": "What happens when data is copied to another volume?",
+    "choices": [
+      "It keeps the same access rights as before",
+      "It inherits new permissions from destination",
+      "It is removed from all previous logs",
+      "It becomes unmodifiable until reviewed",
+      "It is automatically encrypted at rest"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 15,
+    "question": "What is the main purpose of an Access Control List (ACL)?",
+    "choices": [
+      "To filter packets based on information in the packet header",
+      "To increase network bandwidth by compressing data",
+      "To encrypt network traffic at the router interface",
+      "To provide end-to-end user authentication",
+      "To dynamically reroute packets for redundancy"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 16,
+    "question": "What does a wildcard mask bit value of 0 indicate?",
+    "choices": [
+      "Match only when subnetting is disabled",
+      "Match the corresponding bit in the address",
+      "Match only if it is a network bit",
+      "Perform a binary AND with all bits ignored",
+      "Ignore the bit during matching"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 17,
+    "question": "Which command creates a named standard IPv4 ACL?",
+    "choices": [
+      "ip access-list standard ACL_NAME",
+      "access-group standard create ACL",
+      "ip filter standard 100 name ACL",
+      "access-list 10 permit any",
+      "ip route add standard ACL"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 18,
+    "question": "What is the implicit rule at the end of every ACL?",
+    "choices": [
+      "forward unprocessed packets",
+      "permit all traffic",
+      "deny only broadcast traffic",
+      "log all remaining packets",
+      "deny any"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 19,
+    "question": "Why are named ACLs preferred over numbered ACLs?",
+    "choices": [
+      "They are faster to process in the router hardware",
+      "They are easier to manage and identify their purpose",
+      "They automatically apply to all router interfaces",
+      "They consume less configuration memory space",
+      "They are compatible with legacy IOS versions"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 20,
+    "question": "What is a common use of ACLs in mitigating spoofing attacks?",
+    "choices": [
+      "Encrypting all inbound packets from the internet",
+      "Using dynamic NAT to rewrite spoofed headers",
+      "Blocking packets with invalid or reserved source IP addresses",
+      "Filtering out all TCP segments with the RST flag set",
+      "Allowing only packets with source port numbers above 1024"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 21,
+    "question": "What is the best placement for an extended ACL?",
+    "choices": [
+      "On the final router before the destination",
+      "As far from the traffic source as feasible",
+      "On both WAN and LAN interfaces simultaneously",
+      "As close to the source as possible",
+      "On the core switch for global filtering"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 22,
+    "question": "Why is the 'deny all by default' policy preferred?",
+    "choices": [
+      "It disables all intrusion detection temporarily",
+      "It limits access to only necessary services",
+      "It applies open routing between private networks",
+      "It lets any trusted device bypass filtering rules",
+      "It enhances network speed by skipping inspection"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 23,
+    "question": "What is a primary advantage of layered defense?",
+    "choices": [
+      "It eliminates the need for separate authentication servers",
+      "It provides automatic redundancy and load balancing",
+      "It replaces encryption and monitoring mechanisms",
+      "Multiple firewalls add depth against threats",
+      "It ensures zero latency between network segments"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 24,
+    "question": "In a two-interface firewall, which traffic is normally allowed?",
+    "choices": [
+      "Traffic crossing from external hosts to DMZs",
+      "Public connections directed to internal systems",
+      "Multicast routing updates from the Internet",
+      "Private network traffic to the public network",
+      "Broadcast packets sent from any subnet"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 25,
+    "question": "Why is a demilitarized zone (DMZ) used in design?",
+    "choices": [
+      "To enforce symmetric encryption between routers",
+      "To isolate public services from the private network",
+      "To merge all internal networks for faster routing",
+      "To disable outside access entirely by default",
+      "To centralize user identity management systems"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 26,
+    "question": "Which type of DMZ traffic is normally blocked?",
+    "choices": [
+      "Private-to-public management updates",
+      "Public-to-DMZ file sharing sessions",
+      "Public-to-private network traffic",
+      "DMZ-to-public web access attempts",
+      "Private-to-DMZ control requests"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 27,
+    "question": "What is a defining trait of an application gateway firewall?",
+    "choices": [
+      "It uses only MAC address filtering and routing tables",
+      "It acts as a proxy between client and server",
+      "It permits all incoming sessions automatically",
+      "It cannot inspect application-layer communications",
+      "It depends exclusively on hardware acceleration modules"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 28,
+    "question": "What is the core idea behind zone-based policy firewalls (ZPFs)?",
+    "choices": [
+      "Allow all interzone traffic by default",
+      "Depend on hardware routing tables exclusively",
+      "Route traffic using static layer-3 entries",
+      "Group interfaces into zones for policy control",
+      "Filter packets by MAC address for each subnet"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 29,
+    "question": "Which ZPF configuration rule is correct?",
+    "choices": [
+      "Traffic between unzoned interfaces is blocked automatically",
+      "All ICMP traffic is always inspected regardless of policy",
+      "An interface can’t be in more than one zone",
+      "Zone membership instantly secures routing updates between neighbors",
+      "Classic and Zone firewall can share a single interface"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 30,
+    "question": "Why is a zone-pair created in ZPF?",
+    "choices": [
+      "To back up policies to external configuration servers",
+      "To create logical tunnels for IPsec traffic only",
+      "To apply QoS shaping between VLANs",
+      "To define source, destination, and policy",
+      "To configure static routes for secure zones"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 31,
+    "question": "What occurs when 'zone-member security' is applied too early?",
+    "choices": [
+      "All self-zone flows are mirrored to NMS for diagnostics",
+      "Transit traffic is dropped",
+      "Interfaces are automatically renamed to temporary zones",
+      "The router blocks DNS and DHCP queries until reset",
+      "The configuration reverts to legacy Classic Firewall mode"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 32,
+    "question": "If one interface is zoned and the other is not, what happens?",
+    "choices": [
+      "The router passes only ICMP packets for troubleshooting",
+      "The connection retries until a default policy is attached",
+      "The router inspects and logs the event to syslog automatically",
+      "The interface is temporarily moved to a quarantine zone",
+      "The traffic is dropped"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 33,
+    "question": "Traffic between a zoned and unzoned interface will be:",
+    "choices": [
+      "Passed with default tracking enabled",
+      "Deferred until router reload or policy merge",
+      "Accepted only if the ACL includes a permit any-any rule",
+      "Forwarded via dynamic service chaining inspection",
+      "Dropped"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 34,
+    "question": "Which order correctly builds a ZPF?",
+    "choices": [
+      "Assign interfaces first → Apply NAT → Create class maps → Define zones",
+      "Create zones → Class-map → Policy-map → Zonepair → Interfaces",
+      "Create global objects → Enable dynamic DNS inspection → Define pairs",
+      "Configure ACLs → Verify routing → Attach policies to sub-interfaces",
+      "Set up QoS queues before adding inspection and NAT filters"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  },
+  {
+    "id": 35,
+    "question": "Which language defines traffic policies in a ZPF?",
+    "choices": [
+      "Cisco Common Classification Policy Language",
+      "Dynamic Security Policy Definition Framework",
+      "Cisco Adaptive Security Scripting Engine",
+      "Unified Access and Control Expression Protocol for devices",
+      "Extended Network Traffic Policy Syntax Interface"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Midterms_1"
+  }
+]
