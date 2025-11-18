@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "question": "Which two technologies are primarily used on peer-to-peer networks?",
+    "choices": [
+      "Darknet",
+      "Snort",
+      "BitTorrent",
+      "Bitcoin",
+      "Wireshark"
+    ],
+    "answer": [2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Network Defense"
+  },
+  {
+    "id": 2,
+    "question": "Which technique would a threat actor use to disguise traces of an ongoing exploit?",
+    "choices": [
+      "Use SSL to encapsulate malware.",
+      "Create an invisible iFrame on a web page.",
+      "Corrupt time information by attacking the NTP infrastructure.",
+      "Encapsulate other protocols within DNS to evade security measures."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 3,
+    "question": "Which type of attack is carried out by threat actors against a network to determine which IP addresses, protocols, and ports are allowed by ACLs?",
+    "choices": [
+      "reconnaissance",
+      "phishing",
+      "social engineering",
+      "denial of service"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 4,
+    "question": "What is the purpose of Tor?",
+    "choices": [
+      "to allow users to browse the Internet anonymously",
+      "to securely connect to a remote network over an unsecure link such as an Internet connection",
+      "to inspect incoming traffic and look for any that violates a rule or matches the signature of a known exploit",
+      "to donate processor cycles to distributed computational tasks in a processor sharing P2P network"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 5,
+    "question": "Which protocol is exploited by cybercriminals who create malicious iFrames?",
+    "choices": [
+      "DHCP",
+      "DNS",
+      "ARP",
+      "HTTP"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 6,
+    "question": "After a security monitoring tool identifies a malware attachment entering the network, what is the benefit of performing a retrospective analysis?",
+    "choices": [
+      "It can determine which network host was first affected.",
+      "It can identify how the malware originally entered the network.",
+      "A retrospective analysis can help in tracking the behavior of the malware from the identification point forward.",
+      "It can calculate the probability of a future incident."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 7,
+    "question": "Which technique is necessary to ensure a private transfer of data using a VPN?",
+    "choices": [
+      "encryption",
+      "scalability",
+      "authorization",
+      "virtualization"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 8,
+    "question": "Which method is used by some malware to transfer files from infected hosts to a threat actor host?",
+    "choices": [
+      "UDP infiltration",
+      "ICMP tunneling",
+      "iFrame injection",
+      "HTTPS traffic encryption"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 9,
+    "question": "What is a key difference between the data captured by NetFlow and data captured by Wireshark?",
+    "choices": [
+      "NetFlow collects metadata from a network flow whereas Wireshark captures full data packets.",
+      "NetFlow data is analyzed by tcpdump whereas Wireshark data is analyzed by nfdump.",
+      "NetFlow data shows network flow contents whereas Wireshark data shows network flow statistics.",
+      "NetFlow provides transaction data whereas Wireshark provides session data."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 10,
+    "question": "Which type of data is used by Cisco Cognitive Intelligence to find malicious activity that has bypassed security controls, or entered through unmonitored channels, and is operating inside an enterprise network?",
+    "choices": [
+      "statistical",
+      "session",
+      "alert",
+      "transaction"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 11,
+    "question": "Which Cisco appliance can be used to filter network traffic contents to report and deny traffic based on the web server reputation?",
+    "choices": [
+      "WSA",
+      "ESA",
+      "ASA",
+      "AVC"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 12,
+    "question": "A system administrator runs a file scan utility on a Windows PC and notices a file lsass.exe in the Program Files directory. What should the administrator do?",
+    "choices": [
+      "Move it to Program Files (x86) because it is a 32bit application.",
+      "Open the Task Manager, right-click on the lsass process and choose End Task.",
+      "Delete the file because it is probably malware.",
+      "Uninstall the lsass application because it is a legacy application and no longer required by Windows."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 13,
+    "question": "How does a web proxy device provide data loss prevention (DLP) for an enterprise?",
+    "choices": [
+      "by functioning as a firewall",
+      "by inspecting incoming traffic for potential exploits",
+      "by checking the reputation of external web servers",
+      "by scanning and logging outgoing traffic"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 14,
+    "question": "Which two services are provided by the NetFlow tool?",
+    "choices": [
+      "network monitoring",
+      "log analysis",
+      "access list monitoring",
+      "QoS configuration",
+      "usage-based network billing"
+    ],
+    "answer": [0, 4],
+    "type": "multiple-choice-v2",
+    "category": "Network Defense"
+  },
+  {
+    "id": 15,
+    "question": "What information is contained in the options section of a Snort rule?",
+    "choices": [
+      "source and destination address",
+      "action to be taken",
+      "text describing the event",
+      "direction of traffic flow"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 16,
+    "question": "Which classification indicates that an alert is verified as an actual security incident?",
+    "choices": [
+      "true negative",
+      "false negative",
+      "false positive",
+      "true positive"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 17,
+    "question": "A threat actor has successfully breached the network firewall without being detected by the IDS system. What condition describes the lack of alert?",
+    "choices": [
+      "false negative",
+      "true positive",
+      "true negative",
+      "false positive"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense"
+  },
+  {
+    "id": 18,
+    "question": "What are two scenarios where probabilistic security analysis is best suited?",
+    "choices": [
+      "when applications that conform to application/networking standards are analyzed",
+      "when random variables create difficulty in knowing with certainty the outcome of any given event",
+      "when each event is the inevitable result of antecedent causes",
+      "when analyzing applications designed to circumvent firewalls",
+      "when analyzing events with the assumption that they follow predefined steps"
+    ],
+    "answer": [1, 3],
+    "type": "multiple-choice-v2",
+    "category": "Network Defense"
+  },
+  {
+    "id": 19,
+    "question": "What are the three core functions provided by the Security Onion?",
+    "choices": [
+      "security device management",
+      "full packet capture",
+      "alert analysis",
+      "intrusion detection",
+      "business continuity planning",
+      "threat containment"
+    ],
+    "answer": [1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Network Defense"
+  },
+  {
+    "id": 20,
+    "question": "Refer to the exhibit. Which field in the Sguil event window indicates the number of times an event is detected for the same source and destination IP address?",
+    "choices": [
+      "CNT",
+      "Pr",
+      "AlertID",
+      "ST"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Defense",
+    "image": "quiz-data/assets/q20_checkpoint2.png"
+  }
+]
