@@ -13,7 +13,7 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Brain, Play, BookOpen } from 'lucide-react';
 
-const NOTICE_VERSION = '2025-11-28-a'; // BUMP THIS FOR NOTICE
+const NOTICE_VERSION = '2025-11-28-b'; // BUMP THIS FOR NOTICE
 const NOTICE_STORAGE_KEY = 'release_notice_version';
 
 export default function Home() {
