@@ -1,0 +1,395 @@
+[
+  {
+    "id": 1,
+    "question": "Refer to the exhibit. An administrator has configured a standard ACL on R1 and applied it to interface serial 0/0/0 in the outbound direction. What happens to traffic leaving interface serial 0/0/0 that does not match the configured ACL statements?",
+    "choices": [
+      "The resulting action is determined by the destination IP address and port number.",
+      "The resulting action is determined by the destination IP address.",
+      "The traffic is dropped.",
+      "The source IP address is checked and, if a match is not found, traffic is routed out interface serial 0/0/1."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls",
+    "image": "quiz-data/assets/q1_checkpoint.jpg"
+  },
+  {
+    "id": 2,
+    "question": "When an inbound Internet-traffic ACL is being implemented, what should be included to prevent the spoofing of internal networks?",
+    "choices": [
+      "ACEs to prevent broadcast address traffic",
+      "ACEs to prevent traffic from private address spaces",
+      "ACEs to prevent ICMP traffic",
+      "ACEs to prevent SNMP traffic",
+      "ACEs to prevent HTTP traffic"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 3,
+    "question": "Refer to the exhibit. What is the result of adding the established argument to the end of the ACE?",
+    "choices": [
+      "192.168.254.0 /23 traffic is allowed to reach any network.",
+      "Any IP traffic is allowed to reach the 192.168.254.0 255.255.254.0 network as long as it is in response to an originated request.",
+      "Any traffic is allowed to reach the 192.168.254.0 255.255.254.0 network.",
+      "Any TCP traffic is allowed to reach the 192.168.254.0 255.255.254.0 network if it is in response to an originated request."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls",
+    "image": "quiz-data/assets/q3_checkpoint.png"
+  },
+  {
+    "id": 4,
+    "question": "What single access list statement matches all of the following networks? 192.168.16.0, 192.168.17.0, 192.168.18.0, 192.168.19.0",
+    "choices": [
+      "access-list 10 permit 192.168.16.0 0.0.0.255",
+      "access-list 10 permit 192.168.16.0 0.0.3.255",
+      "access-list 10 permit 192.168.16.0 0.0.15.255",
+      "access-list 10 permit 192.168.0.0 0.0.15.255"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 5,
+    "question": "Refer to the exhibit. The IPv6 access list LIMITED_ACCESS is applied on the S0/0/0 interface of R1 in the inbound direction. Which IPv6 packets from the ISP will be dropped by the ACL on R1?",
+    "choices": [
+      "neighbor advertisements that are received from the ISP router",
+      "HTTPS packets to PC1",
+      "ICMPv6 packets that are destined to PC1",
+      "packets that are destined to PC1 on port 80"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls",
+    "image": "quiz-data/assets/q5_checkpoint.png"
+  },
+  {
+    "id": 6,
+    "question": "What are two characteristics of a stateful firewall?",
+    "choices": [
+      "uses static packet filtering techniques",
+      "uses connection information maintained in a state table",
+      "prevents Layer 7 attacks",
+      "analyzes traffic at Layers 3, 4 and 5 of the OSI model",
+      "uses complex ACLs which can be difficult to configure"
+    ],
+    "answer": [1, 3],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 7,
+    "question": "How does a firewall handle traffic when it is originating from the public network and traveling to the DMZ network?",
+    "choices": [
+      "Traffic that is originating from the public network is inspected and selectively permitted when traveling to the DMZ network.",
+      "Traffic that is originating from the public network is usually forwarded without inspection when traveling to the DMZ network.",
+      "Traffic that is originating from the public network is usually blocked when traveling to the DMZ network.",
+      "Traffic that is originating from the public network is usually permitted with little or no restriction when traveling to the DMZ network."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 8,
+    "question": "Which type of firewall is commonly part of a router firewall and allows or blocks traffic based on Layer 3 and Layer 4 information?",
+    "choices": [
+      "stateless firewall",
+      "proxy firewall",
+      "stateful firewall",
+      "application gateway firewall"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 9,
+    "question": "What is one limitation of a stateful firewall?",
+    "choices": [
+      "not as effective with UDP- or ICMP-based traffic",
+      "poor log information",
+      "cannot filter unnecessary traffic",
+      "weak user authentication"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 10,
+    "question": "How does a firewall handle traffic when it is originating from the private network and traveling to the DMZ network?",
+    "choices": [
+      "The traffic is selectively denied based on service requirements.",
+      "The traffic is selectively permitted and inspected.",
+      "The traffic is usually blocked.",
+      "The traffic is usually permitted with little or no restrictions."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 11,
+    "question": "When a Cisco IOS zone-based policy firewall is being configured, which three actions can be applied to a traffic class?",
+    "choices": [
+      "reroute",
+      "queue",
+      "drop",
+      "pass",
+      "shape",
+      "inspect"
+    ],
+    "answer": [2, 3, 5],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 12,
+    "question": "Which two statements describe the two configuration models for Cisco IOS firewalls?",
+    "choices": [
+      "Both IOS Classic Firewall and ZPF models require ACLs to define traffic filtering policies.",
+      "ZPF must be enabled in the router configuration before enabling an IOS Classic Firewall.",
+      "The IOS Classic Firewall and ZPF cannot be combined on a single interface.",
+      "IOS Classic Firewalls and ZPF models can be enabled on a router concurrently.",
+      "IOS Classic Firewalls must be enabled in the router configuration before enabling ZPF."
+    ],
+    "answer": [2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 13,
+    "question": "What are two benefits of using a ZPF rather than a Classic Firewall?",
+    "choices": [
+      "With ZPF, the router will allow packets unless they are explicitly blocked.",
+      "ZPF policies are easy to read and troubleshoot.",
+      "Multiple inspection actions are used with ZPF.",
+      "The ZPF is not dependent on ACLs.",
+      "ZPF allows interfaces to be placed into zones for IP inspection."
+    ],
+    "answer": [1, 3],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 14,
+    "question": "When using Cisco IOS zone-based policy firewall, where is the inspection policy applied?",
+    "choices": [
+      "to a zone pair",
+      "to a global service policy",
+      "to a zone",
+      "to an interface"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 15,
+    "question": "Which zone-based policy firewall zone is system-defined and applies to traffic destined for the router or originating from the router?",
+    "choices": [
+      "inside zone",
+      "outside zone",
+      "system zone",
+      "local zone",
+      "self zone"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 16,
+    "question": "Which cloud security domain covers cloud-specific aspects of infrastructure security and foundations for operating securely in the cloud?",
+    "choices": [
+      "Application Security",
+      "Data Security and Encryption",
+      "Management Plane and Business Continuity",
+      "Infrastructure Security"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 17,
+    "question": "Which technique can be used to leverage virtual network topologies to run smaller and more isolated networks without incurring additional hardware costs?",
+    "choices": [
+      "shadow IT",
+      "microsegmentation",
+      "fog computing",
+      "edge computing"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 18,
+    "question": "Which algorithm is used with symmetric encryption to provide confidentiality?",
+    "choices": [
+      "RSA",
+      "MD5",
+      "AES",
+      "ECC"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 19,
+    "question": "In which phase of application development is new software verified to run under the required security settings?",
+    "choices": [
+      "testing",
+      "staging",
+      "developing",
+      "provisioning"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 20,
+    "question": "What is the description of VM sprawl?",
+    "choices": [
+      "The demand for VMs is greater than the ability to create VMs.",
+      "When a process breaks out of the VM and interacts with the host operating system.",
+      "VMs are spread over too large of a geographic area.",
+      "There are more VMs than can be effectively managed."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 21,
+    "question": "Which measure can a security analyst take to perform effective security monitoring against network traffic encrypted by SSL technology?",
+    "choices": [
+      "Use a Syslog server to capture network traffic.",
+      "Require remote access connections through IPsec VPN.",
+      "Deploy a Cisco ASA.",
+      "Deploy a Cisco SSL Appliance."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 22,
+    "question": "What technology has a function of using trusted third-party protocols to issue credentials that are accepted as an authoritative identity?",
+    "choices": [
+      "hashing algorithms",
+      "PKI certificates",
+      "symmetric keys",
+      "digital signatures"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 23,
+    "question": "Which method tries all possible passwords until a match is found?",
+    "choices": [
+      "cloud",
+      "cryptographic",
+      "birthday",
+      "brute force",
+      "rainbow tables",
+      "dictionary"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 24,
+    "question": "An IT enterprise is recommending the use of PKI applications to securely exchange information between the employees. In which two cases might an organization use PKI applications to securely exchange information between users?",
+    "choices": [
+      "file and directory access permission",
+      "HTTPS web service",
+      "local NTP server",
+      "802.1x authentication",
+      "FTP transfers"
+    ],
+    "answer": [1, 3],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 25,
+    "question": "Refer to the exhibit. A router has an existing ACL that permits all traffic from the 172.16.0.0 network. The administrator attempts to add a new statement to the ACL that denies packets from host 172.16.0.1 and receives the error message that is shown in the exhibit. What action can the administrator take to block packets from host 172.16.0.1 while still permitting all other traffic from the 172.16.0.0 network?",
+    "choices": [
+      "Create a second access list denying the host and apply it to the same interface.",
+      "Add a deny any any statement to access-list 1.",
+      "Manually add the new deny statement with a sequence number of 15.",
+      "Manually add the new deny statement with a sequence number of 5."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls",
+    "image": "quiz-data/assets/q25_checkpoint.png"
+  },
+  {
+    "id": 26,
+    "question": "Which type of packet is unable to be filtered by an outbound ACL?",
+    "choices": [
+      "router-generated packet",
+      "ICMP packet",
+      "broadcast packet",
+      "multicast packet"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 27,
+    "question": "What is the first step in configuring a Cisco IOS zone-based policy firewall via the CLI?",
+    "choices": [
+      "Assign policy maps to zone pairs.",
+      "Create zones.",
+      "Define traffic classes.",
+      "Assign router interfaces to zones.",
+      "Define firewall policies."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 28,
+    "question": "What are two properties of a cryptographic hash function?",
+    "choices": [
+      "Complex inputs will produce complex hashes.",
+      "Hash functions can be duplicated for authentication purposes.",
+      "The output is a fixed length.",
+      "The input for a particular hash algorithm has to have a fixed size.",
+      "The hash function is one way and irreversible."
+    ],
+    "answer": [2, 4],
+    "type": "multiple-choice-v2",
+    "category": "Access Control Lists and Firewalls"
+  },
+  {
+    "id": 29,
+    "question": "A customer purchases an item from an e-commerce site. The e-commerce site must maintain proof that the data exchange took place between the site and the customer. Which feature of digital signatures is required?",
+    "choices": [
+      "integrity of digitally signed data",
+      "confidentiality of the public key",
+      "authenticity of digitally signed data",
+      "nonrepudiation of the transaction"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Access Control Lists and Firewalls"
+  }
+]
