@@ -1,0 +1,188 @@
+[
+  {
+    "id": 1,
+    "question": "A cyberanalyst is reviewing an entry-point ACL. What three types of ICMP traffic should be allowed to access an internal network from the internet?",
+    "choices": [
+      "destination unreachable",
+      "time exceeded",
+      "ping",
+      "request",
+      "reply",
+      "squelch"
+    ],
+    "answer": [0, 1, 4],
+    "type": "multiple-choice-v2",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 2,
+    "question": "A company decides to purchase a device capable of managing load balancing so that traffic will be distributed between their servers. What could be a potential problem using the new device on the network?",
+    "choices": [
+      "It will cause extra traffic going to a server resource that is not available.",
+      "It will require the purchase of more servers so that existing servers are not overwhelmed.",
+      "The traffic will require more bandwidth to send to multiple servers.",
+      "All links to redundant servers will require encrypted tunneling protocols.",
+      "The LBM probe messages may appear as suspicious traffic."
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 3,
+    "question": "What method allows VPN traffic to remain confidential?",
+    "choices": [
+      "verification",
+      "authentication",
+      "encryption",
+      "encapsulation"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 4,
+    "question": "To facilitate the troubleshooting process, which inbound ICMP message should be permitted on an outside interface?",
+    "choices": [
+      "time-stamp reply",
+      "echo reply",
+      "time-stamp request",
+      "router advertisement",
+      "echo request"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 5,
+    "question": "In which way does the use of HTTPS increase the security monitoring challenges within enterprise networks?",
+    "choices": [
+      "HTTPS traffic enables end-to-end encryption.",
+      "HTTPS traffic does not require authentication.",
+      "HTTPS traffic can carry a much larger data payload than HTTP can carry.",
+      "HTTPS traffic is much faster than HTTP traffic."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 6,
+    "question": "Which type of server would support the SMTP, POP, and IMAP protocols?",
+    "choices": [
+      "proxy",
+      "syslog",
+      "email",
+      "DHCP"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 7,
+    "question": "Which network service synchronizes the time across all devices on the network?",
+    "choices": [
+      "NetFlow",
+      "NTP",
+      "SNMP",
+      "syslog"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 8,
+    "question": "What port number would be used if a threat actor was using NTP to direct DDoS attacks?",
+    "choices": [
+      "25",
+      "69",
+      "443",
+      "123"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 9,
+    "question": "Which protocol is used to send e-mail messages between two servers that are in different e-mail domains?",
+    "choices": [
+      "SMTP",
+      "IMAP4",
+      "POP3",
+      "HTTP"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 10,
+    "question": "How do cybercriminals make use of a malicious iFrame?",
+    "choices": [
+      "The iFrame allows multiple DNS subdomains to be used.",
+      "The attacker embeds malicious content in business appropriate files.",
+      "The attacker redirects traffic to an incorrect DNS server.",
+      "The iFrame allows the browser to load a web page from another source."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 11,
+    "question": "Which type of server daemon accepts messages sent by network devices to create a collection of log entries?",
+    "choices": [
+      "NTP",
+      "syslog",
+      "AAA",
+      "SSH"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 12,
+    "question": "What type of server can threat actors use DNS to communicate with?",
+    "choices": [
+      "web",
+      "NTP",
+      "CnC",
+      "database"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 13,
+    "question": "Which statement describes the function provided by the Tor network?",
+    "choices": [
+      "It allows users to browse the Internet anonymously.",
+      "It manipulates packets by mapping IP addresses between two networks.",
+      "It distributes user packets through load balancing.",
+      "It conceals packet contents by establishing end-to-end tunnels."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  },
+  {
+    "id": 14,
+    "question": "How can NAT/PAT complicate network security monitoring if NetFlow is being used?",
+    "choices": [
+      "It conceals the contents of a packet by encrypting the data payload.",
+      "It hides internal IP addresses by allowing them to share one or a few outside IP addresses.",
+      "It changes the source and destination MAC addresses.",
+      "It disguises the application initiated by a user by manipulating port numbers."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Technologies and Protocols"
+  }
+]

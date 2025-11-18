@@ -1,0 +1,162 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of the DH algorithm?",
+    "choices": [
+      "to provide nonrepudiation support",
+      "to support email data confidentiality",
+      "to encrypt data traffic after a VPN is established",
+      "to generate a shared secret between two hosts that have not communicated before"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 2,
+    "question": "Which statement is a feature of HMAC?",
+    "choices": [
+      "HMAC is based on the RSA hash function.",
+      "HMAC uses a secret key that is only known to the sender and defeats man-in-the-middle attacks.",
+      "HMAC uses protocols such as SSL or TLS to provide session layer confidentiality.",
+      "HMAC uses a secret key as input to the hash function, adding authentication to integrity assurance."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 3,
+    "question": "Which requirement of secure communications is ensured by the implementation of MD5 or SHA hash generating algorithms?",
+    "choices": [
+      "confidentiality",
+      "authentication",
+      "integrity",
+      "nonrepudiation"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 4,
+    "question": "Which two statements correctly describe certificate classes used in the PKI?",
+    "choices": [
+      "A class 0 certificate is for testing purposes.",
+      "A class 0 certificate is more trusted than a class 1 certificate.",
+      "The lower the class number, the more trusted the certificate.",
+      "A class 5 certificate is for users with a focus on verification of email.",
+      "A class 4 certificate is for online business transactions between companies."
+    ],
+    "answer": [0, 4],
+    "type": "multiple-choice-v2",
+    "category": "Cryptography"
+  },
+  {
+    "id": 5,
+    "question": "Which statement describes the use of certificate classes in the PKI?",
+    "choices": [
+      "The lower the class number, the more trusted the certificate.",
+      "A vendor must issue only one class of certificates when acting as a CA.",
+      "A class 5 certificate is more trustworthy than a class 4 certificate.",
+      "Email security is provided by the vendor, not by a certificate."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 6,
+    "question": "What technology allows users to verify the identity of a website and to trust code that is downloaded from the Internet?",
+    "choices": [
+      "asymmetric key algorithm",
+      "digital signature",
+      "encryption",
+      "hash algorithm"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 7,
+    "question": "What two assurances does digital signing provide about code that is downloaded from the Internet?",
+    "choices": [
+      "The code is authentic and is actually sourced by the publisher.",
+      "The code contains no errors.",
+      "The code was encrypted with both a private and public key.",
+      "The code has not been modified since it left the software publisher.",
+      "The code contains no viruses."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice-v2",
+    "category": "Cryptography"
+  },
+  {
+    "id": 8,
+    "question": "What term is used to describe the technology that replaces sensitive information with a nonsensitive version?",
+    "choices": [
+      "hiding",
+      "masking",
+      "retracting",
+      "whiteout",
+      "blanking"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 9,
+    "question": "What term is used to describe concealing data in another file such as a graphic, audio, or other text file?",
+    "choices": [
+      "masking",
+      "obfuscation",
+      "steganography",
+      "hiding"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 10,
+    "question": "What is a strength of using a hashing function?",
+    "choices": [
+      "It is a one-way function and not reversible.",
+      "It can take only a fixed length message.",
+      "It has a variable length output.",
+      "Two different files can be created that have the same output.",
+      "It is not commonly used in security."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 11,
+    "question": "An investigator finds a USB drive at a crime scene and wants to present it as evidence in court. The investigator takes the USB drive and creates a forensic image of it and takes a hash of both the original USB device and the image that was created. What is the investigator attempting to prove about the USB drive when the evidence is submitted in court?",
+    "choices": [
+      "The investigator found a USB drive and was able to make a copy of it.",
+      "The data is all there.",
+      "An exact copy cannot be made of a device.",
+      "The data in the image is an exact copy and nothing has been altered by the process."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  },
+  {
+    "id": 12,
+    "question": "In which way does the use of HTTPS increase the security monitoring challenges within enterprise networks?",
+    "choices": [
+      "HTTPS traffic is much faster than HTTP traffic.",
+      "HTTPS traffic enables end-to-end encryption.",
+      "HTTPS traffic does not require authentication.",
+      "HTTPS traffic can carry a much larger data payload than HTTP can carry."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Cryptography"
+  }
+]

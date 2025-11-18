@@ -1,0 +1,160 @@
+[
+  {
+    "id": 1,
+    "question": "What is a feature of the tcpdump tool?",
+    "choices": [
+      "It records metadata about packet flows.",
+      "It provides real-time reporting and long-term analysis of security events.",
+      "It uses agents to submit host logs to centralized management servers.",
+      "It can display packet captures in real time or write them to a file."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 2,
+    "question": "A NIDS/NIPS has identified a threat. Which type of security data will be generated and sent to a logging device?",
+    "choices": [
+      "alert",
+      "transaction",
+      "statistical",
+      "session"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 3,
+    "question": "Which statement describes the tcpdump tool?",
+    "choices": [
+      "It is used to control multiple TCP-based applications.",
+      "It is a command-line packet analyzer.",
+      "It accepts and analyzes data captured by Wireshark.",
+      "It can be used to analyze network log data in order to describe and predict network behavior."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 4,
+    "question": "What are two of the 5-tuples?",
+    "choices": [
+      "protocol",
+      "ACL",
+      "IPS",
+      "IDS",
+      "source port"
+    ],
+    "answer": [0, 4],
+    "type": "multiple-choice-v2",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 5,
+    "question": "Which type of security data can be used to describe or predict network behavior?",
+    "choices": [
+      "statistical",
+      "alert",
+      "transaction",
+      "session"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 6,
+    "question": "Which Windows log records events related to login attempts and operations related to file or object access?",
+    "choices": [
+      "setup logs",
+      "system logs",
+      "application logs",
+      "security logs"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 7,
+    "question": "Which type of data is used by Cisco Cognitive Intelligence to find malicious activity that has bypassed security controls, or entered through unmonitored channels, and is operating inside an enterprise network?",
+    "choices": [
+      "session",
+      "statistical",
+      "alert",
+      "transaction"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 8,
+    "question": "Which Windows host log event type describes the successful operation of an application, driver, or service?",
+    "choices": [
+      "warning",
+      "error",
+      "success audit",
+      "information"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 9,
+    "question": "What are two popular SIEM platforms?",
+    "choices": [
+      "NetFlow",
+      "tcpdump",
+      "Splunk",
+      "Security Onion with ELK",
+      "Cisco Umbrella"
+    ],
+    "answer": [2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 10,
+    "question": "Which Windows tool can be used to review host logs?",
+    "choices": [
+      "Event Viewer",
+      "Services",
+      "Task Manager",
+      "Device Manager"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 11,
+    "question": "Which statement describes an operational characteristic of NetFlow?",
+    "choices": [
+      "NetFlow captures the entire contents of a packet.",
+      "NetFlow flow records can be viewed by the tcpdump tool.",
+      "NetFlow collects basic information about the packet flow, not the flow data itself.",
+      "NetFlow can provide services for user access control."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  },
+  {
+    "id": 12,
+    "question": "In a Cisco AVC system, in which module is NBAR2 deployed?",
+    "choices": [
+      "Application Recognition",
+      "Metrics Collection",
+      "Control",
+      "Management and Reporting"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Network Security Data"
+  }
+]

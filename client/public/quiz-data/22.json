@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following principles is used by the U.S. government in its access control models?",
+    "choices": [
+      "Job rotation",
+      "Separation of duties",
+      "Need to know",
+      "Mandatory vacations"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 2,
+    "question": "An organization has experienced several incidents involving employees downloading unauthorized software and using unauthorized websites and personal USB devices. What measures could the organization implement to manage these threats?",
+    "choices": [
+      "Implement disciplinary action",
+      "Monitor all employee activity",
+      "Disable USB access",
+      "Provide security awareness training",
+      "Use content filtering",
+      "Run computers from a central server rather than localized hard drives"
+    ],
+    "answer": [2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 3,
+    "question": "The ability to carry out highly specialized review and evaluation of incoming cybersecurity information to determine if it is useful for intelligence is covered in what category of the National Cybersecurity Workforce Framework?",
+    "choices": [
+      "Protect and defend",
+      "Oversight and development",
+      "Security provision",
+      "Analyze"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 4,
+    "question": "What act protects the personal information of students in schools?",
+    "choices": [
+      "HIPPA",
+      "FERPA",
+      "CIPA",
+      "COPPA"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 5,
+    "question": "Cybersecurity professionals may have access to sensitive data. What one factor should they understand to help them make informed ethical decisions in relation to this data?",
+    "choices": [
+      "Partnerships with third parties",
+      "Laws governing the data",
+      "A potential bonus",
+      "Cloud provider agreements"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 6,
+    "question": "Which of the following frameworks identifies controls based on the latest information about common cyber attacks and provides benchmarks for various platforms?",
+    "choices": [
+      "CIS",
+      "CSA",
+      "The National Cybersecurity Workforce",
+      "ISO"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 7,
+    "question": "What law protects the privacy of an employee's personal information from being shared with third parties?",
+    "choices": [
+      "PCI DSS",
+      "FIRPA",
+      "GLBA",
+      "SOX"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 8,
+    "question": "What federal act law would an individual be subject to if they knowingly accessed a government computer without permission?",
+    "choices": [
+      "GLBA",
+      "ECPA",
+      "CFAA",
+      "SOX"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 9,
+    "question": "What do penetration tests and red team exercises achieve?",
+    "choices": [
+      "They simulate attacks to gauge the security capabilities of an organization.",
+      "They provide audit controls for all NetBIOS connections made.",
+      "They provide a list of malware that has successfully penetrated the firewall.",
+      "They provide audit trails for all TCP connections in place at any given time."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 10,
+    "question": "What is the function of the Cloud Security Alliance (CSA)?",
+    "choices": [
+      "It provides security guidance to any organization that uses cloud computing.",
+      "It audits the CIA Triad objectives.",
+      "It produces a statement of applicability (SOA) which stipulates control objectives and audit controls to be implemented.",
+      "It ensures total compliance with the ISO 27000 standards."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  },
+  {
+    "id": 11,
+    "question": "What is the primary goal of IT security governance?",
+    "choices": [
+      "To provide oversight to ensure that risks are adequately mitigated",
+      "To define a set of controls that an organization should implement",
+      "To make decisions to mitigate risk",
+      "To provide a set of policies and procedures to manage sensitive data"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Governance and Compliance"
+  }
+]

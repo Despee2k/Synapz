@@ -1,0 +1,147 @@
+[
+  {
+    "id": 1,
+    "question": "What are the two classes of encryption algorithms?",
+    "choices": [
+      "open",
+      "symmetric",
+      "asymmetric",
+      "classic",
+      "advanced"
+    ],
+    "answer": [1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 2,
+    "question": "What term is used to describe the phenomenon of more VMs than can be managed effectively?",
+    "choices": [
+      "VM Scaling",
+      "VM Exhaustion",
+      "VM Escape",
+      "VM Sprawl"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 3,
+    "question": "Which cloud security domain covers the challenges of delivering, measuring, and communicating compliances when organizations migrate from traditional data centers to the cloud?",
+    "choices": [
+      "Infrastructure Security",
+      "Management Plane and Business Continuity",
+      "Information Governance",
+      "Compliance and Audit Management"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 4,
+    "question": "A company is deploying a product ordering system on a public cloud. The company IT specialist is working on security measures to protect the cloud resources. What are two possible negative impacts that should be considered when deploying a virtual firewall and an IPS appliance?",
+    "choices": [
+      "compatibility with VM operating systems",
+      "routing issues associated with virtual security appliances",
+      "traffic bottleneck",
+      "possible VM escape attacks",
+      "processor overloading"
+    ],
+    "answer": [2, 4],
+    "type": "multiple-choice-v2",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 5,
+    "question": "What should be deployed to protect traffic confidentiality between a public cloud and a private cloud?",
+    "choices": [
+      "proxy device",
+      "IPS",
+      "VPN",
+      "firewall"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 6,
+    "question": "In which type of environment would a developer run software to verify that required security settings are met prior to production deployment?",
+    "choices": [
+      "sandbox environment",
+      "development environment",
+      "production environment",
+      "staging environment"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 7,
+    "question": "Which state of data refers to data moving between the CPU and the hard drive of a server?",
+    "choices": [
+      "data in storage",
+      "data in process",
+      "data in transit",
+      "data at rest"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 8,
+    "question": "Which technology is used to verify the integrity of files to ensure they were not modified in transit?",
+    "choices": [
+      "asymmetric encryption",
+      "checksum",
+      "secure cookies",
+      "normalization"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 9,
+    "question": "Which threat type describes the case when cloud computing resources are set up incorrectly?",
+    "choices": [
+      "inside threat",
+      "cloud misconfiguration",
+      "data breaches",
+      "poor cloud security architecture strategy"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 10,
+    "question": "What term is used to refer to readable data in the context of the data encryption process?",
+    "choices": [
+      "ciphertext",
+      "cleantext",
+      "opentext",
+      "plaintext"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  },
+  {
+    "id": 11,
+    "question": "Which key component of virtualization allows for running multiple independent operating systems on one physical computing system?",
+    "choices": [
+      "VDI",
+      "hypervisor",
+      "VM",
+      "container"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Cloud Security"
+  }
+]
