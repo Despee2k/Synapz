@@ -1,0 +1,370 @@
+[
+  {
+    "id": 1,
+    "question": "What is the purpose of the CSA's 14 security domains?",
+    "choices": [
+      "Eliminate organizational responsibility under shared models",
+      "Provide guidance for securing cloud environments",
+      "Evaluate only physical network appliance configurations",
+      "Replace the need for traditional cybersecurity frameworks",
+      "Restrict adoption of hybrid clouds until all controls are validated"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 2,
+    "question": "Why is fog computing important for some IoT deployments?",
+    "choices": [
+      "It mirrors public cloud architectures for remote data staging",
+      "It centralizes computation in large data centers for consistency",
+      "It requires containerized workloads for all data operations",
+      "It processes data closer to devices to reduce latency",
+      "It eliminates the need for local gateway devices completely"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 3,
+    "question": "In the shared responsibility model, what is the CSP generally responsible for?",
+    "choices": [
+      "Customer application code security validations",
+      "User account policies and password complexity rules",
+      "Encrypting all client-side data before application processing",
+      "Underlying cloud services and infrastructure",
+      "Determining which IAM permissions each client user needs"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 4,
+    "question": "What distinguishes a container from a virtual machine?",
+    "choices": [
+      "It runs a full guest operating system with separate kernel instances",
+      "It includes only the application and its dependencies",
+      "It cannot be orchestrated by platforms such as Kubernetes or similar tools",
+      "It requires a hypervisor to emulate complete device stacks",
+      "It provides hardware-level isolation via dedicated virtual CPUs"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 5,
+    "question": "What weakness makes MD5 and SHA-1 unsuitable for security-critical use?",
+    "choices": [
+      "They depend on reversible mathematical functions that expose message contents.",
+      "They generate digests that exceed typical storage limits for modern authentication systems.",
+      "They require secret keys to produce consistent digests across distributed systems.",
+      "They rely on variable-length outputs, making them unpredictable in validation scenarios.",
+      "They have known vulnerabilities that allow feasible collisions."
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 6,
+    "question": "Which property is essential for a cryptographic hash function?",
+    "choices": [
+      "Compatibility with only one specific algorithm family to prevent misuse.",
+      "A digest length that expands based on message size for accuracy.",
+      "A reversible hashing path that enables recovery of original inputs when needed.",
+      "The inclusion of embedded key material to authenticate the origin of the data.",
+      "Collision resistance, meaning different inputs should not produce the same output."
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 7,
+    "question": "What is a key characteristic of a hierarchical PKI trust model?",
+    "choices": [
+      "A single CA issues all certificates directly to users, simplifying security oversight.",
+      "No entity is required to maintain trust boundaries because certificates validate automatically.",
+      "A root CA issues certificates to subordinate CAs, enabling scalability.",
+      "All CAs operate independently and cross-sign each other to maintain redundant trust paths.",
+      "Certificates can be used interchangeably across domains without validation of the issuing authority."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 8,
+    "question": "Why can't hashing alone protect against deliberate message alteration?",
+    "choices": [
+      "Because hashing always exposes a portion of the message content in its digest output.",
+      "Because hashing requires symmetric keys, which attackers can extract through brute-force methods.",
+      "Because hash digest values are transmitted in plaintext and automatically decrypted by intermediaries.",
+      "Because hash functions generate different outputs when repeatedly hashing unchanged inputs.",
+      "Because attackers may alter data and recompute a valid hash."
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 9,
+    "question": "Use the RSA algorithm: (e, n) = (11, 91). Encrypt the message 6.",
+    "choices": [],
+    "answer": "76",
+    "type": "short-answer",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 10,
+    "question": "In the RSA algorithm: p = 3, q = 23 and the public exponent e = 13. What is the private exponent d?",
+    "choices": [],
+    "answer": "17",
+    "type": "short-answer",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 11,
+    "question": "In the RSA algorithm, n = 1517. Calculate Φ(n) and write the correct answer.",
+    "choices": [],
+    "answer": "1440",
+    "type": "short-answer",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 12,
+    "question": "Your friend is exchanging a key with you using the Diffie-Hellman algorithm. Given: g = 13, p = 71. He sends you his public key A = 34. Your private key is b = 11. What is the shared secret key?",
+    "choices": [],
+    "answer": "26",
+    "type": "short-answer",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 13,
+    "question": "What enables attackers to manipulate ACL-controlled traffic effectively?",
+    "choices": [
+      "Gateways that apply ACLs only after payload inspection completes.",
+      "Enforcement policies that require all rules to be globally permissive.",
+      "Packet manipulation techniques such as spoofing or flag alteration.",
+      "NAT transitions that automatically override permit-deny entries.",
+      "Mandatory ICMP support that exposes ACL sequencing errors."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 14,
+    "question": "Why is NetFlow visibility reduced when flows cross NAT boundaries?",
+    "choices": [
+      "NetFlow collectors ignore flows that originate from internal segments.",
+      "Address translation breaks continuity of flow identifiers.",
+      "Flow engines lose sequence numbers during address rewriting.",
+      "NetFlow requires symmetric routing paths unavailable under NAT.",
+      "NAT forces flow records to be encrypted before export."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 15,
+    "question": "How does Tor enable anonymity for its users?",
+    "choices": [
+      "Nodes replicate traffic among themselves to mask packet origins.",
+      "Layered encryption hides each hop except for the next router.",
+      "Exit nodes rewrite HTTP headers with randomized identity fields.",
+      "Tunnel initialization suppresses all timing metadata during transit.",
+      "Session keys are negotiated using publicly mirrored relay registries."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 16,
+    "question": "What is the primary risk posed by iFrame injection attacks?",
+    "choices": [
+      "Frames expand the visible DOM structure in ways that prevent content filtering.",
+      "Injection forces browsers to disable certificate verification during loading.",
+      "The malicious code modifies NAT mappings and redirects internal traffic.",
+      "It replaces web server SSL configurations with self-signed certificates.",
+      "Hidden frames can deliver malware from untrusted remote sources."
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 17,
+    "question": "What is the primary purpose of the testmyids website?",
+    "choices": [
+      "To benchmark IPS throughput under simulated attack loads",
+      "To compare multiple IDS engines in a controlled attack-scenario environment",
+      "To verify that a NIDS such as Snort is triggering alerts correctly",
+      "To provide a database of known CVEs mapped to IDS signatures",
+      "To measure end-host vulnerability exposure based on browsing activity"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 18,
+    "question": "What technology enables Cisco AVC to identify applications?",
+    "choices": [
+      "Reverse proxy filtering with content heuristics",
+      "NBAR2 application recognition",
+      "Flow aggregation using advanced IPFIX templates",
+      "Deep statistical modeling of TLS session lifecycles",
+      "Multi-vendor SIEM plugins using RESTful ingestion"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 19,
+    "question": "What best defines alert data in network security monitoring?",
+    "choices": [
+      "Packet-level reconstructions of file transfers captured during deep inspections",
+      "Statistical summaries of baseline deviations derived from NetFlow aggregation",
+      "Messages generated when traffic violates IDS/IPS rules",
+      "Logs summarizing long-term bandwidth use across subnets for trend analysis",
+      "Multi-system compliance reports correlating host, network, and application events"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 20,
+    "question": "What do NetFlow records primarily group together?",
+    "choices": [
+      "Sessions aggregated by application identifiers",
+      "Logs from multiple protocols merged by device role",
+      "Alerts matched to IDS rule clusters based on activity baselines",
+      "Packets sharing the same 5-tuple attributes",
+      "Events normalized through SIEM transformation rules"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 21,
+    "question": "What do Snort rule headers define?",
+    "choices": [
+      "Multi-stage exploit correlation thresholds",
+      "Full packet payload extraction patterns",
+      "Dynamic policy weights for contextual scoring",
+      "Time-sequenced heuristics for long-term drift",
+      "Action, protocol, addressing, ports"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 22,
+    "question": "What is a True Positive in alert evaluation?",
+    "choices": [
+      "A verified actual security incident",
+      "Temporarily cached traffic that mimics anomalous flows",
+      "Routine host activity misclassified due to timestamp skew",
+      "Analytics noise produced by obsolete rule dependencies",
+      "Behavioral drift in legitimate sessions under high load"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 23,
+    "question": "What is the Rule Location field used for in Sguil?",
+    "choices": [
+      "Mapping rule clusters to sensor performance logs",
+      "Storing the entire rule history timeline",
+      "Locating the rule file and line number",
+      "Tracking auto-generated rule mutations",
+      "Organizing hierarchical rule-tier scoring structures"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 24,
+    "question": "What is the purpose of the \"Show Rule\" checkbox in Sguil?",
+    "choices": [
+      "Export the alert to alternate indexing clusters",
+      "Display the associated rule",
+      "Generate a preview of correlated anomaly clusters",
+      "Reveal multi-sensor lineage graphs for the alert",
+      "Initiate deep packet decode through Wireshark automation"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 25,
+    "question": "Which ethical perspective is most relevant to cybersecurity specialists?",
+    "choices": [
+      "Avoiding all forms of information sharing",
+      "Using technology only when supervised",
+      "Prioritizing personal opinions above regulations",
+      "Balancing legal obligations with organizational interests",
+      "Eliminating all risks regardless of cost"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 26,
+    "question": "What is a key function of a master cybersecurity policy?",
+    "choices": [
+      "Listing all approved third-party software providers",
+      "Providing detailed steps for system-specific configuration",
+      "Defining hardware procurement specifications",
+      "Outlining employee disciplinary actions for minor violations",
+      "Serving as the strategic blueprint for implementing cybersecurity controls"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 27,
+    "question": "Which data states are specifically addressed by ISO controls?",
+    "choices": [
+      "Queried, transformed, and visualized",
+      "Archived, sanitized, and deprecated",
+      "In process, at rest, and in transit",
+      "Allocated, reserved, and compressed",
+      "Cached, mirrored, and replicated"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  },
+  {
+    "id": 28,
+    "question": "Which category of cybercrime involves a computer being the primary target of an attack?",
+    "choices": [
+      "Hybrid cyber-activity",
+      "Computer-targeted crime",
+      "Computer-incidental misuse",
+      "Network-adjacent misconduct",
+      "Peripheral device exploitation"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "FROM KURT"
+  }
+]

@@ -13,7 +13,7 @@ import {
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Brain, Play, BookOpen } from 'lucide-react';
 
-const NOTICE_VERSION = '2025-11-18-d'; // BUMP THIS FOR NOTICE
+const NOTICE_VERSION = '2025-11-19-a'; // BUMP THIS FOR NOTICE
 const NOTICE_STORAGE_KEY = 'release_notice_version';
 
 export default function Home() {
@@ -186,6 +186,7 @@ export default function Home() {
           <ul className="text-sm text-slate-600 list-disc pl-5 space-y-1">
             <li>Added IAS quizzes (17-22).</li>
             <li>Added checkpoint quiz.</li>
+            <li>Added more questions.</li>
           </ul>
         </DialogContent>
       </Dialog>
