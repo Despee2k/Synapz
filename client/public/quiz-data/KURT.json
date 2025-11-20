@@ -114,33 +114,57 @@
   {
     "id": 9,
     "question": "Use the RSA algorithm: (e, n) = (11, 91). Encrypt the message 6.",
-    "choices": [],
-    "answer": "76",
-    "type": "short-answer",
+    "choices": [
+      "42",
+      "58",
+      "76",
+      "84",
+      "91"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
     "category": "FROM KURT"
   },
   {
     "id": 10,
     "question": "In the RSA algorithm: p = 3, q = 23 and the public exponent e = 13. What is the private exponent d?",
-    "choices": [],
-    "answer": "17",
-    "type": "short-answer",
+    "choices": [
+      "5",
+      "9",
+      "17",
+      "21",
+      "29"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
     "category": "FROM KURT"
   },
   {
     "id": 11,
     "question": "In the RSA algorithm, n = 1517. Calculate Φ(n) and write the correct answer.",
-    "choices": [],
-    "answer": "1440",
-    "type": "short-answer",
+    "choices": [
+      "1320",
+      "1380",
+      "1440",
+      "1500",
+      "1516"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
     "category": "FROM KURT"
   },
   {
     "id": 12,
     "question": "Your friend is exchanging a key with you using the Diffie-Hellman algorithm. Given: g = 13, p = 71. He sends you his public key A = 34. Your private key is b = 11. What is the shared secret key?",
-    "choices": [],
-    "answer": "26",
-    "type": "short-answer",
+    "choices": [
+      "12",
+      "18",
+      "26",
+      "34",
+      "45"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
     "category": "FROM KURT"
   },
   {
