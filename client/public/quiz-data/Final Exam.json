@@ -1,0 +1,2951 @@
+[
+  {
+    "id": 1,
+    "question": "Which two commands could be used to check if DNS name resolution is working properly on a Windows PC?",
+    "choices": [
+      "net cisco.com",
+      "ipconfig /flushdns",
+      "nbtstat cisco.com",
+      "ping cisco.com",
+      "nslookup cisco.com"
+    ],
+    "answer": [3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 2,
+    "question": "A router has an existing ACL that permits all traffic from 172.16.0.0. The administrator wants to block packets from host 172.16.0.1 but receives an error. What action can the administrator take?",
+    "choices": [
+      "Create a second access list denying the host and apply it to the same interface.",
+      "Add a deny any any ACE to access-list 1.",
+      "Manually add the new deny ACE with a sequence number of 5.",
+      "Manually add the new deny ACE with a sequence number of 15."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 3,
+    "question": "Why would an attacker want to spoof a MAC address?",
+    "choices": [
+      "so that a switch on the LAN will start forwarding all frames toward the device that is under control of the attacker (that can then capture the LAN traffic)",
+      "so that the attacker can launch another type of attack in order to gain access to the switch",
+      "so that the attacker can capture traffic from multiple VLANs rather than from just the VLAN that is assigned to the port to which the attacker device is attached",
+      "so that a switch on the LAN will start forwarding frames to the attacker instead of to the legitimate host"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 4,
+    "question": "What is the result in the self zone if a router is the source or destination of traffic?",
+    "choices": [
+      "Only traffic that is destined for the router is permitted.",
+      "No traffic is permitted.",
+      "All traffic is permitted.",
+      "Only traffic that originates in the router is permitted."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 5,
+    "question": "What are two shared characteristics of the IDS and the IPS?",
+    "choices": [
+      "Both are deployed as sensors.",
+      "Both rely on an additional network device to respond to malicious traffic.",
+      "Both have minimal impact on network performance.",
+      "Both use signatures to detect malicious traffic.",
+      "Both analyze copies of network traffic."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 6,
+    "question": "Which two types of hackers are typically classified as grey hat hackers?",
+    "choices": [
+      "cyber criminals",
+      "script kiddies",
+      "hacktivists",
+      "state-sponsored hackers",
+      "vulnerability brokers"
+    ],
+    "answer": [2, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 7,
+    "question": "Which network security tool can detect open TCP and UDP ports on most versions of Microsoft Windows?",
+    "choices": [
+      "SuperScan",
+      "Nmap",
+      "Zenmap",
+      "L0phtcrack"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 8,
+    "question": "What is the motivation of a white hat attacker?",
+    "choices": [
+      "fine tuning network devices to improve their performance and efficiency",
+      "studying operating systems of various platforms to develop a new system",
+      "taking advantage of any vulnerability for illegal personal gain",
+      "discovering weaknesses of networks and systems to improve the security level of these systems"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 9,
+    "question": "What are two uses of an access control list?",
+    "choices": [
+      "ACLs can control which areas a host can access on a network.",
+      "ACLs provide a basic level of security for network access.",
+      "ACLs can permit or deny traffic based upon the MAC address originating on the router.",
+      "ACLs assist the router in determining the best path to a destination.",
+      "Standard ACLs can restrict access to specific applications and ports."
+    ],
+    "answer": [0, 1],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 10,
+    "question": "What is the investigator attempting to prove about the USB drive when the evidence is submitted in court?",
+    "choices": [
+      "The data in the image is an exact copy and nothing has been altered by the process.",
+      "An exact copy cannot be made of a device.",
+      "The investigator found a USB drive and was able to make a copy of it.",
+      "The data is all there."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 11,
+    "question": "A security specialist is asked for advice on a security measure to prevent unauthorized hosts from accessing the home network of employees. Which measure would be most effective?",
+    "choices": [
+      "Implement a VLAN.",
+      "Implement intrusion detection systems.",
+      "Implement a firewall.",
+      "Implement RAID."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 12,
+    "question": "Before data is sent out for analysis, which technique can be used to replace sensitive data in non-production environments to protect the underlying information?",
+    "choices": [
+      "steganography",
+      "steganalysis",
+      "software obfuscation",
+      "data masking substitution"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 13,
+    "question": "In a comparison of biometric systems, what is the crossover error rate (CER)?",
+    "choices": [
+      "rate of rejection and rate of false negatives",
+      "rate of false negatives and rate of false positives",
+      "rate of false positives and rate of acceptability",
+      "rate of acceptability and rate of false negatives"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 14,
+    "question": "Which two application layer protocols manage the exchange of messages between a client with a web browser and a remote web server?",
+    "choices": [
+      "HTTP",
+      "DNS",
+      "HTTPS",
+      "HTML",
+      "DHCP"
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 15,
+    "question": "What would be the target of an SQL injection attack?",
+    "choices": [
+      "email",
+      "DNS",
+      "DHCP",
+      "database"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 16,
+    "question": "Which wireless parameter is used by an access point to broadcast frames that include the SSID?",
+    "choices": [
+      "passive mode",
+      "channel setting",
+      "security mode",
+      "active mode"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 17,
+    "question": "Match the network service with the description.",
+    "choices": [
+      "NetFlow → provides statistics on IP packets flowing through network devices",
+      "syslog → notifies the administrator with detailed system messages",
+      "NTP → synchronizes the time across all devices on the network",
+      "SNMP → allows administrators to manage network nodes"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 18,
+    "question": "Match the commonly used ports on a Linux server with the corresponding service.",
+    "choices": [
+      "HTTPS → 443",
+      "SMTP → 25",
+      "Telnet → 23",
+      "DNS → 53"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 19,
+    "question": "What is the outcome when a Linux administrator enters the man man command?",
+    "choices": [
+      "The man man command configures the network interface with a manual address.",
+      "The man man command opens the most recent log file.",
+      "The man man command provides a list of commands available at the current prompt.",
+      "The man man command provides documentation about the man command."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 20,
+    "question": "How can IMAP be a security threat to a company?",
+    "choices": [
+      "It can be used to encode stolen data and send to a threat actor.",
+      "Encrypted data is decrypted.",
+      "Someone inadvertently clicks on a hidden iFrame.",
+      "An email can be used to bring malware to a host."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 21,
+    "question": "Which information can be provided by the Cisco NetFlow utility?",
+    "choices": [
+      "peak usage times and traffic routing",
+      "source and destination UDP port mapping",
+      "IDS and IPS capabilities",
+      "security and user account restrictions"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 22,
+    "question": "A security analyst is reviewing an alert generated by Snort. What does the number 2100498 in the message indicate?",
+    "choices": [
+      "the message length in bits",
+      "the session number of the message",
+      "the Snort rule that is triggered",
+      "the id of the user that triggers the alert"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 23,
+    "question": "What is an example of a privilege escalation attack?",
+    "choices": [
+      "A DDoS attack is launched against a government server and causes the server to crash.",
+      "A port scanning attack finds that the FTP service is running on a server that allows anonymous access.",
+      "A threat actor sends an email to an IT manager to request the root access.",
+      "A threat actor performs an access attack and gains the administrator password."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 24,
+    "question": "According to NIST standards, which incident response stakeholder is responsible for coordinating an incident response with other stakeholders to minimize the damage of an incident?",
+    "choices": [
+      "human resources",
+      "IT support",
+      "management",
+      "legal department"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 25,
+    "question": "Which meta-feature element in the Diamond Model describes information gained by the adversary?",
+    "choices": [
+      "methodology",
+      "resources",
+      "results",
+      "direction"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 26,
+    "question": "A network administrator is creating a network profile to generate a network baseline. What is included in the critical asset address space element?",
+    "choices": [
+      "the TCP and UDP daemons and ports that are allowed to be open on the server",
+      "the IP addresses or the logical location of essential systems or data",
+      "the time between the establishment of a data flow and its termination",
+      "the list of TCP or UDP processes that are available to accept data"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 27,
+    "question": "What is the term used when a malicious party sends a fraudulent email disguised as being from a legitimate, trusted source?",
+    "choices": [
+      "phishing",
+      "Trojan",
+      "backdoor",
+      "vishing"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 28,
+    "question": "What is indicated by a Snort signature ID (SID) that is below 3464?",
+    "choices": [
+      "The SID was created by Sourcefire and distributed under a GPL agreement.",
+      "This is a custom signature developed by the organization to address locally observed rules.",
+      "The SID was created by the Snort community and is maintained in Community Rules.",
+      "The SID was created by members of EmergingThreats."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 29,
+    "question": "What is a characteristic of CybOX?",
+    "choices": [
+      "It is a set of standardized schemata for specifying, capturing, characterizing, and communicating events and properties of network operations.",
+      "It enables the real-time exchange of cyberthreat indicators between the U.S. Federal Government and the private sector.",
+      "It is a set of specifications for exchanging cyberthreat information between organizations.",
+      "It is the specification for an application layer protocol that allows the communication of CTI over HTTPS."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 30,
+    "question": "What is a feature of distributed firewalls?",
+    "choices": [
+      "They combine the feature of host-based firewalls with centralized management.",
+      "They all use an open sharing standard platform.",
+      "They use only iptables to configure network rules.",
+      "They use only TCP wrappers to configure rule-based access control and logging systems."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 31,
+    "question": "Match the security policy with the description.",
+    "choices": [
+      "Network maintenance policy → specifies network device operating systems and end user application update procedures",
+      "Remote access policy → identifies how remote users can access a network and what is accessible via remote connectivity",
+      "Acceptable use policy (AUP) → identifies network applications and uses that are acceptable to the organization",
+      "Identification and authentication policy → specifies authorized persons that can have access to network resources and identity verification procedures"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 32,
+    "question": "What are two differences between stateful and stateless firewalls?",
+    "choices": [
+      "A stateless firewall will provide more logging information than a stateful firewall.",
+      "A stateless firewall provides more stringent control over security than a stateful firewall.",
+      "A stateless firewall is able to filter sessions that use dynamic port negotiations while a stateful firewall cannot.",
+      "A stateless firewall will examine each packet individually while a stateful firewall observes the state of a connection.",
+      "A stateful firewall will prevent spoofing by determining whether packets belong to an existing connection while a stateless firewall follows pre-configured rule sets."
+    ],
+    "answer": [3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 33,
+    "question": "Designing a ZPF requires several steps. Which step involves dictating the number of devices between most-secure and least-secure zones and determining redundant devices?",
+    "choices": [
+      "identify subsets within zones and merge traffic requirements",
+      "design the physical infrastructure",
+      "establish policies between zones",
+      "determine the zones"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 34,
+    "question": "The entrepreneur is concerned about employees having uninterrupted access to important resources and data. Which of the CIA triad components would address the concern?",
+    "choices": [
+      "integrity",
+      "authentication",
+      "confidentiality",
+      "availability"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 35,
+    "question": "Which cloud security domain describes controls related to securing the data itself?",
+    "choices": [
+      "Data Security and Encryption",
+      "Application Security",
+      "Security as a Service",
+      "Infrastructure Security"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 36,
+    "question": "Which two advantages in security controls are provided by software-defined networks (SDN) over traditional network security solutions?",
+    "choices": [
+      "higher performance than hardware firewalls",
+      "easier insertion into the traffic path",
+      "apply to assets based on more flexible criteria than hardware firewalls",
+      "easier network isolation without constraints of physical hardware",
+      "offer more security features than hardware firewalls"
+    ],
+    "answer": [2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 37,
+    "question": "A SOHO office uses a public cloud to host its website. Which type of encryption key management method should the IT technician choose to protect transaction data between the website and visitors?",
+    "choices": [
+      "shared-secret key encryption",
+      "secret key encryption",
+      "private key encryption",
+      "public key encryption"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 38,
+    "question": "Which role in a data governance program is responsible for compliance, assigning classifications, and determining access criteria for information assets?",
+    "choices": [
+      "data controller",
+      "data protection officer",
+      "data owner",
+      "data custodian"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 39,
+    "question": "Match the stages in the risk management process to the description.",
+    "choices": [
+      "Assess the risk → Once a risk has been identified, it is assessed and analyzed to determine the severity that the threat poses",
+      "Monitor the risk → Continuously review risk reductions due to elimination, mitigation, and transfer actions",
+      "Frame the risk → Identify the threats throughout the organization that increase risk",
+      "Respond to the risk → Develop an action plan to reduce overall risk exposure"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 40,
+    "question": "A company manages sensitive customer data and currently uses username and passphrase authentication. They want to mitigate the risk of employee credential compromise. What should they do?",
+    "choices": [
+      "Purchase an insurance policy",
+      "Enhance data encryption with an advanced algorithm",
+      "Implement multi-factor authentication",
+      "Install fingerprint or retinal scanners"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 41,
+    "question": "As a cybersecurity analyst, which organization maintains the weekly digest called NewsBites?",
+    "choices": [
+      "MITRE",
+      "CIS",
+      "(ISC)²",
+      "SANS"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 42,
+    "question": "Match the threat intelligence service with the description.",
+    "choices": [
+      "FireEye → blocks attacks across the web and email threat vectors, and latent malware that resides on file shares",
+      "Cisco Talos → collects information about active, existing, and emerging threats and provides comprehensive protection against these attacks to subscribers",
+      "MITRE Corporation → creates and maintains a catalog of known security threats called Common Vulnerabilities and Exposures (CVE)",
+      "DHS Automated Indicator Sharing → provides a real-time exchange of cyber threat indicators between the U.S. Government and the private sector"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 43,
+    "question": "Which four metrics are key considerations in a Business Impact Analysis (BIA)?",
+    "choices": [
+      "Recovery point times (RPTs)",
+      "Recovery point objectives (RPOs)",
+      "Mean time to repair (MTTR)",
+      "Recovery time objectives (RTOs)",
+      "Mean time between failures (MTBF)",
+      "Mean time between objectives (RBOs)"
+    ],
+    "answer": [1, 2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 44,
+    "question": "An audit revealed weak passwords, stolen credentials, and phishing attacks. What single measure can mitigate all these risks?",
+    "choices": [
+      "Institute a password reset for all accounts",
+      "Change the minimum password length rules",
+      "Change password complexity rules",
+      "Implement MFA"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 45,
+    "question": "An IT cybersecurity technician wants to conduct a layer-3 port scan and use decoy hosts on the same LAN to mask the scan source. Which tool should be used?",
+    "choices": [
+      "Tripwire",
+      "SIEM",
+      "Nmap",
+      "Superscan"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 46,
+    "question": "Why is it important to conduct server profiling on live networks?",
+    "choices": [
+      "Ensure all servers have the same configurations",
+      "Establish a security baseline for a given server",
+      "Create a traffic profile to identify data-loss potential",
+      "Detect attacks using Big Data analytics",
+      "Detect worm activity"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 47,
+    "question": "Which type of cyber threat could cause electrical power outages?",
+    "choices": [
+      "Sabotage",
+      "Hardware failure",
+      "Utility interruption",
+      "Human error"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 48,
+    "question": "A threat actor uses a Smurf attack to overwhelm a target host. What type of threat is this?",
+    "choices": [
+      "TCP SYN flood attack",
+      "MAC address spoofing attack",
+      "Amplification and reflection attack",
+      "UDP flood attack"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 49,
+    "question": "Which statement describes a characteristic of WLANs?",
+    "choices": [
+      "IEEE 802.11 prescribes CSMA/CD for collision avoidance",
+      "The 5 GHz band is more prone to interference than 2.4 GHz",
+      "Tethering is a variation of infrastructure mode",
+      "An attacker may not have to physically enter the workplace to gain access to a WLAN"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 50,
+    "question": "What cybersecurity mitigation phase involves limiting the spread of a worm infection to areas of the network that are already affected?",
+    "choices": [
+      "inoculation",
+      "quarantine",
+      "containment",
+      "treatment"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 51,
+    "question": "Which is a Windows 10 feature that encrypts removable drives?",
+    "choices": [
+      "Leafpad",
+      "BitLocker To Go",
+      "XProtect",
+      "MRT"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 52,
+    "question": "Which security strategy applies the terms layering, limiting, and obscurity?",
+    "choices": [
+      "defense-in-depth",
+      "physical security",
+      "traffic filtering",
+      "data encryption"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 53,
+    "question": "What is a significant factor in the high vulnerability of industrial and embedded systems?",
+    "choices": [
+      "These systems often have numerous points of administrative access.",
+      "Many devices in these systems have poor authentication and cannot be upgraded or patched.",
+      "Improving the security of these often low-cost systems would increase the cost excessively.",
+      "Many of these systems have deployed, which means that implementing security is expensive and time-consuming."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 54,
+    "question": "What is a feature of a Zero Trust approach to network security?",
+    "choices": [
+      "A user must re-authenticate even if they have successfully passed access control.",
+      "Zone-based Policy Firewalls manage all network traffic.",
+      "Defense-in-depth policies apply to identifying assets, threats, and vulnerabilities.",
+      "A hashing algorithm applies to all network traffic."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 55,
+    "question": "What is used by an application layer gateway to connect to remote servers on behalf of clients?",
+    "choices": [
+      "stateful firewall",
+      "intrusion detection system",
+      "proxy server",
+      "packet filter"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 56,
+    "question": "What actions are employed when configuring an IOS ZPF (Zone-Based Policy Firewall) for network traffic?",
+    "choices": [
+      "policy-map",
+      "zone pair",
+      "class-map",
+      "inspect action"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 57,
+    "question": "How can three algorithms in the SSL/TLS cipher suite be updated if cryptanalysis reveals flaws?",
+    "choices": [
+      "encryption algorithm",
+      "AAA algorithm",
+      "authentication algorithm",
+      "key exchange algorithm",
+      "Certificate Authority algorithm",
+      "hashing algorithm"
+    ],
+    "answer": [0, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 58,
+    "question": "What is an example of transaction data recorded by a network security monitoring tool?",
+    "choices": [
+      "source and destination IP addresses of two network endpoints",
+      "source and destination port numbers of two network endpoints",
+      "the IP code for the protocol in use",
+      "requests and replies between the two network endpoints"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 59,
+    "question": "Why could network Syslog servers be a target for threat actors?",
+    "choices": [
+      "Syslog servers could contain information that could lead to the detection of an exploit by a hacker.",
+      "Syslog servers contain configurations and passwords for all devices on the network.",
+      "Syslog data could be encrypted by the attacker and used as ransomware.",
+      "Syslog servers are usually not installed behind a firewall."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 60,
+    "question": "What is the reason for disabling SSID broadcasting and changing the default SSID on a wireless access point?",
+    "choices": [
+      "Anyone with the default SSID can gain access to the access point and change the configuration.",
+      "Wireless clients must then have the SSID manually configured to connect to the wireless network.",
+      "The access point stops broadcasting its own MAC address, thus preventing unauthorized wireless clients from connecting to the network.",
+      "Disabling SSID broadcasting frees up radio frequency bandwidth and increases the data throughput of the access point."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 61,
+    "question": "Refer to the exhibit. A router has an existing ACL that permits all traffic from the 172.16.0.0 network. The administrator attempts to add a new ACE to the ACL that denies packets from host 172.16.0.1 and receives the error message that is shown in the exhibit. What action can the administrator take to block packets from host 172.16.0.1 while still permitting all other traffic from the 172.16.0.0 network?",
+    "choices": [
+      "Add a deny any any ACE to access-list 1.",
+      "Create a second access list denying the host and apply it to the same interface.",
+      "Manually add the new deny ACE with a sequence number of 15.",
+      "Manually add the new deny ACE with a sequence number of 5."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 62,
+    "question": "To facilitate the troubleshooting process, which inbound ICMP message should be permitted on an outside interface?",
+    "choices": [
+      "Echo request",
+      "Router advertisement",
+      "Time-stamp reply",
+      "Time-stamp request",
+      "Echo reply"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 63,
+    "question": "What does a rootkit modify?",
+    "choices": [
+      "Programs",
+      "Operating system",
+      "Notepad",
+      "Microsoft Word",
+      "Screen savers"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 64,
+    "question": "What are two types of attacks used on DNS open resolvers?",
+    "choices": [
+      "Fast flux",
+      "Amplification and reflection",
+      "Cushioning",
+      "Resource utilization",
+      "ARP poisoning"
+    ],
+    "answer": [1],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 65,
+    "question": "Which method can be used to harden a device?",
+    "choices": [
+      "Allow default services to remain enabled",
+      "Maintain use of the same passwords",
+      "Allow USB auto-detection",
+      "Use SSH and disable the root account access over SSH"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 66,
+    "question": "What is the purpose of mobile device management (MDM) software?",
+    "choices": [
+      "It is used to implement security policies, setting, and software configurations on mobile devices.",
+      "It is used by threat actors to penetrate the system.",
+      "It is used to identify potential mobile device vulnerabilities.",
+      "It is used to create a security policy."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 67,
+    "question": "Which statement describes the anomaly-based intrusion detection approach?",
+    "choices": [
+      "It compares the signatures of incoming traffic to a known intrusion database.",
+      "It compares the behavior of a host to an established baseline to identify potential intrusions.",
+      "It compares the antivirus definition file to a cloud-based repository for the latest updates.",
+      "It compares the operations of a host against a well-defined security policy."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 68,
+    "question": "Which step in the Vulnerability Management Life Cycle performs inventory of all assets across the network and identifies host details, including operating system and open services?",
+    "choices": [
+      "Remediate",
+      "Assess",
+      "Prioritize assets",
+      "Discover"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 69,
+    "question": "What are three benefits of using symbolic links over hard links in Linux?",
+    "choices": [
+      "They can show the location of the original file.",
+      "They can be encrypted.",
+      "Symbolic links can be exported.",
+      "They can link to a file in a different file system.",
+      "They can be compressed.",
+      "They can link to a directory."
+    ],
+    "answer": [0, 3, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 70,
+    "question": "Refer to the exhibit. A security analyst is reviewing an alert message generated by Snort. What does the number 2100498 in the message indicate?",
+    "choices": [
+      "the message length in bits",
+      "the Snort rule that is triggered",
+      "the id of the user that triggers the alert",
+      "the session number of the message"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 71,
+    "question": "Match the security service with the description.",
+    "choices": [
+      "SNMP → Allows administrators to manage network devices",
+      "ACL → A series of commands that control whether a device forwards or drops packets",
+      "Port mirroring → Allows a switch to make duplicate copies of traffic that is sent to a traffic analyzer",
+      "NetFlow → Provides statistics on packets flowing through a Cisco router or multilayer switch"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 72,
+    "question": "Match the security incident stakeholder with the role.",
+    "choices": [
+      "Human resources → Performs disciplinary measures",
+      "IT support → Changes firewall rules",
+      "Information assurance → Preserves attack evidence",
+      "Management → Designs the budget",
+      "Legal department → Reviews policies for local or federal guideline violations"
+    ],
+    "answer": [0, 1, 2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 73,
+    "question": "Which type of evidence cannot prove an IT security fact on its own?",
+    "choices": [
+      "best",
+      "corroborative",
+      "hearsay",
+      "indirect"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 74,
+    "question": "A company implements a security policy that ensures that a file sent from the headquarters office to the branch office can only be opened with a predetermined code. This code is changed every day. Which two algorithms can be used to achieve this task?",
+    "choices": [
+      "AES",
+      "SHA-1",
+      "MD5",
+      "HMAC",
+      "3DES"
+    ],
+    "answer": [0, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 75,
+    "question": "What is the first step taken in risk assessment?",
+    "choices": [
+      "Compare to any ongoing risk assessment as a means of evaluating risk management effectiveness.",
+      "Establish a baseline to indicate risk before security controls are implemented.",
+      "Perform audits to verify threats are eliminated.",
+      "Identify threats and vulnerabilities and the matching of threats with vulnerabilities."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 76,
+    "question": "Which Windows log contains information about installations of software, including Windows updates?",
+    "choices": [
+      "system logs",
+      "security logs",
+      "application logs",
+      "setup logs"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 77,
+    "question": "What is the function of the pass action on a Cisco IOS Zone-Based Policy Firewall?",
+    "choices": [
+      "logging of rejected or dropped packets",
+      "inspecting traffic between zones for traffic control",
+      "tracking the state of connections between zones",
+      "forwarding traffic from one zone to another"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 78,
+    "question": "After host A receives a web page from server B, host A terminates the connection with server B. Match each option to its correct step in the normal termination process for a TCP connection.",
+    "choices": [
+      "Step 1 → Host A sends FIN to Server B",
+      "Step 2 → Server B sends ACK to Host A",
+      "Step 3 → Server B sends FIN to Host A",
+      "Step 4 → Host A sends ACK to Server B"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 79,
+    "question": "Match the tabs of the Windows 10 Task Manager to their functions.",
+    "choices": [
+      "Details → Allows for a process to have its affinity set",
+      "Performance → Displays resource utilization information for CPU, memory, network, disk, and others",
+      "Startup → Allows programs that are running on system startup to be disabled",
+      "Services → Allows for a start, stop or restart of a particular service"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 80,
+    "question": "What is a feature of virtual LANs (VLANs)?",
+    "choices": [
+      "A single collision domain is enabled on a switch that is shared between VLANs.",
+      "Switch port utilization is decreased because each port is only associated with one broadcast domain.",
+      "Communication between different VLANs on the one switch is enabled by default.",
+      "Logical segmentation is provided by creating multiple broadcast domains on a single switch."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 81,
+    "question": "What three security tools does Cisco Talos maintain security incident detection rule sets for?",
+    "choices": [
+      "NetStumbler",
+      "Snort",
+      "ClamAV",
+      "SpamCop",
+      "Socat"
+    ],
+    "answer": [1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 82,
+    "question": "A network administrator is reviewing server alerts because of reports of network slowness. The administrator confirms that an alert was an actual security incident. What is the security alert classification of this type of scenario?",
+    "choices": [
+      "true negative",
+      "true positive",
+      "false positive",
+      "false negative"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 83,
+    "question": "What is an attack vector as it relates to network security?",
+    "choices": [
+      "a defense-in-depth approach to security",
+      "a path by which a threat actor can gain access to an internal network device",
+      "a particular section of a network design where security is applied",
+      "a method of reverse engineering binary files"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 84,
+    "question": "When implementing a ZPF, what is the default security setting when forwarding traffic between two interfaces in the same zone?",
+    "choices": [
+      "Traffic between interfaces in the same zone is not subject to any policy and passes freely.",
+      "Traffic between interfaces in the same zone is selectively forwarded based on Layer 3 information.",
+      "Traffic between interfaces in the same zone is blocked.",
+      "Traffic between interfaces in the same zone is selectively forwarded based on the default policy restrictions."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 85,
+    "question": "A company is deploying a customer service web application on AWS. A network administrator is installing and configuring a VM instance. Which three actions should the administrator take to protect the VM?",
+    "choices": [
+      "Install an IPS appliance in the VM.",
+      "Enforce account management policies.",
+      "Plan subnet placement.",
+      "Configure RAID to ensure storage fault tolerance.",
+      "Deploy an advanced firewall appliance.",
+      "Disable unneeded ports and services."
+    ],
+    "answer": [1, 2, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 86,
+    "question": "A company is preparing for an ISMS audit. Match the right control for each control objective.",
+    "choices": [
+      "to prevent loss, damage, theft or compromise of sensitive data → A clean desk policy will be implemented",
+      "to ensure a consistent and effective approach to the management of information security incidents → Employees will be required to report any observed or suspected information security weakness",
+      "to prevent exploitation of software vulnerabilities → Rules regarding the installation of software by employees will be established and implemented"
+    ],
+    "answer": [0, 1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 87,
+    "question": "An organization is developing a data governance program that follows regulations and policies. Which role in the program is responsible for ensuring compliance with policies and procedures, assigning the proper classification to information assets, and determining the criteria for accessing information assets?",
+    "choices": [
+      "data custodian",
+      "data owner",
+      "data protection officer",
+      "data controller"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 88,
+    "question": "A cybersecurity analyst is testing a new vulnerability scanner on a system. The analyst chooses to run an intrusive credentialed scan. A few moments later, the system that was running the scan crashed. What is the most probable cause of the crash?",
+    "choices": [
+      "a false positive",
+      "a hardware failure",
+      "a false negative",
+      "the intrusive scan"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 89,
+    "question": "An IT cybersecurity technician wants to conduct a layer three port scanning on the network systems but wishes to use decoy hosts on the same LAN as target hosts to mask the source of the scan. What security tool functions allow the technician to do this?",
+    "choices": [
+      "Tripwire",
+      "SIEM",
+      "Superscan",
+      "Nmap"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 90,
+    "question": "A threat actor is using a Smurf attack to overwhelm a target host. What kind of threat is that?",
+    "choices": [
+      "amplification and reflection attack",
+      "TCP SYN flood attack",
+      "MAC address spoofing attack",
+      "UDP flood attack"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 91,
+    "question": "Which file system is for Mac OS X computers, and Windows users may use third-party software to open and save files from this file system?",
+    "choices": [
+      "EXT",
+      "NTFS",
+      "HFS+",
+      "exFAT"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 92,
+    "question": "What is the need for data integrity in forums and personal pages on social media?",
+    "choices": [
+      "high",
+      "critical",
+      "low",
+      "mid"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 93,
+    "question": "Why can ACLs give a false sense of security if overly relied upon as a network security technology?",
+    "choices": [
+      "ACLs can be applied to network interfaces in one direction only.",
+      "Packets are permitted by default when ACL statements don't match.",
+      "ACLs only log denied traffic, not permitted traffic.",
+      "Attackers can determine which IP addresses, protocols, and ports are allowed by ACLs."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 94,
+    "question": "Which network logs contain information that a security analyst can use to determine if packets received from the web are in response to legitimate requests or are part of an exploit?",
+    "choices": [
+      "NBAR logs",
+      "content filter logs",
+      "NetFlow logs",
+      "proxy logs"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 95,
+    "question": "An organization has recently adopted a five nines program for two critical database servers. What type of controls will this involve?",
+    "choices": [
+      "remote access to thousands of external users",
+      "limiting access to the data on these systems",
+      "improving reliability and uptime of the servers",
+      "stronger encryption systems"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 96,
+    "question": "You have been asked to implement a data integrity program to protect data files that need to be electronically downloaded by the sales staff. You have decided to use the strongest hashing algorithm available on your systems. Which hash algorithm would you select?",
+    "choices": [
+      "SHA-256",
+      "MD5",
+      "SHA-1",
+      "AES"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 97,
+    "question": "A cybersecurity specialist is working with the IT staff to establish an effective information security plan. Which combination of security principles forms the foundation of a security plan?",
+    "choices": [
+      "secrecy, identify, and nonrepudiation",
+      "technologies, policies, and awareness",
+      "encryption, authentication, and identification",
+      "confidentiality, integrity, and availability"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 98,
+    "question": "You have been asked to describe data validation to the data entry clerks in accounts receivable. Which of the following are good examples of strings, integers, and decimals?",
+    "choices": [
+      "800-900-4560, 4040-2020-8978-0090, 01/21/2013",
+      "female, 9866, $125.50",
+      "male, $25.25, veteran",
+      "yes/no 345-60-8745, TRF562"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 99,
+    "question": "Users report that the database on the main server cannot be accessed. A database administrator verifies the issue and notices that the database file is now encrypted. The organization receives a threatening email demanding payment for the decryption of the database file. What type of attack has the organization experienced?",
+    "choices": [
+      "man-in-the-middle attack",
+      "ransomeware",
+      "Trojan horse",
+      "DoS attack"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 100,
+    "question": "A cybersecurity specialist is asked to identify the potential criminals known to attack the organization. Which type of hackers would the cybersecurity specialist be least concerned with?",
+    "choices": [
+      "black hat hackers",
+      "gray hat hackers",
+      "white hat hackers",
+      "script kiddies"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 101,
+    "question": "An executive manager went to an important meeting. The secretary in the office receives a call from a person claiming that the executive manager is about to give an important presentation but the presentation files are corrupted. The caller sternly recommends that the secretary email the presentation right away to a personal email address. The caller also states that the executive is holding the secretary responsible for the success of this presentation. Which type of social engineering tactic would describe this scenario?",
+    "choices": [
+      "trusted partners",
+      "urgency",
+      "intimidation",
+      "familiarity"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 102,
+    "question": "Smart cards and biometrics are considered to be what type of access control?",
+    "choices": [
+      "technological",
+      "physical",
+      "administrative",
+      "logical"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 103,
+    "question": "HVAC, water system, and fire systems fall under which of the cybersecurity domains?",
+    "choices": [
+      "user",
+      "physical facilities",
+      "device",
+      "network"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 104,
+    "question": "What technique creates different hashes for the same password?",
+    "choices": [
+      "CRC",
+      "HMAC",
+      "SHA-256",
+      "salting"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 105,
+    "question": "Which technology can be implemented as part of an authentication system to verify the identification of employees?",
+    "choices": [
+      "SHA-1 hash",
+      "a virtual fingerprint",
+      "a Mantrap",
+      "a smart card reader"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 106,
+    "question": "Which type of cybercriminal attack would interfere with established network communication through the use of constructed packets so that the packets look like they are part of the normal communication?",
+    "choices": [
+      "packet forgery",
+      "packet sniffing",
+      "DNS spoofing",
+      "rogue Wi-Fi AP"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 107,
+    "question": "In a comparison of biometric systems, what is the crossover error rate?",
+    "choices": [
+      "rate of false negatives and rate of false positives",
+      "rate of false positives and rate of acceptability",
+      "rate of acceptability and rate of false negatives",
+      "rate of rejection and rate of false negatives"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 108,
+    "question": "Which national resource was developed as a result of a U.S. Executive Order after a ten-month collaborative study involving over 3,000 security professionals?",
+    "choices": [
+      "the National Vulnerability Database (NVD)",
+      "NIST Framework",
+      "ISO/IEC 27000",
+      "ISO OSI model"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 109,
+    "question": "The team is in the process of performing a risk analysis on the database services. The information collected includes the initial value of these assets, the threats to the assets and the impact of the threats. What type of risk analysis is the team performing by calculating the annual loss expectancy?",
+    "choices": [
+      "loss analysis",
+      "qualitative analysis",
+      "quantitative analysis",
+      "protection analysis"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 110,
+    "question": "Which risk mitigation strategies include outsourcing services and purchasing insurance?",
+    "choices": [
+      "transfer",
+      "acceptance",
+      "reduction",
+      "avoidance"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 111,
+    "question": "Which method is used by steganography to hide text in an image file?",
+    "choices": [
+      "data obfuscation",
+      "data masking",
+      "least significant bit",
+      "most significant bit"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 112,
+    "question": "Which technology can be used to ensure data confidentiality?",
+    "choices": [
+      "RAID",
+      "identity management",
+      "hashing",
+      "encryption"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 113,
+    "question": "Which type of cybercriminal is the most likely to create malware to compromise an organization by stealing credit card information?",
+    "choices": [
+      "black hat hackers",
+      "gray hat hackers",
+      "script kiddies",
+      "white hat hackers"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 114,
+    "question": "Which utility uses the Internet Control Messaging Protocol (ICMP)?",
+    "choices": [
+      "DNS",
+      "NTP",
+      "RIP",
+      "ping"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 115,
+    "question": "Which threat is mitigated through user awareness training and tying security awareness to performance reviews?",
+    "choices": [
+      "user-related threats",
+      "device-related threats",
+      "cloud-related threats",
+      "physical threats"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 116,
+    "question": "What Windows utility should be used to configure password rules and account lockout policies on a system that is not part of a domain?",
+    "choices": [
+      "Event Viewer security log",
+      "Computer Management",
+      "Active Directory Security tool",
+      "Local Security Policy tool"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 117,
+    "question": "What is a feature of a cryptographic hash function?",
+    "choices": [
+      "Hashing requires a public and a private key.",
+      "The hash function is a one-way mathematical function.",
+      "The hash input can be calculated given the output value.",
+      "The output has a variable length."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 118,
+    "question": "Passwords, passphrases, and PINs are examples of which security term?",
+    "choices": [
+      "authentication",
+      "identification",
+      "authorization",
+      "access"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 119,
+    "question": "Which hashing algorithm is recommended for the protection of sensitive, unclassified information?",
+    "choices": [
+      "3DES",
+      "MD5",
+      "SHA-256",
+      "AES-256"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 120,
+    "question": "An organization allows employees to work from home two days a week. Which technology should be implemented to ensure data confidentiality as data is transmitted?",
+    "choices": [
+      "RAID",
+      "VPN",
+      "VLANS",
+      "SHS"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 121,
+    "question": "Which statement describes a distributed denial of service attack?",
+    "choices": [
+      "An attacker sends an enormous quantity of data that a server cannot handle.",
+      "An attacker views network traffic to learn authentication credentials.",
+      "One computer accepts data packets based on the MAC address of another computer.",
+      "An attacker builds a botnet comprised of zombies."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 122,
+    "question": "What is it called when an organization only installs applications that meet its guidelines, and administrators increase security by eliminating all other applications?",
+    "choices": [
+      "asset standardization",
+      "asset identification",
+      "asset classification",
+      "asset availability"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 123,
+    "question": "There are many environments that require five nines, but a five nines environment may be cost prohibitive. What is one example of where the five nines environment might be cost prohibitive?",
+    "choices": [
+      "the U.S. Department of Education",
+      "the front office of a major league sports team",
+      "the New York Stock Exchange",
+      "department stores at the local mall"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 124,
+    "question": "An organization has implemented antivirus software. What type of security control did the company implement?",
+    "choices": [
+      "detective control",
+      "recovery control",
+      "compensative control",
+      "deterrent control"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 125,
+    "question": "A specialist in the HR department is invited to promote the cybersecurity program in community schools. Which three topics would the specialist emphasize in the presentation to draw students to this field?",
+    "choices": [
+      "high earning potential",
+      "service to the public",
+      "a field requiring a PhD degree",
+      "the CompTIA A+ certification provides an adequate knowledge base for the field",
+      "a job with routine, day-to-day tasks",
+      "a career-field in high-demand"
+    ],
+    "answer": [0, 1, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 126,
+    "question": "What approach to availability provides the most comprehensive protection because multiple defenses coordinate together to prevent attacks?",
+    "choices": [
+      "diversity",
+      "obscurity",
+      "layering",
+      "limiting"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 127,
+    "question": "What are three states of data during which data is vulnerable?",
+    "choices": [
+      "data in-transit",
+      "data encrypted",
+      "data in-process",
+      "data decrypted",
+      "purged data",
+      "stored data"
+    ],
+    "answer": [0, 2, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 128,
+    "question": "A penetration testing service hired by the company has reported that a backdoor was identified on the network. What action should the organization take to find out if systems have been compromised?",
+    "choices": [
+      "Look for unauthorized accounts.",
+      "Look for policy changes in Event Viewer.",
+      "Scan the systems for viruses.",
+      "Look for usernames that do not have passwords."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 129,
+    "question": "Which statement describes a characteristics of block ciphers?",
+    "choices": [
+      "Block ciphers result in compressed output.",
+      "Block ciphers result in output data that is larger than the input data most of the time.",
+      "Block ciphers are faster than stream ciphers.",
+      "Block ciphers encrypt plaintext one bit at a time to form a block."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 130,
+    "question": "What type of application attack occurs when data goes beyond the memory areas allocated to the application?",
+    "choices": [
+      "RAM spoofing",
+      "SQL injection",
+      "buffer overflow",
+      "RAM Injection"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 131,
+    "question": "Which website offers guidance on putting together a checklist to provide guidance on configuring and hardening operating systems?",
+    "choices": [
+      "The National Vulnerability Database website",
+      "CERT",
+      "The Advanced Cyber Security Center",
+      "Internet Storm Center"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 132,
+    "question": "Which two values are required to calculate annual loss expectancy?",
+    "choices": [
+      "exposure factor",
+      "quantitative loss value",
+      "annual rate of occurrence",
+      "single loss expectancy",
+      "frequency factor",
+      "asset value"
+    ],
+    "answer": [2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 133,
+    "question": "A cyber criminal sends a series of maliciously formatted packets to the database server. The server cannot parse the packets and the event causes the server crash. What is the type of attack the cyber criminal launches?",
+    "choices": [
+      "man-in-the-middle",
+      "SQL injection",
+      "packet Injection",
+      "DoS"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 134,
+    "question": "Mutual authentication can prevent which type of attack?",
+    "choices": [
+      "wireless sniffing",
+      "man-in-the-middle",
+      "wireless IP spoofing",
+      "wireless poisoning"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 135,
+    "question": "A user has a large amount of data that needs to be kept confidential. Which algorithm would best meet this requirement?",
+    "choices": [
+      "3DES",
+      "ECC",
+      "RSA",
+      "Diffie-Hellman"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 136,
+    "question": "What are two incident response phases?",
+    "choices": [
+      "containment and recovery",
+      "mitigation and acceptance",
+      "detection and analysis",
+      "prevention and containment",
+      "risk analysis and high availability",
+      "confidentiality and eradication"
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 137,
+    "question": "Which cybersecurity weapon scans for use of default passwords, missing patches, open ports, misconfigurations, and active IP addresses?",
+    "choices": [
+      "vulnerability scanners",
+      "password crackers",
+      "packet analyzers",
+      "packet sniffers"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 138,
+    "question": "What happens as the key length increases in an encryption application?",
+    "choices": [
+      "Keyspace decreases proportionally.",
+      "Keyspace increases exponentially.",
+      "Keyspace decreases exponentially.",
+      "Keyspace increases proportionally."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 139,
+    "question": "Your risk manager just distributed a chart that uses three colors to identify the level of threat to key assets in the information security systems. Red represents high level of risk, yellow represents average level of threat and green represents low level of threat. What type of risk analysis does this chart represent?",
+    "choices": [
+      "exposure factor analysis",
+      "quantitative analysis",
+      "qualitative analysis",
+      "loss analysis"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 140,
+    "question": "An organization wants to adopt a labeling system based on the value, sensitivity, and criticality of the information. What element of risk management is recommended?",
+    "choices": [
+      "asset classification",
+      "asset availability",
+      "asset identification",
+      "asset standardization"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 141,
+    "question": "An organization has determined that an employee has been cracking passwords on administrative accounts in order to access very sensitive payroll information. Which tools would you look for on the system of the employee?",
+    "choices": [
+      "password digest",
+      "reverse lookup tables",
+      "rouge access points",
+      "lookup tables",
+      "rainbow tables",
+      "algorithm tables"
+    ],
+    "answer": [1, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 142,
+    "question": "What is an impersonation attack that takes advantage of a trusted relationship between two systems?",
+    "choices": [
+      "man-in-the-middle",
+      "spoofing",
+      "spamming",
+      "sniffing"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 143,
+    "question": "Which statement best describes a motivation of hacktivists?",
+    "choices": [
+      "They are part of a protest group behind a political cause.",
+      "They are curious and learning hacking skills.",
+      "They are interested in discovering new exploits.",
+      "They are trying to show off their hacking skills."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 144,
+    "question": "Which two groups of people are considered internal attackers?",
+    "choices": [
+      "trusted partners",
+      "hacktivists",
+      "ex-employees",
+      "black hat hackers",
+      "amateurs"
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 145,
+    "question": "Which hashing technology requires keys to be exchanged?",
+    "choices": [
+      "AES",
+      "HMAC",
+      "salting",
+      "MD5"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 146,
+    "question": "What type of attack has an organization experienced when an employee installs an unauthorized device on the network to view network traffic?",
+    "choices": [
+      "sniffing",
+      "phishing",
+      "spamming",
+      "spoofing"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 147,
+    "question": "Alice and Bob use a pre-shared key to exchange a confidential message. If Bob wants to send a confidential message to Carol, what key should he use?",
+    "choices": [
+      "the same pre-shared key he used with Alice",
+      "the private key of Carol",
+      "the public key of Bob",
+      "a new pre-shared key"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 148,
+    "question": "Which technology would you implement to provide high availability for data storage?",
+    "choices": [
+      "RAID",
+      "N+1",
+      "hot standby",
+      "software updates"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 149,
+    "question": "What is an example of early warning systems that can be used to thwart cybercriminals?",
+    "choices": [
+      "ISO/IEC 27000 program",
+      "Infragard",
+      "CVE database",
+      "Honeynet project"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 150,
+    "question": "A security specialist is asked for advice on a security measure to prevent unauthorized hosts from accessing the home network of employees. Which measure would be most effective?",
+    "choices": [
+      "Implement intrusion detection systems.",
+      "Implement a firewall.",
+      "Implement a VLAN.",
+      "Implement RAID."
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 151,
+    "question": "What type of attack will make illegitimate websites higher in a web search result list?",
+    "choices": [
+      "SEO poisoning",
+      "DNS poisoning",
+      "spam",
+      "browser hijacker"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 152,
+    "question": "Which technology can be used to protect VoIP against eavesdropping?",
+    "choices": [
+      "SSH",
+      "strong authentication",
+      "encrypted voice messages",
+      "ARP"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 153,
+    "question": "What describes the protection provided by a fence that is 1 meter in height?",
+    "choices": [
+      "It deters casual trespassers only.",
+      "The fence deters determined intruders.",
+      "It offers limited delay to a determined intruder.",
+      "It prevents casual trespassers because of its height."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 154,
+    "question": "Which two protocols pose switching threats?",
+    "choices": [
+      "RIP",
+      "IP",
+      "ICMP",
+      "WPA2",
+      "STP",
+      "ARP"
+    ],
+    "answer": [4, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 155,
+    "question": "What technology should be implemented to verify the identity of an organization, to authenticate its website, and to provide an encrypted connection between a client and the website?",
+    "choices": [
+      "asymmetric encryption",
+      "digital signature",
+      "digital certificate",
+      "salting"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 156,
+    "question": "The IT department is tasked to implement a system that controls what a user can and cannot do on the corporate network. Which process should be implemented to meet the requirement?",
+    "choices": [
+      "user login auditing",
+      "a set of attributes that describes user access rights",
+      "a biometric fingerprint reader",
+      "observations to be provided to all employees"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 157,
+    "question": "Which three protocols can use Advanced Encryption Standard (AES)?",
+    "choices": [
+      "TKIP",
+      "802.11q",
+      "WPA",
+      "802.11i",
+      "WEP",
+      "WPA2"
+    ],
+    "answer": [0, 3, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 158,
+    "question": "An organization plans to implement security training to educate employees about security policies. What type of access control is the organization trying to implement?",
+    "choices": [
+      "logical",
+      "physical",
+      "technological",
+      "administrative"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 159,
+    "question": "A VPN will be used within the organization to give remote users secure access to the corporate network. What does IPsec use to authenticate the origin of every packet to provide data integrity checking?",
+    "choices": [
+      "CRC",
+      "password",
+      "salting",
+      "HMAC"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 160,
+    "question": "The X.509 standards defines which security technology?",
+    "choices": [
+      "biometrics",
+      "strong passwords",
+      "digital certificates",
+      "security tokens"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 161,
+    "question": "Which technology should be used to enforce the security policy that a computing device must be checked against the latest antivirus update before the device is allowed to connect to the campus network?",
+    "choices": [
+      "VPN",
+      "NAC",
+      "NAS",
+      "SAN"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 162,
+    "question": "What is a nontechnical method that a cybercriminal would use to gather sensitive information from an organization?",
+    "choices": [
+      "social engineering",
+      "ransomeware",
+      "man-in-the-middle",
+      "pharming"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 163,
+    "question": "Users report that the network access is slow. After questioning the employees, the network administrator learned that one employee downloaded a third-party scanning program for the printer. What type of malware might be introduced that causes slow performance of the network?",
+    "choices": [
+      "phishing",
+      "worm",
+      "spam",
+      "virus"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 164,
+    "question": "Which data state is maintained in NAS and SAN services?",
+    "choices": [
+      "encrypted data",
+      "data in-process",
+      "data in-transit",
+      "stored data"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 165,
+    "question": "What is the most difficult part of designing a cryptosystem?",
+    "choices": [
+      "encryption algorithm",
+      "reverse engineering",
+      "key length",
+      "key management"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 166,
+    "question": "Which methods can be used to implement multifactor authentication?",
+    "choices": [
+      "VPNs and VLANs",
+      "IDS and IPS",
+      "tokens and hashes",
+      "passwords and fingerprints"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 167,
+    "question": "Keeping data backups offsite is an example of which type of disaster recovery control?",
+    "choices": [
+      "preventive",
+      "corrective",
+      "management",
+      "detective"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 168,
+    "question": "Which protocol would be used to provide security for employees that access systems remotely from home?",
+    "choices": [
+      "Telnet",
+      "SCP",
+      "WPA",
+      "SSH"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 169,
+    "question": "Which type of networks poses increasing challenges to cybersecurity specialists due to the growth of BYOD on campus?",
+    "choices": [
+      "sneaker net",
+      "wired networks",
+      "virtual networks",
+      "wireless networks"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 170,
+    "question": "In which situation would a detective control be warranted?",
+    "choices": [
+      "after the organization has experienced a breach in order to restore everything back to a normal state",
+      "when the organization needs to look for prohibited activity",
+      "when the organization needs to repair damage",
+      "when the organization cannot use a guard dog, so it is necessary to consider an alternative"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 171,
+    "question": "What approach to availability involves using file permissions?",
+    "choices": [
+      "layering",
+      "simplicity",
+      "obscurity",
+      "limiting"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 172,
+    "question": "Which wireless standard made AES and CCM mandatory?",
+    "choices": [
+      "WPA2",
+      "WPA",
+      "WEP2",
+      "WEP"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 173,
+    "question": "What technology should you implement to ensure that an individual cannot later claim that he or she did not sign a given document?",
+    "choices": [
+      "asymmetric encryption",
+      "digital certificate",
+      "digital signature",
+      "HMAC"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 174,
+    "question": "Being able to maintain availability during disruptive events describes which of the principles of high availability?",
+    "choices": [
+      "single point of failure",
+      "system resiliency",
+      "fault tolerance",
+      "uninterruptible services"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 175,
+    "question": "Which law was enacted to prevent corporate accounting-related crimes?",
+    "choices": [
+      "The Federal Information Security Management Act",
+      "Import/Export Encryption Act",
+      "Sarbanes-Oxley Act",
+      "Gramm-Leach-Bliley Act"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 176,
+    "question": "The awareness and identification of vulnerabilities is a critical function of a cybersecurity specialist. Which of the following resources can be used to identify specific details about vulnerabilities?",
+    "choices": [
+      "NIST/NICE framework",
+      "Infragard",
+      "ISO/IEC 27000 model",
+      "CVE national database"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 177,
+    "question": "What kind of integrity does a database have when all its rows have a unique identifier called a primary key?",
+    "choices": [
+      "referential integrity",
+      "domain integrity",
+      "entity integrity",
+      "user-defined integrity"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 178,
+    "question": "You have been asked to work with the data collection and entry staff in your organization in order to improve data integrity during initial data entry and data modification operations. Several staff members ask you to explain why the new data entry screens limit the types and size of data able to be entered in specific fields. What is an example of a new data integrity control?",
+    "choices": [
+      "a limitation rule which has been implemented to prevent unauthorized staff from entering sensitive data",
+      "data encryption operations that prevent any unauthorized users from accessing sensitive data",
+      "data entry controls which only allow entry staff to view current data",
+      "a validation rule which has been implemented to ensure completeness, accuracy, and consistency of data"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 179,
+    "question": "Technologies like GIS and IoE contribute to the growth of large data stores. What are two reasons that these technologies increase the need for cybersecurity specialists?",
+    "choices": [
+      "They require 24-hour monitoring.",
+      "They collect sensitive information.",
+      "They contain personal information.",
+      "They increase processing requirements.",
+      "They require more equipment.",
+      "They make systems more complicated."
+    ],
+    "answer": [1, 2],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 180,
+    "question": "What are the two most effective ways to defend against malware?",
+    "choices": [
+      "Implement a VPN.",
+      "Implement strong passwords.",
+      "Install and update antivirus software.",
+      "Implement RAID.",
+      "Implement network firewalls.",
+      "Update the operating system and other application software."
+    ],
+    "answer": [2, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 181,
+    "question": "Which algorithm will Windows use by default when a user intends to encrypt files and folders in an NTFS volume?",
+    "choices": [
+      "RSA",
+      "DES",
+      "AES",
+      "3DES"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 182,
+    "question": "Before data is sent out for analysis, which technique can be used to replace sensitive data in nonproduction environments to protect the underlying information?",
+    "choices": [
+      "data masking substitution",
+      "steganography",
+      "software obfuscation",
+      "steganalysis"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 183,
+    "question": "Technicians are testing the security of an authentication system that uses passwords. When a technician examines the password tables, the technician discovers the passwords are stored as hash values. However, after comparing a simple password hash, the technician then discovers that the values are different from those on other systems. What are two causes of this situation?",
+    "choices": [
+      "The systems use different hashing algorithms.",
+      "Both systems use MD5.",
+      "Both systems scramble the passwords before hashing.",
+      "One system uses hashing and the other uses hashing and salting.",
+      "One system uses symmetrical hashing and the other uses asymmetrical hashing."
+    ],
+    "answer": [0, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 184,
+    "question": "Alice and Bob are using a digital signature to sign a document. What key should Alice use to sign the document so that Bob can make sure that the document came from Alice?",
+    "choices": [
+      "public key from Bob",
+      "private key from Alice",
+      "private key from Bob",
+      "username and password from Alice"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 185,
+    "question": "Your organization will be handling market trades. You will be required to verify the identify of each customer who is executing a transaction. Which technology should be implemented to authenticate and verify customer electronic transactions?",
+    "choices": [
+      "symmetrical encryption",
+      "data hashing",
+      "digital certificates",
+      "asymmetrical encryption"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 186,
+    "question": "The employees in a company receive an email stating that the account password will expire immediately and requires a password reset within 5 minutes. Which statement would classify this email?",
+    "choices": [
+      "It is a piggy-back attack.",
+      "It is an impersonation attack.",
+      "It is a DDoS attack.",
+      "It is a hoax."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 187,
+    "question": "What three best practices can help defend against social engineering attacks?",
+    "choices": [
+      "Deploy well-designed firewall appliances.",
+      "Resist the urge to click on enticing web links.",
+      "Add more security guards.",
+      "Educate employees regarding policies.",
+      "Do not provide password resets in a chat window.",
+      "Enable a policy that states that the IT department should supply information over the phone only to managers."
+    ],
+    "answer": [1, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 188,
+    "question": "Which access control should the IT department use to restore a system back to its normal state?",
+    "choices": [
+      "compensative",
+      "corrective",
+      "detective",
+      "preventive"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 189,
+    "question": "What is required in order to connect a Wi-Fi enabled laptop to a WPA secured wireless network?",
+    "choices": [
+      "a security encryption key",
+      "a username and password",
+      "an updated wireless driver",
+      "a MAC address"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 190,
+    "question": "Place the steps for configuring zone-based policy (ZPF) firewalls in order from first to last.",
+    "choices": [
+      "1st → Create zones.",
+      "2nd → Assign zones to interfaces.",
+      "3rd → Create policies.",
+      "4th → Apply policies."
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 191,
+    "question": "Which two options can limit the information discovered from port scanning?",
+    "choices": [
+      "firewall",
+      "intrusion prevention system",
+      "authentication",
+      "encryption",
+      "passwords"
+    ],
+    "answer": [0, 1],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 192,
+    "question": "What type of security test uses simulated attacks to determine possible consequences of a real threat?",
+    "choices": [
+      "penetration testing",
+      "vulnerability scanning",
+      "integrity checking",
+      "network scanning"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 193,
+    "question": "What are two tasks that can be accomplished with the Nmap and Zenmap network tools?",
+    "choices": [
+      "password recovery",
+      "password auditing",
+      "validation of IT system configuration",
+      "TCP and UDP port scanning",
+      "identification of Layer 3 protocol support on hosts"
+    ],
+    "answer": [3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 194,
+    "question": "A new PC is taken out of the box, started up and connected to the Internet. Patches were downloaded and installed. Antivirus was updated. In order to further harden the operating system what can be done?",
+    "choices": [
+      "Give the computer a nonroutable address.",
+      "Install a hardware firewall.",
+      "Turn off the firewall.",
+      "Remove unnecessary programs and services.",
+      "Remove the administrator account.",
+      "Disconnect the computer from the network."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 195,
+    "question": "What are two methods to maintain certificate revocation status?",
+    "choices": [
+      "CRL",
+      "OCSP",
+      "LDAP",
+      "subordinate CA",
+      "DNS"
+    ],
+    "answer": [0, 1],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 196,
+    "question": "Match the network service with the description.",
+    "choices": [
+      "syslog → notifies the administrator with detailed system messages",
+      "SNMP → allows administrators to manage network nodes",
+      "NTP → synchronizes the time across all devices on the network",
+      "NetFlow → provides statistics on IP packets flowing through network devices"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 197,
+    "question": "Which user can override file permissions on a Linux computer?",
+    "choices": [
+      "only the creator of the file",
+      "any user that has 'group' permission to the file",
+      "any user that has 'other' permission to the file",
+      "root user"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 198,
+    "question": "Which two tools have a GUI interface and can be used to view and analyze full packet captures?",
+    "choices": [
+      "tcpdump",
+      "nfdump",
+      "Cisco Prime Network Analysis Module",
+      "Splunk",
+      "Wireshark"
+    ],
+    "answer": [2, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 199,
+    "question": "What is an example of privilege escalation attack?",
+    "choices": [
+      "A port scanning attack finds that the FTP service is running on a server that allows anonymous access.",
+      "A threat actor sends an email to an IT manager to request the root access.",
+      "A threat actor performs an access attack and gains the administrator password.",
+      "A DDoS attack is launched against a government server and causes the server to crash."
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 200,
+    "question": "A threat actor has identified the potential vulnerability of the web server of an organization and is building an attack. What will the threat actor possibly do to build an attack weapon?",
+    "choices": [
+      "Obtain an automated tool in order to deliver the malware payload through the vulnerability.",
+      "Install a webshell on the web server for persistent access.",
+      "Collect credentials of the web server developers and administrators.",
+      "Create a point of persistence by adding services."
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 201,
+    "question": "Which Windows tool can be used by a cybersecurity administrator to secure stand-alone computers that are not part of an active directory domain?",
+    "choices": [
+      "Local Security Policy",
+      "PowerShell",
+      "Windows Firewall",
+      "Windows Defender"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 202,
+    "question": "Which two classes of metrics are included in the CVSS Base Metric Group?",
+    "choices": [
+      "Exploit Code Maturity",
+      "Exploitability",
+      "Confidentiality Requirement",
+      "Modified Base",
+      "Impact metrics"
+    ],
+    "answer": [1, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 203,
+    "question": "After host A receives a web page from server B, host A terminates the connection with server B. Match each option to its correct step in the normal termination process for a TCP connection.",
+    "choices": [
+      "Step 1 → Host A sends FIN to Server B",
+      "Step 2 → Server B sends ACK to Host A",
+      "Step 3 → Server B sends FIN to Host A",
+      "Step 4 → Host A sends ACK to Server B"
+    ],
+    "answer": [0, 1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 204,
+    "question": "Which statement describes Cisco IOS Zone-Based Policy Firewall operation?",
+    "choices": [
+      "Router management interfaces must be manually assigned to the self zone.",
+      "Service policies are applied in interface configuration mode.",
+      "A router interface can belong to multiple zones.",
+      "The pass action works in only one direction."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 205,
+    "question": "Match the correct sequence of steps typically taken by a threat actor carrying out a domain shadowing attack.",
+    "choices": [
+      "Step 1 → The website is compromised",
+      "Step 2 → HTTP 302 cushioning is used",
+      "Step 3 → Domain shadowing is used",
+      "Step 4 → An exploit kit landing page is created",
+      "Step 5 → Malware is spread through its payload"
+    ],
+    "answer": [0, 1, 2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 206,
+    "question": "A flood of packets with invalid source IP addresses requests a connection on the network. The server busily tries to respond, resulting in valid requests being ignored. What type of attack has occurred?",
+    "choices": [
+      "UDP flood",
+      "TCP SYN flood",
+      "TCP session hijacking",
+      "TCP reset"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 207,
+    "question": "In an attempt to prevent network attacks, cyber analysts share unique identifiable attributes of known attacks with colleagues. What three types of attributes or indicators of compromise are helpful to share?",
+    "choices": [
+      "netbios names of compromised firewalls",
+      "IP addresses of attack servers",
+      "features of malware files",
+      "changes made to end system software",
+      "BIOS of attacking systems",
+      "system ID of compromised systems"
+    ],
+    "answer": [1, 2, 3],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 208,
+    "question": "When ACLs are configured to block IP address spoofing and DoS flood attacks, which ICMP message should be allowed both inbound and outbound?",
+    "choices": [
+      "echo",
+      "echo reply",
+      "source quench",
+      "unreachable"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 209,
+    "question": "What does the telemetry function provide in host-based security software?",
+    "choices": [
+      "It updates the heuristic antivirus signature database.",
+      "It blocks the passage of zero-day attacks.",
+      "It enables updates of malware signatures.",
+      "It enables host-based security programs to have comprehensive logging functions."
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 210,
+    "question": "A network administrator is trying to download a valid file from an internal server. However, the process triggers an alert on a NMS tool. What condition describes this alert?",
+    "choices": [
+      "true positive",
+      "false positive",
+      "true negative",
+      "false negative"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 211,
+    "question": "What device would be used as the third line of defense in a defense-in-depth approach?",
+    "choices": [
+      "firewall",
+      "edge router",
+      "host",
+      "internal router"
+    ],
+    "answer": 2,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 212,
+    "question": "Which three security services are provided by digital signatures?",
+    "choices": [
+      "provides nonrepudiation using HMAC functions",
+      "provides data encryption",
+      "authenticates the destination",
+      "guarantees data has not changed in transit",
+      "provides confidentiality of digitally signed data",
+      "authenticates the source"
+    ],
+    "answer": [0, 3, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 213,
+    "question": "A company is using a public cloud provider to host its software development and distribution processes. What two cloud resources is the company solely responsible for in the shared security responsibility model?",
+    "choices": [
+      "application",
+      "identity management",
+      "data",
+      "network control",
+      "customer endpoints"
+    ],
+    "answer": [0, 2],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 214,
+    "question": "What is the function of SDKs in application development?",
+    "choices": [
+      "to prevent software from being reverse engineered by replacing sensitive data with fictional data",
+      "to store precompiled SQL statements that execute tasks",
+      "to verify software can run under required security settings",
+      "to maintain data integrity and identify malicious input",
+      "to provide a repository of code to reduce time and cost of application development"
+    ],
+    "answer": 4,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 215,
+    "question": "The manager of a new data center requisitions magnetic door locks. The locks will require employees to swipe an ID card to open. Which type of security control is being implemented?",
+    "choices": [
+      "corrective",
+      "compensative",
+      "recovery",
+      "preventive"
+    ],
+    "answer": 3,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 216,
+    "question": "Which security organization maintains a list of common vulnerabilities and exposures (CVE) and is used by prominent security organizations?",
+    "choices": [
+      "SANS",
+      "MITRE",
+      "CIS",
+      "SecurityNewsWire"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 217,
+    "question": "As a Cybersecurity Analyst, it is very important to keep current. It was suggested by some colleagues that NewsBites contains many good current articles to read. What network security organization maintains this weekly digest?",
+    "choices": [
+      "CIS",
+      "SANS",
+      "(ISC)2",
+      "Mitre"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 218,
+    "question": "Match the IT security governance role with its description.",
+    "choices": [
+      "Data controller → A person who determines the purposes for which and how to process personal data.",
+      "Data custodian → A person who implements the classification and security controls for the data in accordance with the rules set out by the data owner.",
+      "Data protection officer → A person who oversees an organization's data protection strategy.",
+      "Data processor → A person or organization processes personal data on behalf of the data controller.",
+      "Data steward → A person who ensures that data supports an organization's business needs and meets regulatory requirements.",
+      "Data owner → A person who ensures compliance with policies and procedures assigns the proper classification to information assets and determines the criteria for accessing information assets."
+    ],
+    "answer": [0, 1, 2, 3, 4, 5],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 219,
+    "question": "An organization has experienced several data breaches over the last five years. These data breaches have cost the organization financially and damaged its reputation. The organization has hired a cybersecurity penetration team to perform a full security audit on the entire organization. This independent contractor conducted the audit and found the following vulnerabilities: Several user accounts allowed unauthorized and escalated privileges. Systems and information without formal authorization. What two steps can the organization take to mitigate these risks?",
+    "choices": [
+      "log when elevated privileges are used",
+      "assign the least privilege to perform the given task",
+      "adopt a no reuse of passwords on different applications policy",
+      "terminate access and reset all passwords"
+    ],
+    "answer": [0, 1],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  },
+  {
+    "id": 220,
+    "question": "Which type of cyber threat would cause electrical power outages?",
+    "choices": [
+      "hardware failure",
+      "utility interruption",
+      "sabotage",
+      "human error"
+    ],
+    "answer": 1,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 221,
+    "question": "Which device is the first line of defense in a defense-in-depth approach to network security?",
+    "choices": [
+      "edge router",
+      "internal router",
+      "switch",
+      "firewall"
+    ],
+    "answer": 0,
+    "type": "multiple-choice",
+    "category": "Final Exam"
+  },
+  {
+    "id": 222,
+    "question": "Match the correct sequence of steps typically taken by a threat actor carrying out a domain shadowing attack.",
+    "choices": [
+      "Step 1 → The website is compromised",
+      "Step 2 → HTTP 302 cushioning is used",
+      "Step 3 → Domain shadowing is used",
+      "Step 4 → An exploit kit landing page is created",
+      "Step 5 → Malware is spread through its payload"
+    ],
+    "answer": [0, 1, 2, 3, 4],
+    "type": "multiple-choice-v2",
+    "category": "Final Exam"
+  }
+]
+
+
+
