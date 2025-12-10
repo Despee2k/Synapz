@@ -44,7 +44,7 @@ export function QuestionCard({
             <HelpCircle className="w-6 h-6" />
           </div>
           <div className="flex-1">
-            <h2 className="text-2xl font-semibold text-slate-800 leading-relaxed mb-4">
+            <h2 className="sm:text-2xl max-sm:text-base font-semibold text-slate-800 leading-relaxed mb-4">
               {question.question}
             </h2>
             <div className="flex items-center space-x-4 text-sm text-slate-500">

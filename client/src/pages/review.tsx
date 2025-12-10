@@ -193,18 +193,18 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
 
         <div className="flex items-center justify-between">
           <Button variant="outline" onClick={previousQuestion} disabled={currentIndex === 0}>
-            <ChevronLeft className="w-4 h-4 mr-2" />
-            Previous
+            <ChevronLeft className="w-4 h-4 sm:mr-2" />
+            <span className="max-sm:hidden">Previous</span>
           </Button>
 
           <div className="flex space-x-4">
             <Button variant="outline" onClick={onRetake}>
-              <RotateCcw className="w-4 h-4 mr-2" />
-              Retake Quiz
+              <RotateCcw className="w-4 h-4 sm:mr-2" />
+              <span className="max-sm:hidden">Retake Quiz</span>
             </Button>
             <Button onClick={onHome}>
-              <Home className="w-4 h-4 mr-2" />
-              Go Home
+              <Home className="w-4 h-4 sm:mr-2" />
+              <span className="max-sm:hidden">Go Home</span>
             </Button>
           </div>
 
@@ -213,8 +213,8 @@ export function ReviewAnswers({ questions, userAnswers, score, onRetake, onHome 
             onClick={nextQuestion}
             disabled={currentIndex === questions.length - 1}
           >
-            Next
-            <ChevronRight className="w-4 h-4 ml-2" />
+            <span className="max-sm:hidden">Next</span>
+            <ChevronRight className="w-4 h-4 sm:ml-2" />
           </Button>
         </div>
       </main>
