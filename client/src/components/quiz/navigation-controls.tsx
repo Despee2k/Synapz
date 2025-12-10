@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { Check, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface NavigationControlsProps {
   currentQuestion: number;
@@ -67,7 +67,7 @@ export function NavigationControls({
         className="flex items-center space-x-2 px-6 py-3 text-slate-600 hover:text-slate-800 hover:bg-slate-50 rounded-lg transition-all disabled:opacity-50 disabled:cursor-not-allowed"
       >
         <ChevronLeft className="w-4 h-4" />
-        <span className="font-medium">Previous</span>
+        <span className="font-medium max-sm:hidden">Previous</span>
       </button>
 
       <div className="flex items-center space-x-3">
@@ -79,10 +79,10 @@ export function NavigationControls({
       <button 
         onClick={onNext}
         disabled={!canGoNext}
-        className="flex items-center space-x-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all font-medium shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
+        className="flex items-center sm:space-x-2 px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-all font-medium shadow-sm disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        <span>{isLastQuestion ? 'Finish Quiz' : 'Next'}</span>
-        <ChevronRight className="w-4 h-4" />
+        <span className="max-sm:hidden">{isLastQuestion ? 'Finish Quiz' : 'Next'}</span>
+        {isLastQuestion ? <Check className="w-4 h-4" /> : <ChevronRight className="w-4 h-4" /> }
       </button>
     </div>
   );

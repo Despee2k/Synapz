@@ -96,13 +96,17 @@ export default function Quiz() {
 
                 <div className="flex flex-wrap justify-center gap-3">
                   <Button variant="outline" onClick={goHome} size="sm">
-                    <Home className="w-4 h-4 mr-2" />
-                    Go Home
+                    <Home className="w-4 h-4 sm:mr-2" />
+                    <span className="max-sm:hidden">Go Home</span>
                   </Button>
 
                   <Button variant={shuffled ? 'default' : 'outline'} onClick={toggleShuffle} size="sm">
-                    <Shuffle className="w-4 h-4 mr-2" />
-                    {shuffled ? 'Shuffling On' : 'Shuffle Questions'}
+                    <Shuffle className="w-4 h-4 sm:mr-2" />
+                    {
+                      shuffled ? 
+                        <><span className="max-sm:hidden">Shuffling </span>On</> :
+                        <><span className="max-sm:hidden">Shuffle </span>Questions</>
+                    }
                   </Button>
 
                   <Button
@@ -111,8 +115,8 @@ export default function Quiz() {
                     size="sm"
                     title="Shuffle choices for all questions"
                   >
-                    <Shuffle className="w-4 h-4 mr-2" />
-                    Shuffle Choices
+                    <Shuffle className="w-4 h-4 sm:mr-2" />
+                    <span className="max-sm:hidden">Suffle </span>Choices
                   </Button>
                 </div>
               </div>
