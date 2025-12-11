@@ -733,8 +733,8 @@
       "class-map",
       "inspect action"
     ],
-    "answer": [0, 1, 2, 3],
-    "type": "multiple-choice-v2",
+    "answer": 0,
+    "type": "multiple-choice",
     "category": "Final Exam"
   },
   {
@@ -1723,7 +1723,7 @@
       "The Advanced Cyber Security Center",
       "Internet Storm Center"
     ],
-    "answer": 2,
+    "answer": 0,
     "type": "multiple-choice",
     "category": "Final Exam"
   },
@@ -2072,7 +2072,7 @@
       "WEP",
       "WPA2"
     ],
-    "answer": [0, 3, 5],
+    "answer": [2, 3, 5],
     "type": "multiple-choice-v2",
     "category": "Final Exam"
   },
