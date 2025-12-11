@@ -2752,7 +2752,7 @@
       "source quench",
       "unreachable"
     ],
-    "answer": 3,
+    "answer": 2,
     "type": "multiple-choice",
     "category": "Final Exam"
   },
@@ -2806,7 +2806,7 @@
       "provides confidentiality of digitally signed data",
       "authenticates the source"
     ],
-    "answer": [0, 3, 5],
+    "answer": [1, 3, 5],
     "type": "multiple-choice-v2",
     "category": "Final Exam"
   },
